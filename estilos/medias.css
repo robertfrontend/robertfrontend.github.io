@@ -1,0 +1,115 @@
+@media screen and (max-width: 1028px){
+
+	.principal-coño{
+		height: 4000px;
+	}
+
+	.div-web{
+		height: 600px;
+		margin-left: 5%;
+	}
+	.img-web{
+		float: left;
+		margin-left:  35%;
+	}
+
+	.intro-web{
+		height: 300px;
+		float: left;
+		margin-left: 15%;
+	}
+
+	/*----DISEÑO-----*/
+
+	.div-diseño{
+		float: left;
+		height: 600px;
+		margin-left: 5%;
+	}
+
+
+	.img-diseño{
+		float: left;
+		margin-left:25%;
+	}
+
+	.intro-diseño{
+		width: 70%;
+		height: 300px;
+		float: left;
+		margin-left: 15%;
+	}
+
+	/*----MARKETING-----*/
+
+	.div-marketing{
+		height: 600px;
+		margin-left: 5%;
+	}
+
+	.img-marketing{
+		float: left;
+		margin-left: 32%;
+	}
+
+	.intro-marketing{
+		width: 70%;
+		height: 300px;
+
+		float: left;
+		margin-top: 300px;
+		margin-left: 16%;
+	}
+
+	
+
+	/*---APLICACION---*/
+	.div-aplicacion{
+		top: 300px;
+		float: left;
+		height: 600px;
+		margin-left: 5%;
+	}
+
+	.img-aplicacion{
+		float: left;
+		margin-left: 40%;
+	}
+
+	.intro-aplicacion{
+		width: 70%;
+		height: 300px;
+
+		float: left;
+		margin-top: 30px;
+		margin-left: 16%;
+	}
+
+
+	/*---------CIBER------*/
+
+	.div-ciber{
+		top: 400px;
+		float: left;
+		height: 600px;
+		margin-left: 5%;
+	}
+
+	.img-ciber{
+		float: left;
+		margin-left: 30%;
+	}
+
+	.intro-ciber{
+		width: 70%;
+		height: 300px;
+
+		float: left;
+		margin-top: 30px;
+		margin-left: 16%;
+	}
+	
+
+}
+
+

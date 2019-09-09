@@ -1,0 +1,723 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    background-origin: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display:none;  /* Ocultar scroll */
+}
+
+
+
+
+.div-comunidad{
+    position: relative;
+    float: right;
+    top: 30px;
+    right: 40px;
+}
+
+
+.comunidad{
+    text-decoration: none;
+    color: #7CFB00;
+    font-size: 20px;
+}
+
+
+.img-dev{
+    position: absolute;
+    left: 95px;
+    width: 25px;
+}
+
+.div-comunidad:hover{
+    transition: all .2s linear;
+    border-bottom: 1px solid red;
+}
+
+
+
+.nav-menu{
+    position: fixed;
+    z-index: 1;
+
+    width: 100%;
+    height: 80px;
+    background:navy;
+     border-bottom: 2px solid #DADADA;
+
+    
+}
+
+.div-menu{
+
+    position: relative;
+    float: left;
+    top: 25px;
+    
+}
+
+.link-menu{
+    text-decoration: none;
+    margin-left: 20px;
+    color:white;
+    font-size: 18px;
+}
+
+
+.link-menu:hover{
+    transition: all .1s linear;
+    color: #7CFB00;
+
+}
+
+
+.nav-bienvenida{
+    width: 100%;
+    height: 800px;
+
+    text-align: center;
+
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; 
+
+}
+
+
+.bienvenida{
+    position: relative;
+    float: left;
+    top: 100px;
+    width: 90%;
+    height: 200px;
+
+    padding-top: 10px;
+    padding-left: 5px;
+
+
+     border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; 
+
+}
+
+.bienvenida:hover{
+    transition: all .2s linear;
+ 
+}
+
+.h3-lleva{
+    margin-left: 0px;
+    padding-left: 10px;
+
+    color: black;
+}
+
+.cohete{
+    position: relative;
+    float: right;
+    margin-top: 5px;
+
+    width: 100px;
+
+}
+
+
+
+.bienvenida-2{
+    position: relative;
+    float: right;
+    top: 150px;
+    right: 10px;
+    width: 90%;
+    height: 250px;
+
+    text-align: center;
+
+    background: white;
+
+  border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; 
+}
+
+.tit-bien2{
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 5px solid #7CFB00;
+}
+
+
+.diva1{
+    border-left: 5px solid navy;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+}
+
+.a-1{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.diva1:hover{
+
+    transition: all .2s linear;   
+    border-left: 5px solid #7CFB00;
+}
+
+.a-1:hover{
+    transition: all .2s linear;
+    color: red;
+}
+
+
+/*------------------*/
+
+.principal-coño{
+    position: absolute;
+    top: 810px;
+    width: 100%;
+    height: 2500px;
+
+
+   background: #BDBDBD; 
+
+    
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; 
+}
+
+
+/*----------Pagina Web---------*/
+
+.div-web{   
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 10px;
+
+    width: 90%;
+    height: 300px;
+
+    border-right: 2px solid #9F9F9F;
+    
+    
+  border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;  
+
+
+}
+
+.div-web:hover{
+    transition: all .2s linear;
+
+}
+
+
+.titulo-web{
+    margin-left: 0px;
+    color: rgb(13, 13, 197);
+}
+
+
+
+.img-web{
+    position: relative;
+    float: left;
+    left: 10px;
+    width: 250px;
+
+    border-radius: 100px;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+
+.intro-web{
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 70%;
+    height: auto;
+
+
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+.des-web{
+    font-size: 20px;
+    color: black;
+}
+
+
+/*-----------Diseñoo grafico-----------------*/
+
+.div-diseño{
+    position: relative;
+    float: right;
+    top: 100px;
+
+    width: 90%;
+    height: 300px;
+
+    border-left:  2px solid #9F9F9F;
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+.div-diseño:hover{
+    transition: all .2s linear;
+
+}
+
+.titulo-diseño{
+    color: rgb(13, 13, 197);
+}
+
+
+.img-diseño{
+    position: relative;
+    float: right;
+    margin-top: 30px;
+
+
+
+    width: 450px;
+    height: auto;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+    border-radius: 100px;
+}
+
+.intro-diseño{
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    margin-top: 45px;
+
+
+    width: 50%;
+    height: auto;
+
+
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+
+.des-diseño{
+    color: black;
+}
+
+
+
+/*--------------MARKETINNNG-------------*/
+
+.div-marketing{
+    position: relative;
+    float: left;
+    top: 200px;
+
+    width: 90%;
+    height: 300px;
+
+    border-right: 2px solid #9F9F9F;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+   
+}
+
+.div-marketing:hover{
+    transition: all .2s linear;
+
+}
+
+
+.titulo-marketing{
+    color: rgb(13, 13, 197);
+}
+
+
+
+.img-marketing{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 0px;
+
+    width: 280px;
+
+    border-radius: 100px;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+}
+
+.intro-marketing{
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    margin-left: 35%;
+
+    width: 50%;
+    height: auto;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+.des-marketing{
+    color: black;
+}
+
+.boton-marketing{
+    position: absolute;
+    top: 140px;
+    left: 710px;
+    width: 150px;
+    height: 50px;
+
+    border-radius: 20px;
+
+    padding-top: 10px;
+    padding-left: 30px;
+
+    background:navy;
+}
+
+.bt-3{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.boton-marketing:hover{
+    transition: all .1s linear;
+    background: rgb(255, 0, 0);
+}
+
+
+/*-----------------------------*/
+
+.div-aplicacion{
+    position: relative;
+    float: right;
+    top: 300px;
+
+    width: 90%;
+    height: 300px;
+
+    border-left: 2px solid #9F9F9F;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+}
+
+.div-aplicacion:hover{
+    transition: all .2s linear;
+
+}
+
+.img-aplicacion{
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    width: 200px;
+
+    border-radius: 50px;
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+.intro-aplicacion{
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-right: 100px;
+    width: 50%;
+    height: 210px;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+
+.titulo-aplicacion{
+    color: #390DC5;
+}
+
+.des-aplicacion{
+    color: black;
+}
+
+.boton-aplicacion{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 150px;
+    height: 50px;
+
+    border-radius: 20px;
+
+    padding-top: 10px;
+    padding-left: 30px;
+
+    background:navy;;
+}
+
+
+.bt-4{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.boton-aplicacion:hover{
+    transition: all .1s linear;
+    background: rgb(255, 0, 0);
+
+}
+
+/*-------------CIBERSECURIT----------------*/
+
+.div-ciber{
+    position: relative;
+    float: left;
+    top: 400px;
+
+    width: 90%;
+    height: 300px;
+
+    border-left: 2px solid #9F9F9F;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+}
+
+.div-ciber:hover{
+    transition: all .2s linear;
+
+}
+
+.img-ciber{
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    margin-left: : 100px;
+    width: 300px;
+    height: 210px;
+
+    border-radius: 50px;
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+.intro-ciber{
+    position: relative;
+    margin-top: 40px;
+    margin-left:450px;
+
+    width: 50%;
+    height: 210px;
+
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+
+    border-right: 1px solid black;
+
+    border-bottom: 1px solid black; 
+
+}
+
+
+.titulo-ciber{
+    color: #390DC5;
+}
+
+.des-ciber{
+    color: black;
+}
+
+.boton-ciber{
+    position: absolute;
+    top: 120px;
+    left: 850px;
+    width: 150px;
+    height: 50px;
+
+    border-radius: 20px;
+
+    padding-top: 10px;
+    padding-left: 30px;
+
+    background:navy;;
+}
+
+
+.bt-5{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.boton-ciber:hover{
+    transition: all .1s linear;
+    background: rgb(255, 0, 0);
+
+}
+
+
+
+.footer{
+    position: absolute;
+    top: 5000px;
+    width: 100%;
+    height: 200px;
+
+
+
+}
+
+.div-copy{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 100px;
+    left: 600px;
+
+
+}
+
+.copy{
+    position: absolute;
+    top: 10px;
+    text-transform: none;
+    font-style: italic;
+    font-size: 18px;
+    color: black;
+}
+
+
+.comu{
+    position: absolute;
+    top: 10px;
+    left: 650px;
+}
+
+.ico-ig{
+    width: 35px;
+}
+
+
+

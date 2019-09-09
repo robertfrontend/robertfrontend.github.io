@@ -1,0 +1,29 @@
+Transincion de un elemento
+
+.div-basico:hover{
+
+    width: 210px;
+    height: 300px;
+    transition: all .4s linear;
+    font-size: 20px;
+}
+
+  /*  Mover elemento y regresar elemnto
+  
+  -moz-transform: translate(250px,50px); 
+    -webkit-transform: translate(250px,50px); 
+    -o-transform: translate(250px,50px); 
+    transform: translate(250px,50px); 
+
+    */
+
+
+transparencia de imagen
+
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+    
+
+
+deja menu fijo
+z-index;1;

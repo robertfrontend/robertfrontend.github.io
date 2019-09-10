@@ -93,10 +93,7 @@ body::-webkit-scrollbar {
 
     text-align: center;
 
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; 
+
 
 }
 
@@ -112,10 +109,6 @@ body::-webkit-scrollbar {
     padding-left: 5px;
 
 
-     border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; 
 
 }
 
@@ -154,10 +147,7 @@ body::-webkit-scrollbar {
 
     background: white;
 
-  border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; 
+
 }
 
 .tit-bien2{
@@ -204,10 +194,7 @@ body::-webkit-scrollbar {
    background: #BDBDBD; 
 
     
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; 
+ 
 }
 
 
@@ -225,10 +212,6 @@ body::-webkit-scrollbar {
     border-right: 2px solid #9F9F9F;
     
     
-  border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;  
 
 
 }
@@ -253,14 +236,7 @@ body::-webkit-scrollbar {
     width: 250px;
 
     border-radius: 100px;
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
+ 
 
 }
 
@@ -278,13 +254,7 @@ body::-webkit-scrollbar {
     padding-left: 0px;
     padding-right: 0px;
 
-    border-top: 1px solid black;
 
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
 
 }
 
@@ -304,14 +274,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    border-left:  2px solid #9F9F9F;
-    border-top: 1px solid black;
 
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
 
 }
 
@@ -335,15 +298,7 @@ body::-webkit-scrollbar {
     width: 450px;
     height: auto;
 
-    border-top: 1px solid black;
 
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
-
-    border-radius: 100px;
 }
 
 .intro-diseño{
@@ -357,14 +312,6 @@ body::-webkit-scrollbar {
     height: auto;
 
 
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
 
 }
 
@@ -385,15 +332,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    border-right: 2px solid #9F9F9F;
 
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
    
 }
 
@@ -417,15 +356,7 @@ body::-webkit-scrollbar {
 
     width: 280px;
 
-    border-radius: 100px;
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
+ 
 }
 
 .intro-marketing{
@@ -437,13 +368,7 @@ body::-webkit-scrollbar {
     width: 50%;
     height: auto;
 
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
+   
 
 }
 
@@ -488,15 +413,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    border-left: 2px solid #9F9F9F;
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
+  
 }
 
 .div-aplicacion:hover{
@@ -512,13 +429,7 @@ body::-webkit-scrollbar {
     width: 200px;
 
     border-radius: 50px;
-    border-top: 1px solid black;
 
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
 
 }
 
@@ -529,14 +440,6 @@ body::-webkit-scrollbar {
     margin-right: 100px;
     width: 50%;
     height: 210px;
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
 
 }
 
@@ -587,15 +490,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    border-left: 2px solid #9F9F9F;
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
+ 
 }
 
 .div-ciber:hover{
@@ -612,13 +507,7 @@ body::-webkit-scrollbar {
     height: 210px;
 
     border-radius: 50px;
-    border-top: 1px solid black;
 
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
 
 }
 
@@ -629,14 +518,7 @@ body::-webkit-scrollbar {
 
     width: 50%;
     height: 210px;
-
-    border-top: 1px solid black;
-
-    border-left: 1px solid black;
-
-    border-right: 1px solid black;
-
-    border-bottom: 1px solid black; 
+ 
 
 }
 

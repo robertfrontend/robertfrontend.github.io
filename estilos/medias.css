@@ -1,7 +1,7 @@
 @media screen and (max-width: 1028px){
 
 	.principal-coño{
-		height: 4000px;
+		height: 4200px;
 	}
 
 	.div-web{
@@ -108,8 +108,55 @@
 		margin-top: 30px;
 		margin-left: 16%;
 	}
+
+
+
+	/*---------ADMI REDES------*/
+
+	.div-admi{
+		top: 500px;
+		float: left;
+		height: 600px;
+		margin-left: 5%;
+	}
+
+	.img-admi{
+		float: left;
+		margin-left: 35%;
+	}
+
+	.intro-admi{
+		width: 70%;
+		height: 300px;
+
+		float: left;
+		margin-top: 30px;
+		margin-left: 16%;
+	}
 	
+
+	.footer{
+		top: 1700px;
+	}
 
 }
 
 
+
+/*--Media para tables---*/
+
+
+@media screen and (max-width: 768px){
+
+	.intro-web{
+		margin-left: 20%;
+	}
+
+
+	.img-diseño{
+		margin-left: 18%;
+	}
+
+
+
+}

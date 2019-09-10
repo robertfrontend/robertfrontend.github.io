@@ -108,7 +108,10 @@ body::-webkit-scrollbar {
     padding-top: 10px;
     padding-left: 5px;
 
- 
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
 
 }
 
@@ -147,6 +150,10 @@ body::-webkit-scrollbar {
 
     background: white;
 
+     border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
 
 }
 
@@ -191,7 +198,7 @@ body::-webkit-scrollbar {
     height: 2500px;
 
 
-   background: white; 
+   background: gray; 
 
     
  
@@ -211,7 +218,11 @@ body::-webkit-scrollbar {
 
     border-right: 2px solid #9F9F9F;
     
- 
+     border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 
 
 }
@@ -237,6 +248,11 @@ body::-webkit-scrollbar {
 
     border-radius: 100px;
 
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 
 
 }
@@ -255,6 +271,12 @@ body::-webkit-scrollbar {
 
     text-align: center;
 
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
+
 }
 
 .des-web{
@@ -272,6 +294,12 @@ body::-webkit-scrollbar {
 
     width: 90%;
     height: 300px;
+
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 
  
 
@@ -297,6 +325,11 @@ body::-webkit-scrollbar {
     width: 450px;
     height: auto;
 
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 
     border-radius: 100px;
 }
@@ -311,6 +344,12 @@ body::-webkit-scrollbar {
 
     width: 50%;
     height: auto;
+
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
  
 
 }
@@ -334,6 +373,11 @@ body::-webkit-scrollbar {
 
     text-align: center;
    
+       border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 }
 
 .div-marketing:hover{
@@ -358,6 +402,12 @@ body::-webkit-scrollbar {
 
     border-radius: 100px;
 
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
+
 
 }
 
@@ -370,38 +420,16 @@ body::-webkit-scrollbar {
     width: 50%;
     height: auto;
 
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
 
 
 }
 
 .des-marketing{
     color: black;
-}
-
-.boton-marketing{
-    position: absolute;
-    top: 140px;
-    left: 710px;
-    width: 150px;
-    height: 50px;
-
-    border-radius: 20px;
-
-    padding-top: 10px;
-    padding-left: 30px;
-
-    background:navy;
-}
-
-.bt-3{
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.boton-marketing:hover{
-    transition: all .1s linear;
-    background: rgb(255, 0, 0);
 }
 
 
@@ -416,6 +444,13 @@ body::-webkit-scrollbar {
     height: 300px;
 
     text-align: center;
+
+
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
  
 }
 
@@ -433,6 +468,12 @@ body::-webkit-scrollbar {
 
     border-radius: 50px;
 
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
+
 
 }
 
@@ -443,6 +484,12 @@ body::-webkit-scrollbar {
     margin-right: 100px;
     width: 50%;
     height: 210px;
+
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
  
 
 }
@@ -454,34 +501,6 @@ body::-webkit-scrollbar {
 
 .des-aplicacion{
     color: black;
-}
-
-.boton-aplicacion{
-    position: absolute;
-    top: 120px;
-    left: 40px;
-    width: 150px;
-    height: 50px;
-
-    border-radius: 20px;
-
-    padding-top: 10px;
-    padding-left: 30px;
-
-    background:navy;;
-}
-
-
-.bt-4{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.boton-aplicacion:hover{
-    transition: all .1s linear;
-    background: rgb(255, 0, 0);
-
 }
 
 /*-------------CIBERSECURIT----------------*/
@@ -498,7 +517,11 @@ body::-webkit-scrollbar {
 
     border-left: 2px solid #9F9F9F;
 
-; 
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 }
 
 .div-ciber:hover{
@@ -516,16 +539,28 @@ body::-webkit-scrollbar {
 
     border-radius: 50px;
 
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 
 }
 
 .intro-ciber{
     position: relative;
+    float: left;
     margin-top: 40px;
-    margin-left:450px;
+    margin-left: 100px;
 
     width: 50%;
     height: 210px;
+
+     border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 
 
 }
@@ -539,59 +574,111 @@ body::-webkit-scrollbar {
     color: black;
 }
 
-.boton-ciber{
-    position: absolute;
-    top: 120px;
-    left: 850px;
-    width: 150px;
-    height: 50px;
 
-    border-radius: 20px;
 
-    padding-top: 10px;
-    padding-left: 30px;
+/*---ADMI REDES------*/
 
-    background:navy;;
+.div-admi{
+    position: relative;
+    float: right;
+    top: 500px;
+
+    width: 90%;
+    height: 300px;
+
+    text-align: center;
+
+    border-left: 2px solid #9F9F9F;
+
+        border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
+}
+
+.img-admi{
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+
+    width: 300px;
+
+
+     border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
 }
 
 
-.bt-5{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+.intro-admi{
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    width: 50%;
+    height: 210px;
+
+     border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black; 
+
+
+
 }
 
-.boton-ciber:hover{
-    transition: all .1s linear;
-    background: rgb(255, 0, 0);
 
+.titulo-admi{
+    color: #390DC5;
 }
+
+.des-admi{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .footer{
-    position: absolute;
-    top: 5000px;
+    position: relative;
+    margin-top: 2480px;
     width: 100%;
     height: 200px;
 
-
+    background: red;
 
 }
 
 .div-copy{
-    position: absolute;
+    position: relative;
+    top: 150px;
+    margin-left: 40%;
     width: 500px;
     height: 50px;
-    top: 100px;
-    left: 600px;
-
 
 }
 
+
 .copy{
-    position: absolute;
-    top: 10px;
+
     text-transform: none;
     font-style: italic;
     font-size: 18px;
@@ -599,15 +686,13 @@ body::-webkit-scrollbar {
 }
 
 
+
 .comu{
-    position: absolute;
-    top: 10px;
-    left: 650px;
+    position: relative;
+    margin-left: 45%;
 }
 
-.ico-ig{
-    width: 35px;
-}
+
 
 
 

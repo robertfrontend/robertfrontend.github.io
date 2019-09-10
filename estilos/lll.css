@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgb(255, 255, 255);
+    background: white;
     margin: 0;
     padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
     padding-top: 10px;
     padding-left: 5px;
 
-
+ 
 
 }
 
@@ -191,7 +191,7 @@ body::-webkit-scrollbar {
     height: 2500px;
 
 
-   background: #BDBDBD; 
+   background: white; 
 
     
  
@@ -211,7 +211,7 @@ body::-webkit-scrollbar {
 
     border-right: 2px solid #9F9F9F;
     
-    
+ 
 
 
 }
@@ -236,7 +236,8 @@ body::-webkit-scrollbar {
     width: 250px;
 
     border-radius: 100px;
- 
+
+
 
 }
 
@@ -274,7 +275,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-
+ 
 
 }
 
@@ -299,6 +300,7 @@ body::-webkit-scrollbar {
     height: auto;
 
 
+    border-radius: 100px;
 }
 
 .intro-diseño{
@@ -310,8 +312,7 @@ body::-webkit-scrollbar {
 
     width: 50%;
     height: auto;
-
-
+ 
 
 }
 
@@ -356,7 +357,9 @@ body::-webkit-scrollbar {
 
     width: 280px;
 
- 
+    border-radius: 100px;
+
+
 }
 
 .intro-marketing{
@@ -368,7 +371,7 @@ body::-webkit-scrollbar {
     width: 50%;
     height: auto;
 
-   
+
 
 }
 
@@ -412,8 +415,7 @@ body::-webkit-scrollbar {
 
     width: 90%;
     height: 300px;
-
-  
+ 
 }
 
 .div-aplicacion:hover{
@@ -440,6 +442,7 @@ body::-webkit-scrollbar {
     margin-right: 100px;
     width: 50%;
     height: 210px;
+ 
 
 }
 
@@ -490,7 +493,9 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
- 
+    border-left: 2px solid #9F9F9F;
+
+; 
 }
 
 .div-ciber:hover{
@@ -518,7 +523,7 @@ body::-webkit-scrollbar {
 
     width: 50%;
     height: 210px;
- 
+
 
 }
 

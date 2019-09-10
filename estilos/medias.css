@@ -113,3 +113,21 @@
 }
 
 
+
+/*--Media para tables---*/
+
+
+@media screen and (max-width: 768px){
+
+	.intro-web{
+		margin-left: 20%;
+	}
+
+
+	.img-diseño{
+		margin-left: 18%;
+	}
+
+	
+
+}

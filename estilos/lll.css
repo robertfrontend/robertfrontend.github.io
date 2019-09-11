@@ -8,10 +8,10 @@
 }
 
 body{
-    background: white;
+    background: #1C3643;
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: arial;
     
 }
 
@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 
 .img-dev{
     position: absolute;
-    left: 95px;
+    left: 100px;
     width: 25px;
 }
 
@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 
     width: 100%;
     height: 80px;
-    background:navy;
+    background:#030041;
      border-bottom: 2px solid #DADADA;
 
     
@@ -91,9 +91,12 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 800px;
 
-    text-align: center;
+    text-align: left;
 
-
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black;
 
 }
 
@@ -102,11 +105,15 @@ body::-webkit-scrollbar {
     position: relative;
     float: left;
     top: 100px;
-    width: 90%;
-    height: 200px;
+    width: 70%;
+    height: 250px;
 
     padding-top: 10px;
     padding-left: 5px;
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black;
 
 
 }
@@ -120,7 +127,7 @@ body::-webkit-scrollbar {
     margin-left: 0px;
     padding-left: 10px;
 
-    color: black;
+    color: white;
 }
 
 .cohete{
@@ -140,21 +147,33 @@ body::-webkit-scrollbar {
     top: 150px;
     right: 10px;
     width: 90%;
-    height: 250px;
+    height: 350px;
 
-    text-align: center;
-
-    background: white;
-
+    text-align: left;
+    border-top: 1px solid black;
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+    border-bottom:  1px solid black;
 
 
 }
 
 .tit-bien2{
+    color: white;
     margin-left: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
     border-left: 5px solid #7CFB00;
 }
+
+
+/*--LOS DIVA--*/
+
+.principal-diva1{
+    position: relative;
+    float: right;
+    margin-right: 5%;
+}
+
 
 
 .diva1{
@@ -164,22 +183,46 @@ body::-webkit-scrollbar {
     width: 250px;
 }
 
+.diva2{
+    border-left: 5px solid red;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+}
+.diva3{
+    border-left: 5px solid orange;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+}
+.diva4{
+    border-left: 5px solid yellow;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+}
+.diva5{
+    border-left: 5px solid #0DAEFF;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+}
+
+.diva6{
+    border-left: 5px solid #00FFBA;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 250px;
+
+}
+
+
 .a-1{
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 18px;
 }
 
-.diva1:hover{
-
-    transition: all .2s linear;   
-    border-left: 5px solid #7CFB00;
-}
-
-.a-1:hover{
-    transition: all .2s linear;
-    color: red;
-}
 
 
 /*------------------*/
@@ -189,8 +232,6 @@ body::-webkit-scrollbar {
     top: 810px;
     width: 100%;
     height: 2500px;
-
-   background: white; 
 
     
  
@@ -208,7 +249,6 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-
     border-right: 2px solid #9F9F9F;
 
 
@@ -220,10 +260,6 @@ body::-webkit-scrollbar {
 }
 
 
-.titulo-web{
-    margin-left: 0px;
-    color: rgb(13, 13, 197);
-}
 
 
 
@@ -234,11 +270,6 @@ body::-webkit-scrollbar {
     width: 250px;
 
     border-radius: 100px;
-
- 
-
-
-
 }
 
 
@@ -253,15 +284,30 @@ body::-webkit-scrollbar {
     width: 70%;
     height: auto;
 
-    text-align: center;
-
-
+    text-align: left;
 
 }
 
+
+.titulo-web{
+    border-left: 1px solid #00FFDE;
+    padding-left: 10px;
+    margin-left: 0px;
+    color:white;
+}
+
+
+.titulo-web:hover{
+    border-left: 5px solid #00FFDE;
+    transition: all .5s linear;
+    color: #00FFDE;
+    padding-left: 50px;
+}
+
+
 .des-web{
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    color: white;
 }
 
 
@@ -284,9 +330,7 @@ body::-webkit-scrollbar {
 
 }
 
-.titulo-diseño{
-    color: rgb(13, 13, 197);
-}
+
 
 
 .img-diseño{
@@ -309,16 +353,29 @@ body::-webkit-scrollbar {
     margin-right: 0px;
     margin-top: 45px;
 
-    text-align: center;
+    text-align: left;
 
     width: 50%;
     height: auto;
 
 }
 
+.titulo-diseño{
+    border-left: 1px solid red;
+    padding-left: 10px;
+    color: white;
+}
+
+.titulo-diseño:hover{
+    border-left: 5px solid red;
+    transition: all .5s linear;
+    color: red;
+    padding-left: 50px;
+}
+
 
 .des-diseño{
-    color: black;
+    color: white;
 }
 
 
@@ -333,7 +390,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    text-align: center;
+    text-align: left;
 
      border-right: 2px solid #9F9F9F;
    
@@ -344,13 +401,6 @@ body::-webkit-scrollbar {
     transition: all .2s linear;
 
 }
-
-
-.titulo-marketing{
-    color: rgb(13, 13, 197);
-}
-
-
 
 .img-marketing{
     position: absolute;
@@ -363,15 +413,13 @@ body::-webkit-scrollbar {
     border-radius: 100px;
 
 
-
-
 }
 
 .intro-marketing{
     position: relative;
     float: left;
-    margin-top: 40px;
-    margin-left: 35%;
+    margin-top: 45px;
+    margin-left: 30%;
 
     width: 50%;
     height: auto;
@@ -380,8 +428,23 @@ body::-webkit-scrollbar {
 
 }
 
+.titulo-marketing{
+    border-left: 1px solid orange;
+    padding-left: 10px;
+    color: white;
+}
+
+.titulo-marketing:hover{
+    border-left: 5px solid orange;
+    transition: all .5s linear;
+    color: orange;
+    padding-left: 50px;
+}
+
+
 .des-marketing{
-    color: black;
+    font-size: 18px;
+    color: white;
 }
 
 
@@ -395,7 +458,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    text-align: center;
+    text-align: left;
 
     border-left: 2px solid #9F9F9F;
 
@@ -434,11 +497,21 @@ body::-webkit-scrollbar {
 
 
 .titulo-aplicacion{
-    color: #390DC5;
+    border-left: 1px solid #FFFC00;
+    padding-left: 10px;
+    color: white;
+}
+
+.titulo-aplicacion:hover{
+    border-left: 5px solid #FFFC00;
+    transition: all .5s linear;
+    color: #FFFC00;
+    padding-left: 50px;
 }
 
 .des-aplicacion{
-    color: black;
+    font-size: 18px;
+    color: white;
 }
 
 /*-------------CIBERSECURIT----------------*/
@@ -451,7 +524,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    text-align: center;
+    text-align: left;
 
     border-right: 2px solid #9F9F9F;
 
@@ -485,17 +558,24 @@ body::-webkit-scrollbar {
     width: 50%;
     height: 210px;
 
-
-
 }
 
 
 .titulo-ciber{
-    color: #390DC5;
+    border-left: 2px solid #0DAEFF;
+    padding-left: 10px;
+    color: white;
+}
+
+.titulo-ciber:hover{
+    border-left: 5px solid #0DAEFF;
+    transition: all .5s linear;
+    color: #0DAEFF;
+    padding-left: 50px;
 }
 
 .des-ciber{
-    color: black;
+    color: white;
 }
 
 
@@ -510,7 +590,7 @@ body::-webkit-scrollbar {
     width: 90%;
     height: 300px;
 
-    text-align: center;
+    text-align: left;
 
     border-left: 2px solid #9F9F9F;
 
@@ -542,16 +622,23 @@ body::-webkit-scrollbar {
 
 
 .titulo-admi{
-    color: #390DC5;
+    border-left: 1px solid #00FFBA;
+    padding-left: 10px;
+        color: white;
 }
+
+.titulo-admi:hover{
+    border-left: 5px solid #00FFBA;
+    transition: all .5s linear;
+    color: #00FFBA;
+    padding-left: 50px;
+}
+
 
 .des-admi{
-    color: black;
+    font-size: 18px;
+    color: white;
 }
-
-
-
-
 
 
 
@@ -572,7 +659,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 200px;
 
-    background: red;
+    background: #030041;
 
 }
 
@@ -591,17 +678,16 @@ body::-webkit-scrollbar {
     text-transform: none;
     font-style: italic;
     font-size: 18px;
-    color: black;
+    color: white;
 }
 
 
 
 .comu{
+    color: white;
     position: relative;
     margin-left: 45%;
 }
-
-
 
 
 

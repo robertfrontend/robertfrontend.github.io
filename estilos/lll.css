@@ -167,6 +167,8 @@ body::-webkit-scrollbar {
 /*--LOS DIVA--*/
 
 .principal-diva1{
+    width: 500px;
+    height: 200px;
     position: relative;
     float: right;
     margin-right: 5%;
@@ -669,7 +671,7 @@ body::-webkit-scrollbar {
 .div-copy{
     position: relative;
     top: 150px;
-    margin-left: 40%;
+    margin-left: 42%;
     width: 500px;
     height: 50px;
 
@@ -680,7 +682,7 @@ body::-webkit-scrollbar {
 
     text-transform: none;
     font-style: italic;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
 }
 

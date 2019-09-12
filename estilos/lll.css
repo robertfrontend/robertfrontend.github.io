@@ -91,10 +91,7 @@ body::-webkit-scrollbar {
 
     text-align: left;
 
-    border-top: 1px solid black;
-    border-left:  1px solid black;
-    border-right:  1px solid black;
-    border-bottom:  1px solid black;
+
 
 }
 
@@ -108,10 +105,7 @@ body::-webkit-scrollbar {
 
     padding-top: 10px;
     padding-left: 5px;
-    border-top: 1px solid black;
-    border-left:  1px solid black;
-    border-right:  1px solid black;
-    border-bottom:  1px solid black;
+
 
 
 }
@@ -148,10 +142,7 @@ body::-webkit-scrollbar {
     height: 350px;
 
     text-align: left;
-    border-top: 1px solid black;
-    border-left:  1px solid black;
-    border-right:  1px solid black;
-    border-bottom:  1px solid black;
+
 
 
 }
@@ -173,10 +164,7 @@ body::-webkit-scrollbar {
     float: right;
     margin-right: 5%;
 
-    border-top: 1px solid black;
-    border-left:  1px solid black;
-    border-right:  1px solid black;
-    border-bottom:  1px solid black;
+
 }
 
 

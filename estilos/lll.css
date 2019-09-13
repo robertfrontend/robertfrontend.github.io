@@ -103,6 +103,8 @@ body::-webkit-scrollbar {
     padding-top: 10px;
     padding-left: 5px;
 
+    border-left: 2px solid #7CFB00;
+
 
 
 }
@@ -135,18 +137,16 @@ body::-webkit-scrollbar {
     float: right;
     width: 70%;
     margin-top: 100px;
-
     text-align: left;
 
-
+    border-left: 4px solid #7CFB00;
 
 }
 
 .tit-bien2{
     color: white;
-    margin-left: 5px;
     padding-left: 10px;
-    border-left: 5px solid #7CFB00;
+
 }
 
 
@@ -157,7 +157,7 @@ body::-webkit-scrollbar {
     height: 200px;
     position: relative;
     padding-top: 10px;
-    margin-left: 50px;
+    margin-left: 10px;
     float: left;
 }
 
@@ -283,6 +283,10 @@ body::-webkit-scrollbar {
     color:white;
 }
 
+.a-web{
+    text-decoration: none;
+}
+
 
 .titulo-web:hover{
     border-left: 5px solid #00FFDE;
@@ -348,9 +352,15 @@ body::-webkit-scrollbar {
 }
 
 .titulo-diseño{
+    text-decoration: none;
+    font-size: 25px;
     border-left: 1px solid red;
     padding-left: 10px;
     color: white;
+}
+
+.a-dise{
+    text-decoration: none;
 }
 
 .titulo-diseño:hover{
@@ -421,6 +431,11 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+
+.a-marke{
+    text-decoration: none;
+}
+
 .titulo-marketing:hover{
     border-left: 5px solid orange;
     transition: all .5s linear;
@@ -489,6 +504,10 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+.a-app{
+    text-decoration: none;
+}
+
 .titulo-aplicacion:hover{
     border-left: 5px solid #FFFC00;
     transition: all .5s linear;
@@ -554,6 +573,10 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+.a-cibe{
+    text-decoration: none;
+}
+
 .titulo-ciber:hover{
     border-left: 5px solid #0DAEFF;
     transition: all .5s linear;
@@ -614,6 +637,10 @@ body::-webkit-scrollbar {
         color: white;
 }
 
+.a-admi{
+    text-decoration: none;
+}
+
 .titulo-admi:hover{
     border-left: 5px solid #00FFBA;
     transition: all .5s linear;
@@ -655,16 +682,37 @@ body::-webkit-scrollbar {
     height: 60px;
 
     position: relative;
-    float: left;
-    margin-top: 50px;
-    margin-left: 600px;
-
-
+    float: right;
+    margin-right: 35%;
 
 }
 
 
 .siguenos{
     font-size: 15px;
+    color: white;
+}
+
+
+.div-nosotros{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 300px;
+
+    margin-top: 50px;
+    margin-left: 100px;
+
+    padding-top: 10px;
+    padding-left: 120px;
+
+}
+
+
+.q-s{
+    color: white;
+}
+
+.p-s{
     color: white;
 }

@@ -22,73 +22,156 @@ body::-webkit-scrollbar {
 }
 
 
-.nav-menu{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 60px;
-    background: #09161C;
-    border-bottom: 1px solid #234150;
 
+/*-----------MENUUU---------*/
 
+a {
+  color: #000;
 }
 
+/* header */
 
-.div-menu{
-    position: relative;
-    float: left;
-    margin-top: 20px;
-    margin-left: 30px;
+.header {
+  background-color: #1C3643;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
 
-    border-right: 2px solid white;
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #1C3643;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #1C3643;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    transition: all .s linear;
+    color: #ADADAD;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
 }
 
 .link{
-    font-size: 16px;
-    text-decoration: none;
     color: white;
-    padding-left: 5px;
-    padding-right: 10px;
 }
 
-
-.link:hover{
-    transition: all .3s linear;
-    color: #00DEFF;
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
 }
 
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
 
-.div-dev{
-    position: relative;
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
     float: right;
-    margin-top: 20px;
-    margin-right:5%;
-
-    border-left: 3px solid white;
-
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
-.dev{
-    padding-left: 5px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #06FF00;
-}
-
-.dev:hover{
-    transition: all .2s linear;
-    color: #00DEFF;
-}
-
-
-
-
+/*------------------*/
 
 
 .nav-bienvenida{
     width: 100%;
     height: 800px;
-
     text-align: left;
 }
 
@@ -102,7 +185,7 @@ body::-webkit-scrollbar {
 
     padding-top: 10px;
     padding-left: 5px;
-
+    margin-left: 10px;
     border-left: 2px solid #7CFB00;
 
 
@@ -118,6 +201,7 @@ body::-webkit-scrollbar {
     margin-left: 0px;
     padding-left: 10px;
 
+    font-size: 17px;
     color: white;
 }
 
@@ -125,10 +209,12 @@ body::-webkit-scrollbar {
     position: relative;
     float: right;
     margin-top: 5px;
-
+    cursor: none;
     width: 100px;
 
 }
+
+
 
 
 
@@ -138,13 +224,14 @@ body::-webkit-scrollbar {
     width: 70%;
     margin-top: 100px;
     text-align: left;
-
-    border-left: 4px solid #7CFB00;
+    margin-right: 10px;
+    border-right: 2px solid #7CFB00;
 
 }
 
 .tit-bien2{
     color: white;
+    font-size: 17px;
     padding-left: 10px;
 
 }
@@ -169,6 +256,7 @@ body::-webkit-scrollbar {
     margin-top: 5px;
     width: 250px;
 }
+
 
 .diva2{
     border-left: 5px solid red;
@@ -207,7 +295,13 @@ body::-webkit-scrollbar {
 .a-1{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+.a-1:hover{
+    transition: all .3s linear;
+    padding-left: 50px;
 }
 
 
@@ -220,7 +314,6 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 2500px;
 
-    
  
 }
 
@@ -233,7 +326,7 @@ body::-webkit-scrollbar {
     top: 20px;
     left: 10px;
 
-    width: 90%;
+    width: 80%;
     height: 300px;
 
     border-right: 2px solid #9F9F9F;
@@ -259,7 +352,6 @@ body::-webkit-scrollbar {
     border-radius: 100px;
 }
 
-
 .intro-web{
     position: relative;
 
@@ -277,6 +369,7 @@ body::-webkit-scrollbar {
 
 
 .titulo-web{
+    font-size: 18px;
     border-left: 1px solid #00FFDE;
     padding-left: 10px;
     margin-left: 0px;
@@ -297,10 +390,9 @@ body::-webkit-scrollbar {
 
 
 .des-web{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
-
 
 /*-----------Diseñoo grafico-----------------*/
 
@@ -309,7 +401,7 @@ body::-webkit-scrollbar {
     float: right;
     top: 100px;
 
-    width: 90%;
+    width: 80%;
     height: 300px;
 
     border-left: 2px solid #9F9F9F;
@@ -353,7 +445,7 @@ body::-webkit-scrollbar {
 
 .titulo-diseño{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     border-left: 1px solid red;
     padding-left: 10px;
     color: white;
@@ -372,6 +464,7 @@ body::-webkit-scrollbar {
 
 
 .des-diseño{
+    font-size: 17px;
     color: white;
 }
 
@@ -384,7 +477,7 @@ body::-webkit-scrollbar {
     float: left;
     top: 200px;
 
-    width: 90%;
+    width: 80%;
     height: 300px;
 
     text-align: left;
@@ -426,6 +519,7 @@ body::-webkit-scrollbar {
 }
 
 .titulo-marketing{
+    font-size: 18px;
     border-left: 1px solid orange;
     padding-left: 10px;
     color: white;
@@ -445,7 +539,7 @@ body::-webkit-scrollbar {
 
 
 .des-marketing{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 
@@ -457,7 +551,7 @@ body::-webkit-scrollbar {
     float: right;
     top: 300px;
 
-    width: 90%;
+    width: 80%;
     height: 300px;
 
     text-align: left;
@@ -499,6 +593,7 @@ body::-webkit-scrollbar {
 
 
 .titulo-aplicacion{
+    font-size: 18px;
     border-left: 1px solid #FFFC00;
     padding-left: 10px;
     color: white;
@@ -516,7 +611,7 @@ body::-webkit-scrollbar {
 }
 
 .des-aplicacion{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 
@@ -527,7 +622,7 @@ body::-webkit-scrollbar {
     float: left;
     top: 400px;
 
-    width: 90%;
+    width: 80%;
     height: 300px;
 
     text-align: left;
@@ -568,6 +663,7 @@ body::-webkit-scrollbar {
 
 
 .titulo-ciber{
+    font-size: 18px;
     border-left: 2px solid #0DAEFF;
     padding-left: 10px;
     color: white;
@@ -585,6 +681,7 @@ body::-webkit-scrollbar {
 }
 
 .des-ciber{
+    font-size: 17px;
     color: white;
 }
 
@@ -597,7 +694,7 @@ body::-webkit-scrollbar {
     float: right;
     top: 500px;
 
-    width: 90%;
+    width: 80%;
     height: 300px;
 
     text-align: left;
@@ -611,7 +708,7 @@ body::-webkit-scrollbar {
     float: right;
     margin-top: 30px;
     margin-right: 20px;
-
+    border-radius: 50px;
     width: 300px;
 
 
@@ -632,6 +729,7 @@ body::-webkit-scrollbar {
 
 
 .titulo-admi{
+    font-size: 18px;
     border-left: 1px solid #00FFBA;
     padding-left: 10px;
         color: white;
@@ -650,7 +748,7 @@ body::-webkit-scrollbar {
 
 
 .des-admi{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 

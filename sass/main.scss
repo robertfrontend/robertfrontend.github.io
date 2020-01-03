@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+.contenedor {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+$marino: #3c40c6;
+$cielo: #00bdd3;
+
+
+@mixin titulo-black {
+    font-size: 40px;
+    color: rgba(4, 0, 26, 0.89);
+    font-weight: 400;
+    padding: 10px;
+}
+
+@mixin titulo-2-black {
+    font-size: 25px;
+    color: rgba(4, 0, 26, 0.89);
+    font-weight: 400;
+    padding: 10px;
+}
+
+@mixin subtitulo-black {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(4, 0, 26, 0.603);
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px;
+}
+
+//---------------------//
+
+@mixin titulo-white {
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+@mixin subtitulo-white {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+//--------------------------//
+
+#boton-1 {
+    padding: 8px 30px;
+    background: $cielo;
+    margin-left: 10px;
+    border-radius:20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    border: 2px solid $cielo;
+}
+
+#boton-1:hover{
+    transition: all .3s;
+    background: $marino;
+    border: 2px solid $marino;
+}
+
+#boton-2 {
+    padding: 8px 30px;
+    margin-left: 10px;
+    border-radius:20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.884);
+    background: transparent;
+    font-weight: 900;
+    border: 2px solid white;
+}
+
+#boton-2:hover{
+    transition: all .3s;
+    color: rgba(7, 7, 7, 0.747);
+    background: white;
+    border: 2px solid white;
+}
+
+#boton-3 {
+    padding: 8px 30px;
+    margin-left: 10px;
+    border-radius:20px;
+    text-decoration: none;
+    color: rgba(4, 0, 26, 0.89);
+    background: transparent;
+    font-weight: 400;
+    border: 2px solid $cielo;
+}
+
+#boton-3:hover{
+    transition: all .3s;
+    color: rgb(255, 255, 255);
+    background: $marino;
+    border: 2px solid $marino;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background: url(../imagenes/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .color {
+        width: 100%;
+        height: inherit;
+        background: rgba(0, 17, 170, 0.705);
+    }
+
+    .div-header{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            i{
+                font-size: 80px;
+                color: white;
+                cursor: pointer;
+            }
+            h1{
+                @include titulo-white();
+            }
+            h1::before{
+                content: 'Agencia';
+            }
+            h1::after{
+                content: 'Web';  
+              }
+
+            p {
+                @include subtitulo-white();
+            }
+
+            a{
+                text-decoration: none;
+
+                i {
+                    color: white;
+                    font-size: 60px;
+                }:hover{
+                    transition: all .2s;
+                    color: $cielo;
+                }
+            }
+        }
+
+        #div-botones{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+
+.seccion-1 {
+    width: 100%;
+    height: auto;
+padding-top: 50px;
+    .div-sec-1 {
+        widows: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 60%;
+            height: auto;
+            padding-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                @include titulo-black();
+            }
+
+            p{
+                @include subtitulo-black();
+            }
+        }
+    }
+}
+
+.seccion-2 {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    .div-sec-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        div{
+            width: 320px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.377);
+            .r{
+                font-size: 60px;
+                padding: 0px;
+                color: $marino;
+            }
+
+            .p{
+                font-size: 60px;
+                padding: 0px;
+                color: rgba(217, 255, 0, 0.623);
+            }
+
+            .w{
+                font-size: 60px;
+                padding: 0px;
+                color: $cielo;
+            }
+            .m{
+                font-size: 60px;
+                padding: 0px;
+                color: rgb(0, 255, 42);
+            }
+            .mo{
+                font-size: 60px;
+                padding: 0px;
+                color: rgba(255, 0, 0, 0.822);
+            }
+            .d{
+                font-size: 60px;
+                padding: 0px;
+                color: rgb(190, 0, 228);
+            }
+
+
+            h1 {
+                @include titulo-2-black();
+            }
+
+            p{
+                @include subtitulo-black();
+                text-align: left;
+            }
+        }
+    }
+}
+
+.seccion-3 {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    .div-sec-3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            width: 600px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            img {
+                width: 100%;
+            }
+
+            h1{
+                @include titulo-black();
+            }
+
+            p{
+                @include subtitulo-black();
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  /* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

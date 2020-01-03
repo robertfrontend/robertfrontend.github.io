@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+.contenedor {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#boton-1 {
+  padding: 8px 30px;
+  background: #00bdd3;
+  margin-left: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  border: 2px solid #00bdd3;
+}
+
+#boton-1:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background: #3c40c6;
+  border: 2px solid #3c40c6;
+}
+
+#boton-2 {
+  padding: 8px 30px;
+  margin-left: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.884);
+  background: transparent;
+  font-weight: 900;
+  border: 2px solid white;
+}
+
+#boton-2:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: rgba(7, 7, 7, 0.747);
+  background: white;
+  border: 2px solid white;
+}
+
+#boton-3 {
+  padding: 8px 30px;
+  margin-left: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgba(4, 0, 26, 0.89);
+  background: transparent;
+  font-weight: 400;
+  border: 2px solid #00bdd3;
+}
+
+#boton-3:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: white;
+  background: #3c40c6;
+  border: 2px solid #3c40c6;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: url(../imagenes/fondo2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .color {
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 17, 170, 0.705);
+}
+
+header .div-header {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .div-header div {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+header .div-header div i {
+  font-size: 80px;
+  color: white;
+  cursor: pointer;
+}
+
+header .div-header div h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+}
+
+header .div-header div h1::before {
+  content: 'Agencia';
+}
+
+header .div-header div h1::after {
+  content: 'Web';
+}
+
+header .div-header div p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+header .div-header div a {
+  text-decoration: none;
+}
+
+header .div-header div a i {
+  color: white;
+  font-size: 60px;
+}
+
+header .div-header div a :hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: #00bdd3;
+}
+
+header .div-header #div-botones {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.seccion-1 {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+.seccion-1 .div-sec-1 {
+  widows: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-1 .div-sec-1 div {
+  width: 60%;
+  height: auto;
+  padding-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-1 .div-sec-1 div h1 {
+  font-size: 40px;
+  color: rgba(4, 0, 26, 0.89);
+  font-weight: 400;
+  padding: 10px;
+}
+
+.seccion-1 .div-sec-1 div p {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(4, 0, 26, 0.603);
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.seccion-2 {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+.seccion-2 .div-sec-2 {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.seccion-2 .div-sec-2 div {
+  width: 320px;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.377);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.377);
+}
+
+.seccion-2 .div-sec-2 div .r {
+  font-size: 60px;
+  padding: 0px;
+  color: #3c40c6;
+}
+
+.seccion-2 .div-sec-2 div .p {
+  font-size: 60px;
+  padding: 0px;
+  color: rgba(217, 255, 0, 0.623);
+}
+
+.seccion-2 .div-sec-2 div .w {
+  font-size: 60px;
+  padding: 0px;
+  color: #00bdd3;
+}
+
+.seccion-2 .div-sec-2 div .m {
+  font-size: 60px;
+  padding: 0px;
+  color: #00ff2a;
+}
+
+.seccion-2 .div-sec-2 div .mo {
+  font-size: 60px;
+  padding: 0px;
+  color: rgba(255, 0, 0, 0.822);
+}
+
+.seccion-2 .div-sec-2 div .d {
+  font-size: 60px;
+  padding: 0px;
+  color: #be00e4;
+}
+
+.seccion-2 .div-sec-2 div h1 {
+  font-size: 25px;
+  color: rgba(4, 0, 26, 0.89);
+  font-weight: 400;
+  padding: 10px;
+}
+
+.seccion-2 .div-sec-2 div p {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(4, 0, 26, 0.603);
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px;
+  text-align: left;
+}
+
+.seccion-3 {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+.seccion-3 .div-sec-3 {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.seccion-3 .div-sec-3 div {
+  width: 600px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.seccion-3 .div-sec-3 div img {
+  width: 100%;
+}
+
+.seccion-3 .div-sec-3 div h1 {
+  font-size: 40px;
+  color: rgba(4, 0, 26, 0.89);
+  font-weight: 400;
+  padding: 10px;
+}
+
+.seccion-3 .div-sec-3 div p {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(4, 0, 26, 0.603);
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px;
+  text-align: left;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white;
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+  color: white;
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+/*# sourceMappingURL=main.css.map */

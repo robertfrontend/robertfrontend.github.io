@@ -11,9 +11,14 @@ body{
     cursor:auto;
 }
 
+
 .contenedor {
     margin-left: 5%;
     margin-right: 5%;
+    @media screen {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
 }
 
 $marino: #3c40c6;
@@ -142,7 +147,10 @@ $cielo: #00bdd3;
 }
 
 .botonm{
-    color: rgb(255, 0, 0) !important;
+    color: rgba(3, 0, 0, 0.705) !important;
+    display: none !important;
+}
+.botom2{
     display: block !important;
 }
 
@@ -153,6 +161,9 @@ header{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    @media screen {
+        background-size: contain;
+    }
 
     .color {
         width: 100%;
@@ -200,8 +211,10 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+        
+
             @media screen and (max-width:700px) {
-                    width: 50%;
+                    max-width: 70%;
                     height: 100vh;
                     position: fixed;
                     flex-direction: column;
@@ -209,7 +222,22 @@ header{
                     right:0%;
                     display: flex;
                     justify-content: flex-start;
-                    align-items: flex-start;
+                    align-items: center;
+            }
+            .desc-menu{
+                display: none;
+
+                @media screen and (max-width:700px)  {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        @include subtitulo-black();
+                        font-size: 16px !important;
+                    }
+                }
             }
             div{
                 width: 100px;
@@ -227,7 +255,7 @@ header{
                     color:$cielo;
                 }
             }
-        }
+        }   
         .icono-menu{
             width: 50%;
             display: none;
@@ -235,9 +263,13 @@ header{
                 padding: 20px;
                 font-size: 38px;
                 color: $marino;
+                
             }
             #boton-icono2 {
                 display: none;
+                padding: 20px;
+                font-size: 38px;
+                color: $marino;
             }
             @media screen and (max-width:700px){
                 display: flex;
@@ -468,6 +500,10 @@ padding-top: 50px;
     background-position:bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    @media screen {
+        background-size: cover;
+        background-position: center;
+    }
 
     .color {
         width: 100%;
@@ -485,7 +521,7 @@ padding-top: 50px;
         flex-wrap: wrap;
         div{
             width: 550px;
-            height: 50vh;
+            height: auto;
             margin: 100px auto;
 
             h1{

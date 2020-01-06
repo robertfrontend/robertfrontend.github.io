@@ -18,6 +18,13 @@ body {
   margin-right: 5%;
 }
 
+@media screen {
+  .contenedor {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
 #boton-1 {
   padding: 8px 30px;
   background: #00bdd3;
@@ -88,7 +95,11 @@ body {
 }
 
 .botonm {
-  color: red !important;
+  color: rgba(3, 0, 0, 0.705) !important;
+  display: none !important;
+}
+
+.botom2 {
   display: block !important;
 }
 
@@ -99,6 +110,12 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media screen {
+  header {
+    background-size: contain;
+  }
 }
 
 header .color {
@@ -184,7 +201,7 @@ header .div-menu nav {
 
 @media screen and (max-width: 700px) {
   header .div-menu nav {
-    width: 50%;
+    max-width: 70%;
     height: 100vh;
     position: fixed;
     -webkit-box-orient: vertical;
@@ -199,9 +216,43 @@ header .div-menu nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .div-menu nav .desc-menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  header .div-menu nav .desc-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .div-menu nav .desc-menu p {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(4, 0, 26, 0.603);
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-width: 700px) {
+  header .div-menu nav .desc-menu p {
+    font-size: 16px;
   }
 }
 
@@ -236,6 +287,9 @@ header .div-menu .icono-menu #boton-icono {
 
 header .div-menu .icono-menu #boton-icono2 {
   display: none;
+  padding: 20px;
+  font-size: 38px;
+  color: #3c40c6;
 }
 
 @media screen and (max-width: 700px) {
@@ -652,6 +706,13 @@ header .div-header #div-botones {
   background-attachment: fixed;
 }
 
+@media screen {
+  .seccion-4 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .seccion-4 .color {
   width: 100%;
   height: inherit;
@@ -680,7 +741,7 @@ header .div-header #div-botones {
 
 .seccion-4 .div-sec-4 div {
   width: 550px;
-  height: 50vh;
+  height: auto;
   margin: 100px auto;
 }
 

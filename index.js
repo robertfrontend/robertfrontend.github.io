@@ -15,5 +15,10 @@ document.getElementById('boton-menu').addEventListener("click",function(){
 
 
 document.getElementById('boton-menu').addEventListener("click" ,function(){
-    document.getElementById("boton-icono2").classList.toggle("botonm")
+    document.getElementById("boton-icono").classList.toggle("botonm")
+});
+
+
+document.getElementById('boton-menu').addEventListener("click" ,function(){
+    document.getElementById("boton-icono2").classList.toggle("botom2")
 });

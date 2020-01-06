@@ -8,6 +8,7 @@
 body{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
+    cursor:auto;
 }
 
 .contenedor {
@@ -24,6 +25,9 @@ $cielo: #00bdd3;
     color: rgba(4, 0, 26, 0.89);
     font-weight: 400;
     padding: 10px;
+    @media screen and (max-width:700px) {
+        font-size: 30px;
+    }
 }
 
 @mixin titulo-2-black {
@@ -31,15 +35,21 @@ $cielo: #00bdd3;
     color: rgba(4, 0, 26, 0.89);
     font-weight: 400;
     padding: 10px;
+    @media screen and (max-width:700px) {
+        font-size: 20px;
+    }
 }
 
 @mixin subtitulo-black {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     color: rgba(4, 0, 26, 0.603);
     font-weight: 600;
     line-height: 30px;
     padding: 10px;
+    @media screen and (max-width:700px) {
+        font-size: 16px;
+    }
 }
 
 //---------------------//
@@ -48,6 +58,9 @@ $cielo: #00bdd3;
     font-size: 50px;
     color: white;
     font-weight: 400;
+    @media screen and (max-width:700px) {
+        font-size: 40px;
+    }
 }
 
 @mixin subtitulo-white {
@@ -56,6 +69,9 @@ $cielo: #00bdd3;
     font-size: 18px;
     font-weight: 100;
     line-height: 30px;
+    @media screen and (max-width:700px) {
+        font-size: 16px;
+    }
 }
 
 //--------------------------//
@@ -113,6 +129,23 @@ $cielo: #00bdd3;
     border: 2px solid $marino;
 }
 
+.flotar {
+    position: fixed;
+    transition: all .2s;
+
+}
+
+.activador-menu{
+    background: rgb(255, 255, 255);
+    transition: all .5s;
+    top: 95px !important;
+}
+
+.botonm{
+    color: rgb(255, 0, 0) !important;
+    display: block !important;
+}
+
 header{
     width: 100%;
     height: auto;
@@ -125,6 +158,94 @@ header{
         width: 100%;
         height: inherit;
         background: rgba(0, 17, 170, 0.705);
+    }
+
+    .div-menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        z-index: 10;
+        background: white;
+        flex-direction: row;
+        div{
+            width: 25%;
+            height: 12vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            a{
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: rgba(4, 0, 26, 0.781);
+                    padding: 10px;
+                    font-weight: 600;
+                }
+                i{
+                    font-size: 50px;
+                    color: $marino;
+                }
+            }
+            @media screen and (max-width:700px){
+                width: 50%;
+                justify-content: flex-start;
+            }
+        }
+        
+        nav{
+            width: 75%;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width:700px) {
+                    width: 50%;
+                    height: 100vh;
+                    position: fixed;
+                    flex-direction: column;
+                    top: -1000px;
+                    right:0%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+            }
+            div{
+                width: 100px;
+                padding: 0;
+                @media screen and (max-width:700px) {
+                    
+                }
+                a{
+                    padding: 20px;
+                    color: rgba(4, 0, 26, 0.781);
+                    text-decoration: none;
+                    font-weight: 600;
+                }:hover{
+                    transition: all .2s;
+                    color:$cielo;
+                }
+            }
+        }
+        .icono-menu{
+            width: 50%;
+            display: none;
+            #boton-icono {
+                padding: 20px;
+                font-size: 38px;
+                color: $marino;
+            }
+            #boton-icono2 {
+                display: none;
+            }
+            @media screen and (max-width:700px){
+                display: flex;
+                flex-direction: row;
+                justify-content:flex-end;
+                
+            }
+        }
     }
 
     .div-header{
@@ -142,6 +263,9 @@ header{
             justify-content: center;
             align-items: center;
             padding-top: 50px;
+            @media screen and (max-width:1020px) {
+                width: 100%;
+            }
             i{
                 font-size: 80px;
                 color: white;
@@ -149,6 +273,7 @@ header{
             }
             h1{
                 @include titulo-white();
+                text-align: center;
             }
             h1::before{
                 content: 'Agencia';
@@ -203,9 +328,13 @@ padding-top: 50px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width:900px) {
+                width: 100%;
+            }
 
             h1 {
                 @include titulo-black();
+                text-align: center;
             }
 
             p{
@@ -227,14 +356,20 @@ padding-top: 50px;
         flex-wrap: wrap;
 
         div{
-            width: 320px;
+            width: 280px;
             margin: 40px auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 0px;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.377);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.171);
+            @media screen and (max-width:700px) {
+                width: 80%;
+                padding: 20px;
+            }
             .r{
                 font-size: 60px;
                 padding: 0px;
@@ -277,6 +412,13 @@ padding-top: 50px;
                 @include subtitulo-black();
                 text-align: left;
             }
+        }   
+
+        div:hover{
+            transition: all .2s;
+            border: 2px solid $cielo;
+            background: transparent;
+            
         }
     }
 }
@@ -317,6 +459,46 @@ padding-top: 50px;
     }
 }
 
+
+.seccion-4 {
+    width: 100%;
+    height: auto;
+    background: url(../imagenes/startup-3267505_1920.jpg);
+    background-size: 100%;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .color {
+        width: 100%;
+        height: inherit;
+        background: rgba(0, 17, 170, 0.705);
+    }
+
+    .div-sec-4 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            width: 550px;
+            height: 50vh;
+            margin: 100px auto;
+
+            h1{
+                @include titulo-white();
+            }
+
+            p {
+                @include subtitulo-white();
+                text-align: left;
+            }
+        }
+    }
+}
 
 
 

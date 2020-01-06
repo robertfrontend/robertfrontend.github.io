@@ -158,11 +158,13 @@ header{
     width: 100%;
     height: auto;
     background: url(../imagenes/fondo2.jpg);
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    @media screen {
-        background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width:700px){
+        background-size: cover;
     }
 
     .color {
@@ -500,9 +502,8 @@ padding-top: 50px;
     background-position:bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    @media screen {
-        background-size: cover;
-        background-position: center;
+    @media screen and (max-width:700px){
+        background-size: contain;
     }
 
     .color {

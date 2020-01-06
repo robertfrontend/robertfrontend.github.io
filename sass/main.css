@@ -107,14 +107,15 @@ header {
   width: 100%;
   height: auto;
   background: url(../imagenes/fondo2.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-@media screen {
+@media screen and (max-width: 700px) {
   header {
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -706,10 +707,9 @@ header .div-header #div-botones {
   background-attachment: fixed;
 }
 
-@media screen {
+@media screen and (max-width: 700px) {
   .seccion-4 {
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
   }
 }
 

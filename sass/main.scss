@@ -23,11 +23,12 @@ body{
 
 $marino: #3c40c6;
 $cielo: #00bdd3;
+$negrito:  rgba(4, 0, 27, 0.726);
 
 
 @mixin titulo-black {
     font-size: 40px;
-    color: rgba(4, 0, 26, 0.89);
+    color: $negrito;
     font-weight: 400;
     padding: 10px;
     @media screen and (max-width:700px) {
@@ -37,7 +38,7 @@ $cielo: #00bdd3;
 
 @mixin titulo-2-black {
     font-size: 25px;
-    color: rgba(4, 0, 26, 0.89);
+    color: $negrito;
     font-weight: 400;
     padding: 10px;
     @media screen and (max-width:700px) {
@@ -48,7 +49,7 @@ $cielo: #00bdd3;
 @mixin subtitulo-black {
     text-align: center;
     font-size: 18px;
-    color: rgba(4, 0, 26, 0.603);
+    color: $negrito;
     font-weight: 600;
     line-height: 30px;
     padding: 10px;
@@ -111,7 +112,7 @@ $cielo: #00bdd3;
 
 #boton-2:hover{
     transition: all .3s;
-    color: rgba(7, 7, 7, 0.747);
+    color: $negrito;
     background: white;
     border: 2px solid white;
 }
@@ -121,7 +122,7 @@ $cielo: #00bdd3;
     margin-left: 10px;
     border-radius:20px;
     text-decoration: none;
-    color: rgba(4, 0, 26, 0.89);
+    color: $negrito;
     background: transparent;
     font-weight: 400;
     border: 2px solid $cielo;
@@ -138,12 +139,33 @@ $cielo: #00bdd3;
     position: fixed;
     transition: all .2s;
 
+    p {
+        color:$negrito !important;
+    }
+    a{
+        color: $negrito !important;
+    }
+    i {
+        margin-left: 80px;
+        @media screen and (max-width:348px){
+            margin-left: 30px;
+        }
+    }
+
 }
 
 .activador-menu{
     background: rgb(255, 255, 255);
-    transition: all .5s;
-    top: 95px !important;
+    transition: all .3s;
+    top: 75px !important;
+    right: 0% !important;
+    @media screen and (max-width:414px) {
+    }
+}
+
+@keyframes colorear {
+    0%   {color: $marino;}
+    100%  {color: $cielo;}
 }
 
 .botonm{
@@ -152,7 +174,13 @@ $cielo: #00bdd3;
 }
 .botom2{
     display: block !important;
+    transition: all 1.2s;
+    animation: colorear .6s infinite;
 }
+
+$break-700px: 700px;
+
+$break-iphone7plus: 414px;
 
 header{
     width: 100%;
@@ -163,8 +191,9 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-    @media screen and (max-width:700px){
-        background-size: cover;
+    @media screen and (max-width: $break-iphone7plus) {
+        background-size: 100vw;
+        background-position-y: 90px;
     }
 
     .color {
@@ -178,8 +207,11 @@ header{
         height: auto;
         display: flex;
         z-index: 10;
-        background: white;
         flex-direction: row;
+        background: rgb(255, 255, 255) !important;
+        @media screen and (max-width:700px){
+            position: fixed;
+        }
         div{
             width: 25%;
             height: 12vh;
@@ -191,17 +223,19 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                color: $negrito ;
+                padding: 20px;
                 p{
-                    color: rgba(4, 0, 26, 0.781);
+                    color: $negrito;
                     padding: 10px;
                     font-weight: 600;
                 }
                 i{
                     font-size: 50px;
-                    color: $marino;
+                    color: $negrito;
                 }
             }
-            @media screen and (max-width:700px){
+            @media screen and (max-width:$break-700px){
                 width: 50%;
                 justify-content: flex-start;
             }
@@ -220,8 +254,7 @@ header{
                     height: 100vh;
                     position: fixed;
                     flex-direction: column;
-                    top: -1000px;
-                    right:0%;
+                    right:-100%;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -262,14 +295,13 @@ header{
             width: 50%;
             display: none;
             #boton-icono {
-                padding: 20px;
+                padding: 10px;
                 font-size: 38px;
                 color: $marino;
-                
             }
             #boton-icono2 {
                 display: none;
-                padding: 20px;
+                padding: 10px;
                 font-size: 38px;
                 color: $marino;
             }
@@ -322,14 +354,6 @@ header{
 
             a{
                 text-decoration: none;
-
-                i {
-                    color: white;
-                    font-size: 60px;
-                }:hover{
-                    transition: all .2s;
-                    color: $cielo;
-                }
             }
         }
 
@@ -339,7 +363,23 @@ header{
             display: flex;
             flex-direction: row;
         }
+
+        .div-abajo{
+            i {
+                color: white;
+                animation: traslacion 2s infinite;
+                font-size: 60px;
+                
+            }
+        }
     }
+}
+
+
+@keyframes traslacion {
+    10% {transform: translateY(-50px);}
+    100% {color: $cielo;}
+    
 }
 
 

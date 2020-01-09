@@ -57,7 +57,7 @@ body {
 #boton-2:hover {
   -webkit-transition: all .3s;
   transition: all .3s;
-  color: rgba(7, 7, 7, 0.747);
+  color: rgba(4, 0, 27, 0.726);
   background: white;
   border: 2px solid white;
 }
@@ -67,7 +67,7 @@ body {
   margin-left: 10px;
   border-radius: 20px;
   text-decoration: none;
-  color: rgba(4, 0, 26, 0.89);
+  color: rgba(4, 0, 27, 0.726);
   background: transparent;
   font-weight: 400;
   border: 2px solid #00bdd3;
@@ -87,11 +87,48 @@ body {
   transition: all .2s;
 }
 
+.flotar p {
+  color: rgba(4, 0, 27, 0.726) !important;
+}
+
+.flotar a {
+  color: rgba(4, 0, 27, 0.726) !important;
+}
+
+.flotar i {
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 348px) {
+  .flotar i {
+    margin-left: 30px;
+  }
+}
+
 .activador-menu {
   background: white;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  top: 95px !important;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  top: 75px !important;
+  right: 0% !important;
+}
+
+@-webkit-keyframes colorear {
+  0% {
+    color: #3c40c6;
+  }
+  100% {
+    color: #00bdd3;
+  }
+}
+
+@keyframes colorear {
+  0% {
+    color: #3c40c6;
+  }
+  100% {
+    color: #00bdd3;
+  }
 }
 
 .botonm {
@@ -101,6 +138,10 @@ body {
 
 .botom2 {
   display: block !important;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+  -webkit-animation: colorear .6s infinite;
+          animation: colorear .6s infinite;
 }
 
 header {
@@ -113,9 +154,10 @@ header {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 414px) {
   header {
-    background-size: cover;
+    background-size: 100vw;
+    background-position-y: 90px;
   }
 }
 
@@ -132,11 +174,17 @@ header .div-menu {
   display: -ms-flexbox;
   display: flex;
   z-index: 10;
-  background: white;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background: white !important;
+}
+
+@media screen and (max-width: 700px) {
+  header .div-menu {
+    position: fixed;
+  }
 }
 
 header .div-menu div {
@@ -164,17 +212,19 @@ header .div-menu div a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: rgba(4, 0, 27, 0.726);
+  padding: 20px;
 }
 
 header .div-menu div a p {
-  color: rgba(4, 0, 26, 0.781);
+  color: rgba(4, 0, 27, 0.726);
   padding: 10px;
   font-weight: 600;
 }
 
 header .div-menu div a i {
   font-size: 50px;
-  color: #3c40c6;
+  color: rgba(4, 0, 27, 0.726);
 }
 
 @media screen and (max-width: 700px) {
@@ -209,8 +259,7 @@ header .div-menu nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: -1000px;
-    right: 0%;
+    right: -100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,7 +292,7 @@ header .div-menu nav .desc-menu {
   header .div-menu nav .desc-menu p {
     text-align: center;
     font-size: 18px;
-    color: rgba(4, 0, 26, 0.603);
+    color: rgba(4, 0, 27, 0.726);
     font-weight: 600;
     line-height: 30px;
     padding: 10px;
@@ -281,14 +330,14 @@ header .div-menu .icono-menu {
 }
 
 header .div-menu .icono-menu #boton-icono {
-  padding: 20px;
+  padding: 10px;
   font-size: 38px;
   color: #3c40c6;
 }
 
 header .div-menu .icono-menu #boton-icono2 {
   display: none;
-  padding: 20px;
+  padding: 10px;
   font-size: 38px;
   color: #3c40c6;
 }
@@ -396,17 +445,6 @@ header .div-header div a {
   text-decoration: none;
 }
 
-header .div-header div a i {
-  color: white;
-  font-size: 60px;
-}
-
-header .div-header div a :hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  color: #00bdd3;
-}
-
 header .div-header #div-botones {
   width: 100%;
   height: auto;
@@ -417,6 +455,33 @@ header .div-header #div-botones {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+header .div-header .div-abajo i {
+  color: white;
+  -webkit-animation: traslacion 2s infinite;
+          animation: traslacion 2s infinite;
+  font-size: 60px;
+}
+
+@-webkit-keyframes traslacion {
+  10% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    color: #00bdd3;
+  }
+}
+
+@keyframes traslacion {
+  10% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    color: #00bdd3;
+  }
 }
 
 .seccion-1 {
@@ -470,7 +535,7 @@ header .div-header #div-botones {
 
 .seccion-1 .div-sec-1 div h1 {
   font-size: 40px;
-  color: rgba(4, 0, 26, 0.89);
+  color: rgba(4, 0, 27, 0.726);
   font-weight: 400;
   padding: 10px;
   text-align: center;
@@ -485,7 +550,7 @@ header .div-header #div-botones {
 .seccion-1 .div-sec-1 div p {
   text-align: center;
   font-size: 18px;
-  color: rgba(4, 0, 26, 0.603);
+  color: rgba(4, 0, 27, 0.726);
   font-weight: 600;
   line-height: 30px;
   padding: 10px;
@@ -585,7 +650,7 @@ header .div-header #div-botones {
 
 .seccion-2 .div-sec-2 div h1 {
   font-size: 25px;
-  color: rgba(4, 0, 26, 0.89);
+  color: rgba(4, 0, 27, 0.726);
   font-weight: 400;
   padding: 10px;
 }
@@ -599,7 +664,7 @@ header .div-header #div-botones {
 .seccion-2 .div-sec-2 div p {
   text-align: center;
   font-size: 18px;
-  color: rgba(4, 0, 26, 0.603);
+  color: rgba(4, 0, 27, 0.726);
   font-weight: 600;
   line-height: 30px;
   padding: 10px;
@@ -670,7 +735,7 @@ header .div-header #div-botones {
 
 .seccion-3 .div-sec-3 div h1 {
   font-size: 40px;
-  color: rgba(4, 0, 26, 0.89);
+  color: rgba(4, 0, 27, 0.726);
   font-weight: 400;
   padding: 10px;
 }
@@ -684,7 +749,7 @@ header .div-header #div-botones {
 .seccion-3 .div-sec-3 div p {
   text-align: center;
   font-size: 18px;
-  color: rgba(4, 0, 26, 0.603);
+  color: rgba(4, 0, 27, 0.726);
   font-weight: 600;
   line-height: 30px;
   padding: 10px;

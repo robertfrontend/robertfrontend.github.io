@@ -1,0 +1,19 @@
+{
+  "name": "pags212",
+  "version": "1.0.0",
+  "description": "*Modernizacion y agregando javascript al maximo*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robertrm0/pags212.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robertrm0/pags212/issues"
+  },
+  "homepage": "https://github.com/Robertrm0/pags212#readme"
+}

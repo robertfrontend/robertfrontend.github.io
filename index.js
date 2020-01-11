@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function(event){
-    if (this.scrollY > 50){
+    if (this.scrollY > 400){
         document.getElementById("div-menu").classList.add("flotar" );
     }else{
         document.getElementById("div-menu").classList.remove("flotar");

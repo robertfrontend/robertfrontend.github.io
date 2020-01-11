@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,7 @@ body{
 .contenedor {
     margin-left: 5%;
     margin-right: 5%;
-    @media screen {
+    @media screen and (max-width:500px) {
         margin-right: 2%;
         margin-left: 2%;
     }
@@ -25,6 +27,10 @@ $marino: #3c40c6;
 $cielo: #00bdd3;
 $negrito:  rgba(4, 0, 27, 0.726);
 
+
+//--Tituloos---
+
+// negros
 
 @mixin titulo-black {
     font-size: 40px;
@@ -58,11 +64,11 @@ $negrito:  rgba(4, 0, 27, 0.726);
     }
 }
 
-//---------------------//
+//Blancos
 
 @mixin titulo-white {
     font-size: 50px;
-    color: white;
+    color: white  !important;
     font-weight: 400;
     @media screen and (max-width:700px) {
         font-size: 40px;
@@ -80,73 +86,86 @@ $negrito:  rgba(4, 0, 27, 0.726);
     }
 }
 
-//--------------------------//
+// Botones
 
 #boton-1 {
     padding: 8px 30px;
     background: $cielo;
     margin-left: 10px;
-    border-radius:20px;
+    border-radius:8px;
     text-decoration: none;
     color: white;
     font-weight: 400;
     border: 2px solid $cielo;
+
+    &:hover{
+        transition: all .3s;
+        background: $marino !important;
+        border: 2px solid $marino;
+    }
 }
 
-#boton-1:hover{
-    transition: all .3s;
-    background: $marino;
-    border: 2px solid $marino;
-}
 
 #boton-2 {
     padding: 8px 30px;
     margin-left: 10px;
-    border-radius:20px;
+    border-radius:8px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.884);
     background: transparent;
-    font-weight: 900;
+    font-weight: 400;
     border: 2px solid white;
-}
 
-#boton-2:hover{
-    transition: all .3s;
-    color: $negrito;
-    background: white;
-    border: 2px solid white;
+    &:hover{
+        transition: all .3s;
+        color: $negrito;
+        background: white;
+        border: 2px solid white;
+    }
 }
 
 #boton-3 {
     padding: 8px 30px;
     margin-left: 10px;
-    border-radius:20px;
+    border-radius:8px;
     text-decoration: none;
     color: $negrito;
     background: transparent;
     font-weight: 400;
     border: 2px solid $cielo;
+
+    &:hover{
+        transition: all .3s;
+        color: rgb(255, 255, 255);
+        background: $marino;
+        border: 2px solid $marino
+    }
 }
 
-#boton-3:hover{
-    transition: all .3s;
-    color: rgb(255, 255, 255);
-    background: $marino;
-    border: 2px solid $marino;
-}
+
+//------
 
 .flotar {
     position: fixed;
     transition: all .2s;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(4, 0, 26, 0.295);
 
     p {
         color:$negrito !important;
     }
     a{
         color: $negrito !important;
+        font-weight: 600;
+
+        &:hover{
+            color: $cielo !important;
+        }
+
     }
     i {
         margin-left: 80px;
+        color: $negrito !important;
         @media screen and (max-width:348px){
             margin-left: 30px;
         }
@@ -155,10 +174,10 @@ $negrito:  rgba(4, 0, 27, 0.726);
 }
 
 .activador-menu{
-    background: rgb(255, 255, 255);
     transition: all .3s;
-    top: 75px !important;
+    top: 68px !important;
     right: 0% !important;
+    
     @media screen and (max-width:414px) {
     }
 }
@@ -191,9 +210,8 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: $break-iphone7plus) {
-        background-size: 100vw;
-        background-position-y: 90px;
+    @media screen and (max-width: $break-700px) {
+        background-attachment: initial;
     }
 
     .color {
@@ -208,9 +226,9 @@ header{
         display: flex;
         z-index: 10;
         flex-direction: row;
-        background: rgb(255, 255, 255) !important;
         @media screen and (max-width:700px){
             position: fixed;
+            background-color: white;
         }
         div{
             width: 25%;
@@ -224,15 +242,20 @@ header{
                 justify-content: center;
                 align-items: center;
                 color: $negrito ;
-                padding: 20px;
                 p{
-                    color: $negrito;
+                    color: white;
                     padding: 10px;
                     font-weight: 600;
+                    @media screen and (max-width:$break-700px){
+                        color: $negrito;
+                     }
                 }
                 i{
                     font-size: 50px;
-                    color: $negrito;
+                    color: white;
+                    @media screen and (max-width:$break-700px){
+                       color: $negrito;
+                    }
                 }
             }
             @media screen and (max-width:$break-700px){
@@ -258,6 +281,8 @@ header{
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    background-color: white;
+                
             }
             .desc-menu{
                 display: none;
@@ -276,18 +301,22 @@ header{
             }
             div{
                 width: 100px;
-                padding: 0;
-                @media screen and (max-width:700px) {
-                    
-                }
+                padding: 10px;
+
                 a{
-                    padding: 20px;
-                    color: rgba(4, 0, 26, 0.781);
+                    padding: 10px;
+                    font-size: 18px;
+                    color: white;
                     text-decoration: none;
-                    font-weight: 600;
-                }:hover{
-                    transition: all .2s;
-                    color:$cielo;
+
+                    &:hover{
+                        transition: all .2s;
+                        color:$cielo;  
+                    }
+
+                    @media screen and (max-width: $break-700px ){
+                        color: $negrito;
+                    }
                 }
             }
         }   
@@ -316,7 +345,7 @@ header{
 
     .div-header{
         width: 100%;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -326,11 +355,12 @@ header{
             height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content:center;
+            align-items:center;
             padding-top: 50px;
             @media screen and (max-width:1020px) {
                 width: 100%;
+                padding-top: 100px;
             }
             i{
                 font-size: 80px;
@@ -340,21 +370,25 @@ header{
             h1{
                 @include titulo-white();
                 text-align: center;
+
+                &::before {
+                    content: 'Agencia';
+                }
+
+                &::after{
+                    content: 'Web';
+                } 
+
+                // & > span {
+                //     color: red;
+                // }
             }
-            h1::before{
-                content: 'Agencia';
-            }
-            h1::after{
-                content: 'Web';  
-              }
 
             p {
                 @include subtitulo-white();
+                text-align: center;
             }
 
-            a{
-                text-decoration: none;
-            }
         }
 
         #div-botones{
@@ -363,21 +397,26 @@ header{
             display: flex;
             flex-direction: row;
         }
+    }
 
-        .div-abajo{
-            i {
-                color: white;
-                animation: traslacion 2s infinite;
-                font-size: 60px;
-                
-            }
+    .div-abajo{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: white;
+            animation: traslacion 2.1s infinite;
+            font-size: 60px;
+            
         }
     }
 }
 
 
 @keyframes traslacion {
-    10% {transform: translateY(-50px);}
+    10% {transform: translateY(-40px);}
     100% {color: $cielo;}
     
 }
@@ -428,18 +467,37 @@ padding-top: 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            margin: 20px auto;
+        }
 
         div{
             width: 280px;
-            margin: 40px auto;
+            margin: 20px auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 30px;
             border-radius: 10px;
-            border: 2px solid white;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.171);
+            border: 1px solid white;
+            border-bottom: 2px solid rgba(0, 152, 253, 0.726);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0);
+
+            &:hover{
+                transition: all .4s;
+                cursor: pointer;
+
+                h1{
+                    transition: all .4s;
+                    color: $cielo;
+                }
+            }
+
             @media screen and (max-width:700px) {
                 width: 80%;
                 padding: 20px;
@@ -488,12 +546,7 @@ padding-top: 50px;
             }
         }   
 
-        div:hover{
-            transition: all .2s;
-            border: 2px solid $cielo;
-            background: transparent;
-            
-        }
+
     }
 }
 
@@ -510,15 +563,24 @@ padding-top: 50px;
         align-items: center;
         flex-wrap: wrap;
         div{
-            width: 600px;
-            margin: 50px auto;
+            width: 500px;
+            margin: 80px auto;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
-            text-align: left;
+            align-items: center;
+            text-align: center;
+            @media screen and (max-width:700px){
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 20px;
+            }
             img {
-                width: 100%;
+                width: 80%;
+                @media screen and (max-width:700px){
+                    width: 60%;
+                }
             }
 
             h1{
@@ -527,7 +589,7 @@ padding-top: 50px;
 
             p{
                 @include subtitulo-black();
-                text-align: left;
+                text-align: center;
             }
         }
     }
@@ -538,12 +600,13 @@ padding-top: 50px;
     width: 100%;
     height: auto;
     background: url(../imagenes/startup-3267505_1920.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    @media screen and (max-width:700px){
-        background-size: contain;
+    @media screen and (max-width: $break-700px) {
+        background-attachment: initial;
+        background-position: center;
     }
 
     .color {
@@ -560,10 +623,22 @@ padding-top: 50px;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        
         div{
-            width: 550px;
+            width: 480px;
             height: auto;
-            margin: 100px auto;
+            margin: 200px auto;
+            @media screen and (max-width:1064px){
+                width: 80%;
+                text-align: center;
+                margin: 80px auto;
+            }
+
+            @media screen and (max-width:700px){
+                width: 100%;
+                text-align: center;
+                margin: 50px auto;
+            }
 
             h1{
                 @include titulo-white();
@@ -571,12 +646,60 @@ padding-top: 50px;
 
             p {
                 @include subtitulo-white();
-                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
     }
 }
 
+.seccion-5{
+    width: 100%;
+    height: auto;
+    .div-sec-5 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        #siguenos {
+            width: 20%;
+            h1 {
+                color: $negrito;
+            }
+        }
+
+        div{
+            width: 100px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+
+
+            &:hover{
+               p{
+                   transition: all .2s;
+                   color: $marino;
+               }
+            }
+
+            a {
+                text-decoration: none;
+                color: $marino;
+                img {
+                    width: 40%;
+                }
+                p{
+                    color: $negrito;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
 
 
 

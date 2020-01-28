@@ -171,7 +171,7 @@ header {
 header .color {
   width: 100%;
   height: inherit;
-  background: rgba(0, 17, 170, 0.705);
+  background: rgba(0, 0, 0, 0.788);
 }
 
 header .div-menu {
@@ -882,6 +882,7 @@ header .div-abajo i {
   width: 480px;
   height: auto;
   margin: 200px auto;
+  text-align: left;
 }
 
 @media screen and (max-width: 1064px) {
@@ -904,6 +905,7 @@ header .div-abajo i {
   font-size: 50px;
   color: white  !important;
   font-weight: 400;
+  text-align: left;
 }
 
 @media screen and (max-width: 700px) {
@@ -920,6 +922,7 @@ header .div-abajo i {
   line-height: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: left;
 }
 
 @media screen and (max-width: 700px) {

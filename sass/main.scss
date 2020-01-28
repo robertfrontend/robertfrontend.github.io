@@ -217,7 +217,7 @@ header{
     .color {
         width: 100%;
         height: inherit;
-        background: rgba(0, 17, 170, 0.705);
+        background: rgba(0, 0, 0, 0.788);
     }
 
     .div-menu {
@@ -628,6 +628,7 @@ padding-top: 50px;
             width: 480px;
             height: auto;
             margin: 200px auto;
+            text-align: left;
             @media screen and (max-width:1064px){
                 width: 80%;
                 text-align: center;
@@ -642,12 +643,14 @@ padding-top: 50px;
 
             h1{
                 @include titulo-white();
+                text-align: left;
             }
 
             p {
                 @include subtitulo-white();
                 padding-top: 10px;
                 padding-bottom: 10px;
+                text-align: left;
             }
         }
     }

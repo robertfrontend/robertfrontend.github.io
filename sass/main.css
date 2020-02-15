@@ -235,7 +235,7 @@ header .div-menu div a p {
 }
 
 header .div-menu div a i {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 
@@ -855,7 +855,7 @@ header .div-abajo i {
 .seccion-4 .color {
   width: 100%;
   height: inherit;
-  background: rgba(0, 17, 170, 0.705);
+  background: rgba(0, 0, 0, 0.705);
 }
 
 .seccion-4 .div-sec-4 {

@@ -1,18 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-body {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  cursor: auto;
-}
-
 .contenedor {
   margin-left: 5%;
   margin-right: 5%;
@@ -51,7 +36,7 @@ body {
   color: rgba(255, 255, 255, 0.884);
   background: transparent;
   font-weight: 400;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 #boton-2:hover {
@@ -59,7 +44,7 @@ body {
   transition: all .3s;
   color: rgba(4, 0, 27, 0.726);
   background: white;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 #boton-3 {
@@ -79,6 +64,33 @@ body {
   color: white;
   background: #3c40c6;
   border: 2px solid #3c40c6;
+}
+
+.contenedor {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  cursor: auto;
 }
 
 .flotar {
@@ -105,7 +117,7 @@ body {
 
 .flotar i {
   margin-left: 80px;
-  color: rgba(4, 0, 27, 0.726) !important;
+  color: #3c40c6 !important;
 }
 
 @media screen and (max-width: 348px) {
@@ -310,11 +322,10 @@ header .div-menu nav .desc-menu {
   }
   header .div-menu nav .desc-menu p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(4, 0, 27, 0.726);
-    font-weight: 600;
     line-height: 30px;
-    padding: 10px;
+    padding: 0px 10px;
     font-size: 16px !important;
   }
 }
@@ -586,11 +597,10 @@ header .div-abajo i {
 
 .seccion-1 .div-sec-1 div p {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(4, 0, 27, 0.726);
-  font-weight: 600;
   line-height: 30px;
-  padding: 10px;
+  padding: 0px 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -649,9 +659,8 @@ header .div-abajo i {
   padding: 30px;
   border-radius: 10px;
   border: 1px solid white;
-  border-bottom: 2px solid rgba(0, 152, 253, 0.726);
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.199);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.199);
 }
 
 .seccion-2 .div-sec-2 div:hover {
@@ -673,46 +682,15 @@ header .div-abajo i {
   }
 }
 
-.seccion-2 .div-sec-2 div .r {
-  font-size: 60px;
-  padding: 0px;
+.seccion-2 .div-sec-2 div i {
+  font-size: 40px;
   color: #3c40c6;
-}
-
-.seccion-2 .div-sec-2 div .p {
-  font-size: 60px;
-  padding: 0px;
-  color: rgba(217, 255, 0, 0.623);
-}
-
-.seccion-2 .div-sec-2 div .w {
-  font-size: 60px;
-  padding: 0px;
-  color: #00bdd3;
-}
-
-.seccion-2 .div-sec-2 div .m {
-  font-size: 60px;
-  padding: 0px;
-  color: #00ff2a;
-}
-
-.seccion-2 .div-sec-2 div .mo {
-  font-size: 60px;
-  padding: 0px;
-  color: rgba(255, 0, 0, 0.822);
-}
-
-.seccion-2 .div-sec-2 div .d {
-  font-size: 60px;
-  padding: 0px;
-  color: #be00e4;
 }
 
 .seccion-2 .div-sec-2 div h1 {
   font-size: 25px;
   color: rgba(4, 0, 27, 0.726);
-  font-weight: 400;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -724,11 +702,10 @@ header .div-abajo i {
 
 .seccion-2 .div-sec-2 div p {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(4, 0, 27, 0.726);
-  font-weight: 600;
   line-height: 30px;
-  padding: 10px;
+  padding: 0px 10px;
   text-align: left;
 }
 
@@ -797,7 +774,7 @@ header .div-abajo i {
 }
 
 .seccion-3 .div-sec-3 div img {
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
@@ -821,11 +798,10 @@ header .div-abajo i {
 
 .seccion-3 .div-sec-3 div p {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(4, 0, 27, 0.726);
-  font-weight: 600;
   line-height: 30px;
-  padding: 10px;
+  padding: 0px 10px;
   text-align: center;
 }
 
@@ -966,9 +942,9 @@ header .div-abajo i {
 
 .seccion-5 .div-sec-5 div {
   width: 100px;
-  margin: 50px auto;
+  margin: 20px auto;
   text-align: center;
-  padding: 20px;
+  padding: 10px 5px;
 }
 
 .seccion-5 .div-sec-5 div:hover p {
@@ -980,15 +956,84 @@ header .div-abajo i {
 .seccion-5 .div-sec-5 div a {
   text-decoration: none;
   color: #3c40c6;
+  font-weight: bold;
 }
 
 .seccion-5 .div-sec-5 div a img {
-  width: 40%;
+  width: 30%;
 }
 
 .seccion-5 .div-sec-5 div a p {
   color: rgba(4, 0, 27, 0.726);
   padding-top: 10px;
+}
+
+footer {
+  background-color: #3c40c6;
+}
+
+footer .div-copy {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer .div-copy p {
+  color: white;
+}
+
+footer .div-copy p a {
+  color: rgba(4, 0, 27, 0.726);
+  text-decoration: none;
+}
+
+footer .div-footer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .div-footer div {
+  width: 250px;
+  height: auto;
+  margin: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .div-footer div p {
+  font-size: 20px;
+  padding: 10px 0px;
+  color: white;
+}
+
+footer .div-footer div a {
+  text-decoration: none;
+  color: #d4d4d4;
+}
+
+footer .div-footer div a:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: rgba(4, 0, 27, 0.726);
 }
 
 @font-face {

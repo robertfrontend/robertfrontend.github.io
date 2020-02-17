@@ -1,4 +1,6 @@
-
+@import './botones';
+@import './variables';
+@import './letras';
 
 * {
     margin: 0;
@@ -14,133 +16,7 @@ body{
 }
 
 
-.contenedor {
-    margin-left: 5%;
-    margin-right: 5%;
-    @media screen and (max-width:500px) {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-}
 
-$marino: #3c40c6;
-$cielo: #00bdd3;
-$negrito:  rgba(4, 0, 27, 0.726);
-
-
-//--Tituloos---
-
-// negros
-
-@mixin titulo-black {
-    font-size: 40px;
-    color: $negrito;
-    font-weight: 400;
-    padding: 10px;
-    @media screen and (max-width:700px) {
-        font-size: 30px;
-    }
-}
-
-@mixin titulo-2-black {
-    font-size: 25px;
-    color: $negrito;
-    font-weight: 400;
-    padding: 10px;
-    @media screen and (max-width:700px) {
-        font-size: 20px;
-    }
-}
-
-@mixin subtitulo-black {
-    text-align: center;
-    font-size: 18px;
-    color: $negrito;
-    font-weight: 600;
-    line-height: 30px;
-    padding: 10px;
-    @media screen and (max-width:700px) {
-        font-size: 16px;
-    }
-}
-
-//Blancos
-
-@mixin titulo-white {
-    font-size: 50px;
-    color: white  !important;
-    font-weight: 400;
-    @media screen and (max-width:700px) {
-        font-size: 40px;
-    }
-}
-
-@mixin subtitulo-white {
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 30px;
-    @media screen and (max-width:700px) {
-        font-size: 16px;
-    }
-}
-
-// Botones
-
-#boton-1 {
-    padding: 8px 30px;
-    background: $cielo;
-    margin-left: 10px;
-    border-radius:8px;
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    border: 2px solid $cielo;
-
-    &:hover{
-        transition: all .3s;
-        background: $marino !important;
-        border: 2px solid $marino;
-    }
-}
-
-
-#boton-2 {
-    padding: 8px 30px;
-    margin-left: 10px;
-    border-radius:8px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.884);
-    background: transparent;
-    font-weight: 400;
-    border: 2px solid white;
-
-    &:hover{
-        transition: all .3s;
-        color: $negrito;
-        background: white;
-        border: 2px solid white;
-    }
-}
-
-#boton-3 {
-    padding: 8px 30px;
-    margin-left: 10px;
-    border-radius:8px;
-    text-decoration: none;
-    color: $negrito;
-    background: transparent;
-    font-weight: 400;
-    border: 2px solid $cielo;
-
-    &:hover{
-        transition: all .3s;
-        color: rgb(255, 255, 255);
-        background: $marino;
-        border: 2px solid $marino
-    }
-}
 
 
 //------
@@ -165,7 +41,7 @@ $negrito:  rgba(4, 0, 27, 0.726);
     }
     i {
         margin-left: 80px;
-        color: $negrito !important;
+        color: $marino !important;
         @media screen and (max-width:348px){
             margin-left: 30px;
         }
@@ -485,8 +361,7 @@ padding-top: 50px;
             padding: 30px;
             border-radius: 10px;
             border: 1px solid white;
-            border-bottom: 2px solid rgba(0, 152, 253, 0.726);
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.199);
 
             &:hover{
                 transition: all .4s;
@@ -502,37 +377,10 @@ padding-top: 50px;
                 width: 80%;
                 padding: 20px;
             }
-            .r{
-                font-size: 60px;
-                padding: 0px;
+
+            i {
+                font-size: 40px;
                 color: $marino;
-            }
-
-            .p{
-                font-size: 60px;
-                padding: 0px;
-                color: rgba(217, 255, 0, 0.623);
-            }
-
-            .w{
-                font-size: 60px;
-                padding: 0px;
-                color: $cielo;
-            }
-            .m{
-                font-size: 60px;
-                padding: 0px;
-                color: rgb(0, 255, 42);
-            }
-            .mo{
-                font-size: 60px;
-                padding: 0px;
-                color: rgba(255, 0, 0, 0.822);
-            }
-            .d{
-                font-size: 60px;
-                padding: 0px;
-                color: rgb(190, 0, 228);
             }
 
 
@@ -543,6 +391,7 @@ padding-top: 50px;
             p{
                 @include subtitulo-black();
                 text-align: left;
+
             }
         }   
 
@@ -577,7 +426,7 @@ padding-top: 50px;
                 margin: 20px;
             }
             img {
-                width: 80%;
+                width: 100%;
                 @media screen and (max-width:700px){
                     width: 60%;
                 }
@@ -677,9 +526,9 @@ padding-top: 50px;
 
         div{
             width: 100px;
-            margin: 50px auto;
+            margin: 20px auto;
             text-align: center;
-            padding: 20px;
+            padding: 10px 5px;
 
 
             &:hover{
@@ -692,8 +541,9 @@ padding-top: 50px;
             a {
                 text-decoration: none;
                 color: $marino;
+                font-weight: bold;
                 img {
-                    width: 40%;
+                    width: 30%;
                 }
                 p{
                     color: $negrito;
@@ -704,7 +554,57 @@ padding-top: 50px;
     }
 }
 
+footer{
+    background-color: $marino;
+    .div-copy {
+        text-align: center;
+        padding: 20px 0px;
 
+        p {
+            color: white;
+
+            a{
+                color: $negrito;
+                text-decoration: none;
+            }
+        }
+    }
+    .div-footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        div {
+            width: 250px;
+            height: auto;
+            margin: 20px 20px;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 20px;
+                padding: 10px 0px;
+                color: white;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(212, 212, 212);
+
+                &:hover{
+                    transition: all .2s;
+                    color: $negrito;
+                }
+            }
+        }
+    }
+
+
+}
 
 
 

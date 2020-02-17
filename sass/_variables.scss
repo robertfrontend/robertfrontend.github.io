@@ -1,0 +1,13 @@
+$marino: #3c40c6;
+$cielo: #00bdd3;
+$negrito:  rgba(4, 0, 27, 0.726);
+
+
+.contenedor {
+    margin-left: 5%;
+    margin-right: 5%;
+    @media screen and (max-width:500px) {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}

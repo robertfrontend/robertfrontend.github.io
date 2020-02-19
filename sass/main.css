@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contenedor {
   margin-left: 5%;
   margin-right: 5%;
@@ -633,6 +634,7 @@ header .div-abajo i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 60px 0px;
 }
 
 .seccion-2 .div-sec-2 a {
@@ -968,22 +970,13 @@ header .div-abajo i {
   padding-top: 10px;
 }
 
-footer {
-  background-color: #3c40c6;
-}
-
-footer .div-copy {
-  text-align: center;
-  padding: 20px 0px;
-}
-
-footer .div-copy p {
-  color: white;
-}
-
-footer .div-copy p a {
+footer h1 {
   color: rgba(4, 0, 27, 0.726);
-  text-decoration: none;
+}
+
+footer h1::before {
+  content: '•';
+  color: #3c40c6;
 }
 
 footer .div-footer {
@@ -1009,7 +1002,7 @@ footer .div-footer {
 footer .div-footer div {
   width: 250px;
   height: auto;
-  margin: 20px 20px;
+  margin: 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,18 +1015,38 @@ footer .div-footer div {
 footer .div-footer div p {
   font-size: 20px;
   padding: 10px 0px;
-  color: white;
+  color: rgba(4, 0, 27, 0.726);
+  font-weight: bold;
 }
 
 footer .div-footer div a {
   text-decoration: none;
-  color: #d4d4d4;
+  color: rgba(4, 0, 27, 0.726);
+}
+
+footer .div-footer div a::before {
+  content: '•';
+  color: #3c40c6;
 }
 
 footer .div-footer div a:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
+  color: #3c40c6;
+}
+
+footer .div-copy {
+  text-align: center;
+  padding: 0px 0px;
+}
+
+footer .div-copy p {
   color: rgba(4, 0, 27, 0.726);
+}
+
+footer .div-copy p a {
+  color: white;
+  text-decoration: none;
 }
 
 @font-face {

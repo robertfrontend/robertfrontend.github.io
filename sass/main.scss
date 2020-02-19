@@ -345,6 +345,7 @@ padding-top: 50px;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin: 60px 0px;
 
         a {
             text-decoration: none;
@@ -555,18 +556,11 @@ padding-top: 50px;
 }
 
 footer{
-    background-color: $marino;
-    .div-copy {
-        text-align: center;
-        padding: 20px 0px;
-
-        p {
-            color: white;
-
-            a{
-                color: $negrito;
-                text-decoration: none;
-            }
+    h1 {
+        color: $negrito;
+        &::before {
+            content: '•';
+            color: $marino;
         }
     }
     .div-footer{
@@ -581,24 +575,42 @@ footer{
         div {
             width: 250px;
             height: auto;
-            margin: 20px 20px;
+            margin: 50px auto;
             display: flex;
             flex-direction: column;
 
             p {
                 font-size: 20px;
                 padding: 10px 0px;
-                color: white;
+                color: $negrito;
+                font-weight: bold;
             }
 
             a {
                 text-decoration: none;
-                color: rgb(212, 212, 212);
-
+                color: $negrito;
+                &::before{
+                    content: '•';
+                    color: $marino;
+                }
                 &:hover{
                     transition: all .2s;
-                    color: $negrito;
+                    color: $marino
                 }
+            }
+        }
+    }
+
+    .div-copy {
+        text-align: center;
+        padding: 0px 0px;
+
+        p {
+            color:$negrito;
+
+            a{
+                color: white;
+                text-decoration: none;
             }
         }
     }

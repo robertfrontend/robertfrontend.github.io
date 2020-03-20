@@ -2,55 +2,40 @@
 // Botones
 
 #boton-1 {
-    padding: 8px 30px;
-    background: $cielo;
-    margin-left: 10px;
-    border-radius:8px;
+    padding: 10px 30px;
+    background: $marino;
+    margin: 10px 0px;
+    border-radius:50px;
     text-decoration: none;
-    color: white;
+    color: white !important;
     font-weight: 400;
-    border: 2px solid $cielo;
-
+    font-size: 16px !important;
+    border: 2px solid $marino;
+    font-weight: bold;
     &:hover{
         transition: all .3s;
-        background: $marino !important;
-        border: 2px solid $marino;
+        border: 2px solid $negrito;
+        background-color: transparent;
+        color: $negrito !important;
     }
 }
 
 
 #boton-2 {
-    padding: 8px 30px;
-    margin-left: 10px;
-    border-radius:8px;
+    padding: 10px 30px;
+    background: $cielo;
+    margin: 10px 0px;
+    border-radius:50px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.884);
-    background: transparent;
+    color: white !important;
     font-weight: 400;
-    border: 1px solid white;
-
-    &:hover{
-        transition: all .3s;
-        color: $negrito;
-        background: white;
-        border: 1px solid white;
-    }
-}
-
-#boton-3 {
-    padding: 8px 30px;
-    margin-left: 10px;
-    border-radius:8px;
-    text-decoration: none;
-    color: $negrito;
-    background: transparent;
-    font-weight: 400;
+    font-size: 16px !important;
     border: 2px solid $cielo;
-
+    font-weight: bold;
     &:hover{
         transition: all .3s;
-        color: rgb(255, 255, 255);
-        background: $marino;
-        border: 2px solid $marino
+        border: 2px solid $cielo;
+        background-color:transparent;
+        color:white !important;
     }
 }

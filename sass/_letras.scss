@@ -3,17 +3,15 @@
     font-size: 40px;
     color: $negrito;
     font-weight: 400;
-    padding: 10px;
     @media screen and (max-width:700px) {
         font-size: 30px;
     }
 }
 
 @mixin titulo-2-black {
-    font-size: 25px;
+    font-size: 20px;
     color: $negrito;
-    font-weight: bold;
-    padding: 10px;
+    line-height: 25px;
     @media screen and (max-width:700px) {
         font-size: 20px;
     }
@@ -24,7 +22,6 @@
     font-size: 16px;
     color: $negrito;
     line-height: 30px;
-    padding: 0px 10px;
     @media screen and (max-width:700px) {
         font-size: 16px;
     }
@@ -43,7 +40,6 @@
 
 @mixin subtitulo-white {
     color: white;
-    text-align: center;
     font-size: 18px;
     font-weight: 100;
     line-height: 30px;

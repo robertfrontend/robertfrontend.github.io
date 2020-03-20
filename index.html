@@ -8,11 +8,9 @@
 	<title>Agencia Web</title>
 
 	<link rel="stylesheet" href="./sass/main.css" />
-	<!-- <link rel="stylesheet" href="./sass/botones.css" />
-	<link rel="stylesheet" href="./sass/titulos.css" /> -->
 
 	<!--google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
 	<!--material icons-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,27 +21,37 @@
 
 	<header>
 		<div class="color">
+			<!--Menu-->
 			<div id="div-menu" class="div-menu">
 				<div>
 					<a href="#">
-						<i  class="material-icons">
-							developer_mode
-						</i>
-						<p>AGWEB</p>
+						<img src="./imagenes/logo original.png" alt="">
+						<!-- Robert Developer -->
 					</a>
 				</div>
 				<nav id="menu">
 					<div class="">
-						<a  href="#home">Home</a>
+						<a  href="#home">
+							Inicio
+						</a>
 					</div>
 					<div class="">
-						<a href="#services">Services</a>
+						<a href="#services">Servicios</a>
 					</div>
 					<div class="">
-						<a href="#clients">Clients</a>
+						<a href="#clients">
+							Nostros
+						</a>
 					</div>
 					<div class="">
-						<a href="#about">About</a>
+						<a href="#clients">
+							Portafolio
+						</a>
+					</div>
+					<div class="">
+						<a id="boton-1" href="#about">
+							Contactos
+						</a>
 					</div>
 					<br>
 					<div class="desc-menu">
@@ -52,311 +60,172 @@
 				</nav>
 				<div class="icono-menu">
 					<a href="#menu" id="boton-menu">
-						<i id="boton-icono" class="material-icons">
-							menu
-						</i>
-						<i id="boton-icono2" class="material-icons">
-							clear
-						</i>
+						<ion-icon id="boton-icono" name="menu-outline"></ion-icon>
+
+						<ion-icon id="boton-icono2" name="close-outline"></ion-icon>
 					</a>
 				</div>
 			</div>
+			<!--Fin del menu-->
 			<div class="contenedor">
+				<!--Introduccion-->
 				<div class="div-header">
-					<div class="">	
-						<i class="material-icons">
+					<div class="divText">	
+						<!-- <i class="material-icons">
 							developer_mode
 						</i>
+						<br> -->
+						<h1>
+							Crea tu <span>pagina web </span> adaptada <span> a tu negocio</span>.
+						</h1>
 						<br>
-						<h1> <span>de</span> Desarrollo </h1>
 						<p>
-							<br>
 							Communicate effectively with your entire workforce.
-							<br>
-								The mobile-first employee communication 
-								platform to drive alignment, productivity 
-								and engagement.
 						</p>
+						<br>
+						<div id="div-botones">
+							<a href="#bot" id="boton-1">
+								Comenzar
+							</a>
+						</div>
 					</div>
-					<div id="div-botones">
-						<a href="#bot" id="boton-1">
-							Comenzar
-						</a>
-						<a href="#bot" id="boton-2">
-							Ver Portafolio
-						</a>
+					<div class="divImg">
+						<img id="svg1" src="./imagenes/svg4.svg" alt="">
+						<img id="svg2" src="./imagenes/svg5.svg" alt="">
 					</div>
+
 					<br>
 					<br>
 				</div>
-				<div class="div-abajo">
-					<a href="#aaa">
-						<i class="material-icons">
-							expand_more
-						</i>
-					</a>
-				</div>
+				<!--Fin de introduccion-->
 			</div>
 		</div>
 	</header>
 
-	<section class="seccion-1" id="info">
-		<div class="contenedor">
-			<div class="div-sec-1">
-				<div class="">
-					<h1>
-						Que podemos hacer por ti
-					</h1>
-					<br>
-					<p>
-						Tienes una idea y no sabes 
-						como empezar, nuestro equipo 
-						hace todo el trabajo por 
-						su marca, empresa o emprendimiento.
-					</p>
-					<br>
-				</div>
-				<div class="">
-					<a href="#planestrategico" id="boton-3">
-						Crear Plan Estrategico
-					</a>
-				</div>
-			</div>
+	<!--Fin del header-->
+	
+	<section class="seccion1">
+		<div>
+			<h1>Nuestros <span>Servicios</span></h1>
 		</div>
-	</section>
-
-	<section class="seccion-2" id="services">
 		<div class="contenedor">
-			<div class="div-sec-2">
-
-				<a href="#Redes Sociales">
-					<div class="">
-						<i class="material-icons r">
-							important_devices
-						</i>
-						<h1>Redes Sociales</h1>
-						<br>
-						<p>
-							Los medios o plataformas sociales son 
-							una oportunidad que acerca las 
-							empresas a sus mercados.
-						</p>
+			<div class="divSec1">
+				<!--Tarjeta de Servicios-->
+				<div class="tarjetaServicio">
+					<div class="icoTarjeta">
+						<!-- <i class="material-icons">web</i> -->
+						<ion-icon id="icono" name="desktop-outline"></ion-icon>
 					</div>
-				</a>
-
-				<a href="#Paginas Web">
-					<div class="">
-						<i class="material-icons w">
-							web
-						</i>
+					<div class="textTarjeta">
 						<h1>Paginas Web</h1>
-						<br>
 						<p>
-							Una pagina web profesional como el 
-							escaparate al mundo, de tus 
-							clientes locales y globales.
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, temporibus.
 						</p>
 					</div>
-				</a>
-				
-				<a href="#SEO">
-					<div class="">
-						<i class="material-icons p">
-							view_carousel
-						</i>
-						<h1> SEO</h1>
-						<br>
-						<p>
-							Conseguir que tu web aparezca en los 
-							primeros resultados de las búsquedas orgánicas en Google.
-						</p>
+					<div>
+						<a href=""></a>
 					</div>
-				</a>
-
-				<a href="#Marketing Digital">
-					<div class="">
-						<i class="material-icons m">
-							mobile_friendly
-						</i>
-						<h1>Marketing Digital</h1>
-						<br>
-						<p>
-							Permite dar a conocer rápidamente tu producto 
-							a gran escala, con nuestra campañas publicitarias.
-						</p>
+				</div>
+				<div class="tarjetaServicio">
+					<div class="icoTarjeta">
+						<ion-icon id="icono" name="cart-outline"></ion-icon>
 					</div>
-				</a>
-
-				<a href="#Multimedia">
-					<div class="">
-						<i class="material-icons mo">
-							movie
-						</i>
-						<h1>Multimedia</h1>
-						<br>
-						<p>
-							Comunica de menara interactiva, videos, fotografia
-							 profesionales y creación de render.
-						</p>
-					</div>
-				</a>
-
-				<a href="#Diseño Grafico">
-					<div class="">
-						<i class="material-icons d">
-							wb_iridescent
-						</i>
+					<div class="textTarjeta">
 						<h1>Diseño Grafico</h1>
-						<br>
 						<p>
-							Todo tipo de material impreso, desde la idea
-							 hasta la impresión. Letreros, Flyer, Brochure,
-							  Tarjetas, entre otros.
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, temporibus.
 						</p>
 					</div>
-				</a>
-
+					<div>
+						<a href=""></a>
+					</div>
+				</div>
+				<div class="tarjetaServicio">
+					<div class="icoTarjeta">
+						<ion-icon id="icono" name="bar-chart-outline"></ion-icon>
+					</div>
+					<div class="textTarjeta">
+						<h1>Marketing</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, temporibus.
+						</p>
+					</div>
+					<div>
+						<a href=""></a>
+					</div>
+				</div>
+				<!--Fin de tarjeta de servicios-->
 			</div>
 		</div>
 	</section>
 
-	<section class="seccion-3">
+	<section class="seccion2">
 		<div class="contenedor">
-			<div class="div-sec-3">
-				<div class="">
-					<img src="./imagenes/fondo1.jpg" alt="">
-				</div>
+			<div class="divSec2">
 				<div class="">
 					<h1>
-						Llega donde están tus clientes
+						Desarrollo <span>digital</span> para tu 
+						<span>empresa</span>
 					</h1>
 					<p>
-						Mas del 57% de la actividad de tus clientes potenciales 
-						en el proceso de compra la realizan en Internet antes 
-						de contactar contigo.
+						Lorem ipsum ullam dignissimos quod quaerat commodi incidunt in sapiente iure amet.
 					</p>
-					<a href="#solicitar" id="boton-3">Quiero solicitar</a>
+					<a id="boton-1" href="#">Trabajar</a>
+				</div>
+				<div class="">
+					<img src="./imagenes/svg6.svg" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="seccion-4">
-		<div class="color">
-			<div class="contenedor">
-				<div class="div-sec-4">
-					<div class="">
-						<h1>New Projects</h1>
-						<br>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing 
-							elit. Accusantium hic amet nobis pariatur, omnis 
-							asperiores.
-						</p>
-						<br>
-						<br>
-						<a href="#iniciar" id="boton-2">
-							Iniciar
-						</a>
-					</div>
-					<div class="">
-						<h1>Finish project</h1>
-						<br>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur 
-							adipisicing elit.
-						</p>
-						<br>
-						<br>
-						<a href="#terminar" id="boton-2">
-							Terminar
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="seccion-5">
+	<!-- <div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100vw;"><path d="M0.00,49.98 C149.83,149.98 348.81,-49.98 499.44,49.98 L499.44,149.98 L0.00,149.98 Z" style="stroke: none; fill: #434964;"></path></svg></div>
+	<section class="seccion3">
 		<div class="contenedor">
-			<div class="div-sec-5">
-				<div id="siguenos">
-					<h1>Contactanos:</h1>
+			<div class="divSec3">
+				<div>
+					<h1>
+						Nosotros
+					</h1>
+					<br>
+					<p>
+						Nos apasiona el desarrollo de <span>innovaciones</span> y nos dedicamos 
+						a apoyar las necesidades de nuestros clientes utilizando 
+						los <span>mejores talentos</span> y la <span>metodología</span> adecuada.
+					</p>
 				</div>
-				<div class="">
-					<a href="#Linkedin">
-						<img src="./imagenes/linkedin.svg" alt="" />
-						<p>
-							Linkedin
-						</p>
+				<div>
+					<a href="#" id="boton-2">Contactanos RD</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100vw;"><path d="M0.00,49.98 C149.83,149.98 271.18,-49.98 499.44,49.98 L499.44,0.00 L0.00,0.00 Z" style="stroke: none; fill: #434964;"></path></svg></div> -->
+
+	<section class="seccion4">
+		<div class="contenedor">
+			<div class="divSec4">
+				<div>
+					<h1>
+						Contactanos
+					</h1>
+				</div>
+				<div>
+					<a href="#">
+						<ion-icon name="logo-whatsapp"></ion-icon>
 					</a>
-				</div>
-				<div class="">
-					<a href="#Instagram">
-						<img src="./imagenes/instagram.svg" alt="" />
-						<p>
-							Instagram
-						</p>
+					<a href="#">
+						<ion-icon name="logo-instagram"></ion-icon>
 					</a>
-				</div>
-				<div class="">
-					<a href="#Facebook">
-						<img src="./imagenes/facebook.svg" alt="" />
-						<p>
-							Facebook
-						</p>
-					</a>
-				</div>
-				<div class="">
-					<a href="#Twitter">
-						<img src="./imagenes/twitter.svg" alt="" />
-						<p>
-							Twitter
-						</p>
-					</a>
-				</div>
-				<div class="">
-					<a href="#Whatsapp">
-						<img src="./imagenes/whatsapp.svg" alt="" />
-						<p>
-							Whatsapp
-						</p>
+					<a href="#">
+						<ion-icon name="logo-twitter"></ion-icon>
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<footer>
-		<div class="contenedor">
-			<h1>AGWEB</h1>
-			<div class="div-footer">
-				<div>
-					<p>Empresa</p>
-					<a href="#fdklj">Nostros</a>
-					<a href="#fdklj">Proyectos</a>
-					<a href="#fdklj">Clientes</a>
-				</div>
-				<div>
-					<p>Servicios</p>
-					<a href="#fdklj">Hosting</a>
-					<a href="#fdklj">SEO</a>
-					<a href="#fdklj">Diseño grafrico</a>
-				</div>
-				<div>
-					<p>Contactos</p>
-					<a href="#fdklj">Email</a>
-					<a href="#fdklj">Whatsapp</a>
-					<a href="#fdklj">Otro</a>
-				</div>
-			</div>
-		</div>
-		<div class="div-copy">
-			<p>&copy;Diseñado por <a href="https://github.com/Robertrm0" target="_blank" >Robertrm0</a></p>
-		</div>
-	</footer>
-
 	
 	<script src="index.js"></script>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

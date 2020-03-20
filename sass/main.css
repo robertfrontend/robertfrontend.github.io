@@ -177,7 +177,6 @@ header .div-menu {
 
 @media screen and (max-width: 700px) {
   header .div-menu {
-    position: fixed;
     background-color: white;
   }
 }
@@ -223,9 +222,6 @@ header .div-menu .divLogo a img {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  header .div-menu .divLogo img {
-    width: 25% !important;
-  }
 }
 
 header .div-menu nav {
@@ -240,12 +236,13 @@ header .div-menu nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 700px) {
   header .div-menu nav {
     max-width: 70%;
-    height: 100vh;
+    height: 100vh !important;
     position: fixed;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -258,9 +255,9 @@ header .div-menu nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background-color: white;
   }
 }
@@ -300,6 +297,12 @@ header .div-menu nav .desc-menu {
 header .div-menu nav div {
   width: auto;
   padding: 0px 12px;
+}
+
+@media screen and (max-width: 700px) {
+  header .div-menu nav div {
+    padding: 20px 40px;
+  }
 }
 
 header .div-menu nav div a {

@@ -79,7 +79,7 @@ header{
         z-index: 10;
         flex-direction: row;
         @media screen and (max-width:700px){
-            position: fixed;
+
             background-color: white;
         }
         .divLogo{
@@ -103,9 +103,6 @@ header{
             @media screen and (max-width:$break-700px){
                 width: 50%;
                 justify-content: flex-start;
-                img {
-                    width: 25% !important;
-                }
             }
         }
 
@@ -115,17 +112,16 @@ header{
             display: flex;
             justify-content: flex-end;
             align-items: center;
-        
-
+            z-index: 1000;
             @media screen and (max-width:700px) {
                 max-width: 70%;
-                height: 100vh;
+                height: 100vh !important;
                 position: fixed;
                 flex-direction: column;
                 right:-100%;
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
                 background-color: white;
             }
             .desc-menu{
@@ -144,6 +140,9 @@ header{
             div{
                 width: auto;
                 padding: 0px 12px;
+                @media screen and (max-width: $break-700px ){
+                    padding: 20px 40px;
+                }
                 a{
                     padding: 10px;
                     font-size: 16px;

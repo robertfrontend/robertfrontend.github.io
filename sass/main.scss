@@ -82,7 +82,7 @@ header{
             position: fixed;
             background-color: white;
         }
-        div{
+        .divLogo{
             width: 25%;
             height: 12vh;
             display: flex;
@@ -103,6 +103,9 @@ header{
             @media screen and (max-width:$break-700px){
                 width: 50%;
                 justify-content: flex-start;
+                img {
+                    width: 25% !important;
+                }
             }
         }
 

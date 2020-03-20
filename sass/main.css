@@ -182,7 +182,7 @@ header .div-menu {
   }
 }
 
-header .div-menu div {
+header .div-menu .divLogo {
   width: 25%;
   height: 12vh;
   display: -webkit-box;
@@ -196,7 +196,7 @@ header .div-menu div {
           align-items: center;
 }
 
-header .div-menu div a {
+header .div-menu .divLogo a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,17 +211,20 @@ header .div-menu div a {
   font-weight: bold;
 }
 
-header .div-menu div a img {
+header .div-menu .divLogo a img {
   width: 15%;
   padding: 10px;
 }
 
 @media screen and (max-width: 700px) {
-  header .div-menu div {
+  header .div-menu .divLogo {
     width: 50%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  header .div-menu .divLogo img {
+    width: 25% !important;
   }
 }
 

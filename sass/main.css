@@ -87,7 +87,6 @@ body {
 }
 
 .flotar {
-  position: fixed;
   -webkit-transition: all .2s;
   transition: all .2s;
   background-color: white;
@@ -402,11 +401,12 @@ header .div-header {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 20px 0px;
 }
 
 header .div-header .divText {
   width: 50%;
-  height: 65vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +420,8 @@ header .div-header .divText {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 50px;
+  padding: 30px 0px;
+  margin: 30px 0px;
 }
 
 @media screen and (max-width: 950px) {
@@ -505,7 +506,7 @@ header .div-header .divText #div-botones {
 
 header .div-header .divImg {
   width: 50%;
-  height: 70vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,6 +522,8 @@ header .div-header .divImg {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 30px 0px;
+  margin: 30px 0px;
 }
 
 @media screen and (max-width: 950px) {
@@ -631,8 +634,8 @@ header .div-header .divImg #svg2 {
 
 @media screen and (max-width: 550px) {
   .seccion1 .divSec1 .tarjetaServicio {
-    -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
-            box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
+    -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
+            box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
   }
 }
 
@@ -846,10 +849,10 @@ header .div-header .divImg #svg2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -858,7 +861,7 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion4 .divSec4 div {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,7 +875,6 @@ header .div-header .divImg #svg2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0px;
 }
 
 @media screen and (max-width: 750px) {
@@ -905,14 +907,14 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion4 .divSec4 div a ion-icon {
-  font-size: 35px;
-  color: #434964;
+  font-size: 50px;
+  color: #25D366;
 }
 
 .seccion4 .divSec4 div a:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
-  background-color: #5e17eb;
+  background-color: #25D366;
   border-radius: 100%;
 }
 
@@ -920,6 +922,34 @@ header .div-header .divImg #svg2 {
   -webkit-transition: all .2s;
   transition: all .2s;
   color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+
+footer .divFooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+footer .divFooter div p {
+  color: #434964;
 }
 
 @font-face {

@@ -22,7 +22,7 @@ body{
 }
 //------
 .flotar {
-    position: fixed;
+    //position: fixed;
     transition: all .2s;
     background-color: white;
     p {
@@ -212,14 +212,16 @@ header{
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
+        margin: 20px 0px;
         .divText{
             width: 50%;
-            height: 65vh;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content:center;
             align-items:flex-start;
-            padding-top: 50px;
+            padding: 30px 0px;
+            margin: 30px 0px;
             @media screen and (max-width:950px) {
                 width: 100%;
                 height: 50vh;
@@ -273,12 +275,14 @@ header{
         }
         .divImg{
             width: 50%;
-            height: 70vh;
+            height: auto;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            padding: 30px 0px;
+            margin: 30px 0px;
             @media screen and (max-width:950px) {
                 width: 100%;
                 height: 50vh !important;
@@ -350,7 +354,7 @@ header{
             border-radius: 50px;
             box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
             @media screen and (max-width:550px){
-                box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
+                box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
             }
             &:hover{
                 transition: all .4s;
@@ -502,16 +506,15 @@ header{
     .divSec4{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         div {
-            width: 50%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 30px 0px;
             @media screen and (max-width:750px) {
                 width: 100%;
                 height: auto !important;
@@ -535,13 +538,13 @@ header{
                 padding: 15px 15px;
                 text-decoration: none;
                 ion-icon {
-                    font-size: 35px;
-                    color: $negrito;
+                    font-size: 50px;
+                    color: #25D366;
                 }
 
                 &:hover{
                     transition: all .2s;
-                    background-color: $marino;
+                    background-color: #25D366;
                     border-radius: 100%;
                     ion-icon{
                         transition: all .2s;
@@ -552,6 +555,27 @@ header{
         }
     }
 }
+
+footer{
+    width: 100%;
+    height: auto;
+    // background-color: rgb(14, 0, 39);
+    .divFooter {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        margin: 10px 0px;
+        div {
+            p {
+                color: $negrito;
+            }
+        }
+    }
+}
+
 
 @font-face {
     font-family: 'Material Icons';

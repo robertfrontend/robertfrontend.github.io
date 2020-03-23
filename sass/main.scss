@@ -22,7 +22,8 @@ body{
 }
 //------
 .flotar {
-    //position: fixed;
+    top: 0;
+    position: fixed;
     transition: all .2s;
     background-color: white;
     p {
@@ -220,11 +221,10 @@ header{
             flex-direction: column;
             justify-content:center;
             align-items:flex-start;
-            padding: 30px 0px;
-            margin: 30px 0px;
+            padding: 40px 0px;
+            margin: 40px 0px;
             @media screen and (max-width:950px) {
                 width: 100%;
-                height: 50vh;
                 align-items: center;
                 text-align: center;
                 h1 {
@@ -238,7 +238,8 @@ header{
                 padding: 20px 0px;
             }
             @media screen and (max-width:550px){
-                padding:10px 0px;
+                padding:20px 0px;
+                margin: 20px 0px;
             }
             i{
                 font-size: 80px;
@@ -257,9 +258,9 @@ header{
                 }
             }
             p {
-                font-size: 16px;
+                font-size: 20px;
                 color: $negrito;
-                font-weight: bold;
+                font-weight: normal;
             }
             #div-botones{
                 width: 100%;
@@ -281,11 +282,10 @@ header{
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            padding: 30px 0px;
-            margin: 30px 0px;
+            padding: 40px 0px;
+            margin: 40px 0px;
             @media screen and (max-width:950px) {
                 width: 100%;
-                height: 50vh !important;
                 justify-content: center;
                 align-items: flex-start;
                 #svg1 {
@@ -300,7 +300,8 @@ header{
             }
 
             @media screen and (max-width:550px){
-                height: 30vh !important;
+                padding: 20px 0px;
+                margin: 20px 0px;
             }
 
             //Animacion de las imagenes
@@ -416,7 +417,8 @@ header{
                     padding: 10px 0px;
                 }
                 p {
-                    font-size: 15px;
+                    font-weight: normal;
+                    font-size: 18px;
                 }
             }
         }
@@ -431,14 +433,19 @@ header{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        padding: 20px 0px;
         div {
-            width: 50%;
-            height: 80vh;
+            width: 90%;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
-            text-align: left !important;
+            align-items:center;
+            text-align: center;
+            padding: 5px;
             @media screen and (max-width:950px) {
                 width: 100%;
                 height: auto !important;
@@ -461,13 +468,12 @@ header{
                 }
             }
             p {
-                font-size: 16px;
-                font-weight: bold;
+                font-size: 22px;
                 color: $negrito;
                 padding: 10px 0px;
             }
             img {
-                width: 90%;
+                width: 30%;
             }
         }
     }
@@ -506,11 +512,13 @@ header{
     .divSec4{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 20px 0px;
+        padding: 20px 0px;
         div {
-            width: 100%;
+            width: auto;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -532,7 +540,10 @@ header{
             h1 {
                 font-size: 40px;
                 padding: 10px 0px;
-                color: $marino;
+                color: $negrito;
+                span {
+                    color: $marino;
+                }
             }
             a {
                 padding: 15px 15px;
@@ -571,6 +582,7 @@ footer{
         div {
             p {
                 color: $negrito;
+                font-weight: bold;
             }
         }
     }

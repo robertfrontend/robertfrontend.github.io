@@ -87,6 +87,8 @@ body {
 }
 
 .flotar {
+  top: 0;
+  position: fixed;
   -webkit-transition: all .2s;
   transition: all .2s;
   background-color: white;
@@ -420,14 +422,13 @@ header .div-header .divText {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 30px 0px;
-  margin: 30px 0px;
+  padding: 40px 0px;
+  margin: 40px 0px;
 }
 
 @media screen and (max-width: 950px) {
   header .div-header .divText {
     width: 100%;
-    height: 50vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -449,7 +450,8 @@ header .div-header .divText {
 
 @media screen and (max-width: 550px) {
   header .div-header .divText {
-    padding: 10px 0px;
+    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 
@@ -476,9 +478,9 @@ header .div-header .divText h1 span {
 }
 
 header .div-header .divText p {
-  font-size: 16px;
+  font-size: 20px;
   color: #434964;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 header .div-header .divText #div-botones {
@@ -522,14 +524,13 @@ header .div-header .divImg {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 30px 0px;
-  margin: 30px 0px;
+  padding: 40px 0px;
+  margin: 40px 0px;
 }
 
 @media screen and (max-width: 950px) {
   header .div-header .divImg {
     width: 100%;
-    height: 50vh !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -549,7 +550,8 @@ header .div-header .divImg {
 
 @media screen and (max-width: 550px) {
   header .div-header .divImg {
-    height: 30vh !important;
+    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 
@@ -718,7 +720,8 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion1 .divSec1 .tarjetaServicio .textTarjeta p {
-  font-size: 15px;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .seccion2 {
@@ -738,11 +741,19 @@ header .div-header .divImg #svg2 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+  padding: 20px 0px;
 }
 
 .seccion2 .divSec2 div {
-  width: 50%;
-  height: 80vh;
+  width: 90%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,10 +764,11 @@ header .div-header .divImg #svg2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: left !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 5px;
 }
 
 @media screen and (max-width: 950px) {
@@ -788,14 +800,13 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion2 .divSec2 div p {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 22px;
   color: #434964;
   padding: 10px 0px;
 }
 
 .seccion2 .divSec2 div img {
-  width: 90%;
+  width: 30%;
 }
 
 .seccion3 {
@@ -849,19 +860,21 @@ header .div-header .divImg #svg2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 20px 0px;
+  padding: 20px 0px;
 }
 
 .seccion4 .divSec4 div {
-  width: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,6 +911,10 @@ header .div-header .divImg #svg2 {
 .seccion4 .divSec4 div h1 {
   font-size: 40px;
   padding: 10px 0px;
+  color: #434964;
+}
+
+.seccion4 .divSec4 div h1 span {
   color: #5e17eb;
 }
 
@@ -950,6 +967,7 @@ footer .divFooter {
 
 footer .divFooter div p {
   color: #434964;
+  font-weight: bold;
 }
 
 @font-face {

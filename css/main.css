@@ -79,6 +79,7 @@ body {
 }
 
 .flotar {
+  top: 0;
   position: fixed;
   transition: all 0.2s;
   background-color: white;
@@ -263,7 +264,6 @@ header .div-menu .icono-menu #boton-icono {
 @media screen and (max-width: 550px) {
   header .div-menu .icono-menu #boton-icono {
     font-size: 50px;
-    font-weight: bold;
   }
 }
 header .div-menu .icono-menu #boton-icono2 {
@@ -292,20 +292,21 @@ header .div-header {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin: 20px 0px;
 }
 header .div-header .divText {
   width: 50%;
-  height: 65vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 50px;
+  padding: 40px 0px;
+  margin: 40px 0px;
 }
 @media screen and (max-width: 950px) {
   header .div-header .divText {
     width: 100%;
-    height: 50vh;
     align-items: center;
     text-align: center;
   }
@@ -323,7 +324,8 @@ header .div-header .divText {
 }
 @media screen and (max-width: 550px) {
   header .div-header .divText {
-    padding: 10px 0px;
+    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 header .div-header .divText i {
@@ -345,7 +347,7 @@ header .div-header .divText h1 span {
   color: #5e17eb;
 }
 header .div-header .divText p {
-  font-size: 16px;
+  font-size: 18px;
   color: #434964;
   font-weight: bold;
 }
@@ -363,17 +365,18 @@ header .div-header .divText #div-botones {
 }
 header .div-header .divImg {
   width: 50%;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 40px 0px;
+  margin: 40px 0px;
 }
 @media screen and (max-width: 950px) {
   header .div-header .divImg {
     width: 100%;
-    height: 50vh !important;
     justify-content: center;
     align-items: flex-start;
   }
@@ -388,7 +391,8 @@ header .div-header .divImg {
 }
 @media screen and (max-width: 550px) {
   header .div-header .divImg {
-    height: 30vh !important;
+    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 @keyframes traslacion {
@@ -445,7 +449,7 @@ header .div-header .divImg #svg2 {
 }
 @media screen and (max-width: 550px) {
   .seccion1 .divSec1 .tarjetaServicio {
-    box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
+    box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
   }
 }
 .seccion1 .divSec1 .tarjetaServicio:hover {
@@ -509,7 +513,8 @@ header .div-header .divImg #svg2 {
   padding: 10px 0px;
 }
 .seccion1 .divSec1 .tarjetaServicio .textTarjeta p {
-  font-size: 15px;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .seccion2 {
@@ -522,15 +527,20 @@ header .div-header .divImg #svg2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  padding: 20px 0px;
 }
 .seccion2 .divSec2 div {
-  width: 50%;
-  height: 80vh;
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left !important;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
 }
 @media screen and (max-width: 950px) {
   .seccion2 .divSec2 div {
@@ -556,13 +566,12 @@ header .div-header .divImg #svg2 {
   color: #5e17eb;
 }
 .seccion2 .divSec2 div p {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 22px;
   color: #434964;
   padding: 10px 0px;
 }
 .seccion2 .divSec2 div img {
-  width: 90%;
+  width: 30%;
 }
 
 .seccion3 {
@@ -602,14 +611,15 @@ header .div-header .divImg #svg2 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 20px 0px;
+  padding: 20px 0px;
 }
 .seccion4 .divSec4 div {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px;
 }
 @media screen and (max-width: 750px) {
   .seccion4 .divSec4 div {
@@ -629,6 +639,9 @@ header .div-header .divImg #svg2 {
 .seccion4 .divSec4 div h1 {
   font-size: 40px;
   padding: 10px 0px;
+  color: #434964;
+}
+.seccion4 .divSec4 div h1 span {
   color: #5e17eb;
 }
 .seccion4 .divSec4 div a {
@@ -636,17 +649,35 @@ header .div-header .divImg #svg2 {
   text-decoration: none;
 }
 .seccion4 .divSec4 div a ion-icon {
-  font-size: 35px;
-  color: #434964;
+  font-size: 50px;
+  color: #25D366;
 }
 .seccion4 .divSec4 div a:hover {
   transition: all 0.2s;
-  background-color: #5e17eb;
+  background-color: #25D366;
   border-radius: 100%;
 }
 .seccion4 .divSec4 div a:hover ion-icon {
   transition: all 0.2s;
   color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+footer .divFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+footer .divFooter div p {
+  color: #434964;
+  font-weight: bold;
 }
 
 @font-face {

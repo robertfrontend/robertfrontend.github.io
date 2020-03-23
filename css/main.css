@@ -3,7 +3,6 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-
 @media screen and (max-width: 500px) {
   .contenedor {
     margin-right: 2%;
@@ -23,10 +22,8 @@
   border: 2px solid #5e17eb;
   font-weight: bold;
 }
-
 #boton-1:hover {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
   border: 2px solid #434964;
   background-color: transparent;
   color: #434964 !important;
@@ -44,10 +41,8 @@
   border: 2px solid #00bdd3;
   font-weight: bold;
 }
-
 #boton-2:hover {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
   border: 2px solid #00bdd3;
   background-color: transparent;
   color: white !important;
@@ -57,7 +52,6 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-
 @media screen and (max-width: 500px) {
   .contenedor {
     margin-right: 2%;
@@ -68,10 +62,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 html {
@@ -88,29 +80,23 @@ body {
 
 .flotar {
   position: fixed;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
   background-color: white;
 }
-
 .flotar p {
   color: #434964 !important;
 }
-
 .flotar a {
   color: #434964 !important;
   font-weight: 600;
 }
-
 .flotar a:hover {
   color: #00bdd3 !important;
 }
-
 .flotar i {
   margin-left: 80px;
   color: #5e17eb !important;
 }
-
 @media screen and (max-width: 348px) {
   .flotar i {
     margin-left: 30px;
@@ -118,21 +104,10 @@ body {
 }
 
 .activador-menu {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
   top: 68px !important;
   right: 0% !important;
 }
-
-@-webkit-keyframes colorear {
-  0% {
-    color: #5e17eb;
-  }
-  100% {
-    color: #00bdd3;
-  }
-}
-
 @keyframes colorear {
   0% {
     color: #5e17eb;
@@ -141,7 +116,6 @@ body {
     color: #00bdd3;
   }
 }
-
 .botonm {
   color: rgba(3, 0, 0, 0.705) !important;
   display: none !important;
@@ -149,149 +123,95 @@ body {
 
 .botom2 {
   display: block !important;
-  -webkit-transition: all 1.2s;
   transition: all 1.2s;
-  -webkit-animation: colorear .6s infinite;
-          animation: colorear .6s infinite;
+  animation: colorear 0.6s infinite;
 }
 
 header {
   width: 100%;
   height: auto;
 }
-
 header .div-menu {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 10;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu {
     background-color: white;
   }
 }
-
 header .div-menu .divLogo {
   width: 25%;
   height: 12vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
-
 header .div-menu .divLogo a {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #5e17eb;
   font-weight: bold;
 }
-
 header .div-menu .divLogo a img {
   width: 15%;
   padding: 10px;
   margin-top: 10px;
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu .divLogo {
     width: 50% !important;
     height: 8vh !important;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media screen and (max-width: 550px) {
   header .div-menu .divLogo img {
     margin-top: 40px !important;
     width: 40% !important;
   }
 }
-
 @media screen and (max-width: 414px) {
   header .div-menu .divLogo img {
     margin-top: 10px !important;
     width: 30% !important;
   }
 }
-
 header .div-menu nav {
   width: 70%;
   height: 12vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 1000;
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu nav {
     max-width: 70%;
     height: 100vh !important;
     position: fixed;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     right: -100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: white;
   }
 }
-
 header .div-menu nav .desc-menu {
   display: none;
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu nav .desc-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   header .div-menu nav .desc-menu p {
     text-align: center;
@@ -301,24 +221,20 @@ header .div-menu nav .desc-menu {
     font-size: 16px !important;
   }
 }
-
 @media screen and (max-width: 700px) and (max-width: 700px) {
   header .div-menu nav .desc-menu p {
     font-size: 16px;
   }
 }
-
 header .div-menu nav div {
   width: auto;
   padding: 0px 12px;
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu nav div {
     padding: 20px 40px;
   }
 }
-
 header .div-menu nav div a {
   padding: 10px;
   font-size: 16px;
@@ -326,110 +242,71 @@ header .div-menu nav div a {
   text-decoration: none;
   font-weight: bold !important;
 }
-
 header .div-menu nav div a:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
   color: #5e17eb;
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu nav div a {
     color: #434964;
   }
 }
-
 header .div-menu .icono-menu {
   width: 50%;
   display: none;
 }
-
 header .div-menu .icono-menu #boton-icono {
   padding: 10px;
   font-size: 38px;
   color: #5e17eb;
 }
-
 @media screen and (max-width: 550px) {
   header .div-menu .icono-menu #boton-icono {
     font-size: 50px;
+    font-weight: bold;
   }
 }
-
 header .div-menu .icono-menu #boton-icono2 {
   display: none;
   padding: 10px;
   font-size: 38px;
   color: #5e17eb;
 }
-
 @media screen and (max-width: 550px) {
   header .div-menu .icono-menu #boton-icono2 {
     font-size: 50px;
   }
 }
-
 @media screen and (max-width: 700px) {
   header .div-menu .icono-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
-
 header .div-header {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-
 header .div-header .divText {
   width: 50%;
   height: 65vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding-top: 50px;
 }
-
 @media screen and (max-width: 950px) {
   header .div-header .divText {
     width: 100%;
     height: 50vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
   }
   header .div-header .divText h1 {
@@ -439,100 +316,66 @@ header .div-header .divText {
     width: 50% !important;
   }
 }
-
 @media screen and (max-width: 712px) {
   header .div-header .divText {
     padding: 20px 0px;
   }
 }
-
 @media screen and (max-width: 550px) {
   header .div-header .divText {
     padding: 10px 0px;
   }
 }
-
 header .div-header .divText i {
   font-size: 80px;
   color: white;
   cursor: pointer;
 }
-
 header .div-header .divText h1 {
   font-size: 50px;
   color: #434964;
   font-weight: bold !important;
 }
-
 @media screen and (max-width: 550px) {
   header .div-header .divText h1 {
     padding: 20px 0px;
   }
 }
-
 header .div-header .divText h1 span {
   color: #5e17eb;
 }
-
 header .div-header .divText p {
   font-size: 16px;
   color: #434964;
   font-weight: bold;
 }
-
 header .div-header .divText #div-botones {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 @media screen and (max-width: 950px) {
   header .div-header .divText #div-botones {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 header .div-header .divImg {
   width: 50%;
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 @media screen and (max-width: 950px) {
   header .div-header .divImg {
     width: 100%;
     height: 50vh !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: center;
+    align-items: flex-start;
   }
   header .div-header .divImg #svg1 {
     padding: 10px;
@@ -543,43 +386,27 @@ header .div-header .divImg {
     width: 40% !important;
   }
 }
-
 @media screen and (max-width: 550px) {
   header .div-header .divImg {
     height: 30vh !important;
   }
 }
-
-@-webkit-keyframes traslacion {
-  100% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-}
-
 @keyframes traslacion {
   100% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
 }
-
 header .div-header .divImg #svg1 {
   padding: 10px;
   width: 40%;
-  -webkit-animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-          animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation: traslacion 1.5s ease-in-out 0s infinite alternate;
+  animation-duration: 1.5s;
 }
-
 header .div-header .divImg #svg2 {
   padding: 10px;
   width: 35%;
-  -webkit-animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-          animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation: traslacion 1.5s ease-in-out 0s infinite alternate;
+  animation-duration: 1.5s;
 }
 
 .seccion1 {
@@ -587,97 +414,70 @@ header .div-header .divImg #svg2 {
   height: auto;
   padding: 20px 0px;
 }
-
 @media screen and (max-width: 550px) {
   .seccion1 {
     padding: 0px !important;
   }
 }
-
 .seccion1 h1 {
   text-align: center;
   font-size: 30px;
   padding: 20px 0px 0px;
   color: #434964;
 }
-
 .seccion1 h1 span {
   color: #5e17eb;
 }
-
 .seccion1 .divSec1 {
   margin: 20px 0px;
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 .seccion1 .divSec1 .tarjetaServicio {
   width: 300px;
   padding: 40px 35px 40px;
   margin: 20px auto;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
-          box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
+  box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
 }
-
 @media screen and (max-width: 550px) {
   .seccion1 .divSec1 .tarjetaServicio {
-    -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
-            box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
+    box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
   }
 }
-
 .seccion1 .divSec1 .tarjetaServicio:hover {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
   background: #5e17eb;
 }
-
 .seccion1 .divSec1 .tarjetaServicio:hover a {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
   color: white;
   background: #00bdd3;
   border: 2px solid #00bdd3;
 }
-
 .seccion1 .divSec1 .tarjetaServicio:hover a::before {
   color: white;
 }
-
 .seccion1 .divSec1 .tarjetaServicio:hover #icono {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
   color: white !important;
 }
-
 .seccion1 .divSec1 .tarjetaServicio:hover h1 {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
   color: white;
 }
-
 .seccion1 .divSec1 .tarjetaServicio:hover p {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
   color: white;
 }
-
 .seccion1 .divSec1 .tarjetaServicio div {
   text-align: center;
   font-weight: bold;
   color: #434964;
 }
-
 .seccion1 .divSec1 .tarjetaServicio div a {
   text-decoration: none;
   color: transparent;
@@ -685,35 +485,29 @@ header .div-header .divImg #svg2 {
   border-radius: 20px;
   border: 2px solid #5e17eb;
 }
-
 .seccion1 .divSec1 .tarjetaServicio div a::before {
   font-size: 20px;
   font-weight: bold;
   background: transparent;
-  content: '→';
+  content: "→";
   color: #5e17eb;
 }
-
 .seccion1 .divSec1 .tarjetaServicio .icoTarjeta {
   width: 100%;
   padding: 20px 0px 10px;
 }
-
 .seccion1 .divSec1 .tarjetaServicio .icoTarjeta #icono {
   font-size: 60px;
   color: #5e17eb;
 }
-
 .seccion1 .divSec1 .tarjetaServicio .textTarjeta {
   width: 100%;
   padding: 20px 0px 40px;
 }
-
 .seccion1 .divSec1 .tarjetaServicio .textTarjeta h1 {
   font-size: 25px;
   padding: 10px 0px;
 }
-
 .seccion1 .divSec1 .tarjetaServicio .textTarjeta p {
   font-size: 15px;
 }
@@ -722,47 +516,27 @@ header .div-header .divImg #svg2 {
   width: 100%;
   height: auto;
 }
-
 .seccion2 .divSec2 {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 .seccion2 .divSec2 div {
   width: 50%;
   height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   text-align: left !important;
 }
-
 @media screen and (max-width: 950px) {
   .seccion2 .divSec2 div {
     width: 100%;
     height: auto !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center !important;
     padding: 20px 0px;
   }
@@ -773,24 +547,20 @@ header .div-header .divImg #svg2 {
     width: 70% !important;
   }
 }
-
 .seccion2 .divSec2 div h1 {
   font-size: 50px;
   color: #434964;
   padding: 10px 0px;
 }
-
 .seccion2 .divSec2 div h1 span {
   color: #5e17eb;
 }
-
 .seccion2 .divSec2 div p {
   font-size: 16px;
   font-weight: bold;
   color: #434964;
   padding: 10px 0px;
 }
-
 .seccion2 .divSec2 div img {
   width: 90%;
 }
@@ -799,40 +569,26 @@ header .div-header .divImg #svg2 {
   width: 100%;
   background-color: #434964;
 }
-
 .seccion3 .divSec3 {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .seccion3 .divSec3 div {
   width: 50%;
   text-align: center;
   padding: 20px 0px;
 }
-
 .seccion3 .divSec3 div h1 {
   color: white;
   font-size: 50px;
 }
-
 .seccion3 .divSec3 div p {
   font-size: 16px;
   color: white;
 }
-
 .seccion3 .divSec3 div p span {
   color: #00bdd3;
 }
@@ -840,48 +596,26 @@ header .div-header .divImg #svg2 {
 .seccion4 {
   width: 100%;
 }
-
 .seccion4 .divSec4 {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .seccion4 .divSec4 div {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 30px 0px;
 }
-
 @media screen and (max-width: 750px) {
   .seccion4 .divSec4 div {
     width: 100%;
     height: auto !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center !important;
     padding: 10px 0px;
   }
@@ -892,47 +626,39 @@ header .div-header .divImg #svg2 {
     width: 80% !important;
   }
 }
-
 .seccion4 .divSec4 div h1 {
   font-size: 40px;
   padding: 10px 0px;
   color: #5e17eb;
 }
-
 .seccion4 .divSec4 div a {
   padding: 15px 15px;
   text-decoration: none;
 }
-
 .seccion4 .divSec4 div a ion-icon {
   font-size: 35px;
   color: #434964;
 }
-
 .seccion4 .divSec4 div a:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
   background-color: #5e17eb;
   border-radius: 100%;
 }
-
 .seccion4 .divSec4 div a:hover ion-icon {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
   color: white;
 }
 
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot);
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
-
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -951,8 +677,7 @@ header .div-header .divImg #svg2 {
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
 /* Rules for sizing the icon. */
@@ -1021,4 +746,3 @@ header .div-header .divImg #svg2 {
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3);
 }
-/*# sourceMappingURL=main.css.map */

@@ -25,7 +25,6 @@ body{
     position: fixed;
     transition: all .2s;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(4, 0, 26, 0.295);
     p {
         color:$negrito !important;
     }
@@ -98,11 +97,26 @@ header{
                 img {
                     width: 15%;
                     padding: 10px;
+                    margin-top: 10px;
                 }
             }
+
             @media screen and (max-width:$break-700px){
-                width: 50%;
+                width: 50% !important;
+                height: 8vh !important;
                 justify-content: flex-start;
+            }
+            @media screen and (max-width:550px){
+                img {
+                    margin-top: 40px !important;
+                    width: 40% !important;
+                }
+            }
+            @media screen and (max-width:414px){
+                img {
+                    margin-top: 10px !important;
+                    width: 30% !important;
+                }
             }
         }
 
@@ -168,12 +182,18 @@ header{
                 padding: 10px;
                 font-size: 38px;
                 color: $marino;
+                @media screen and (max-width:550px){
+                    font-size: 50px;
+                }
             }
             #boton-icono2 {
                 display: none;
                 padding: 10px;
                 font-size: 38px;
                 color: $marino;
+                @media screen and (max-width:550px){
+                    font-size: 50px;
+                }
             }
             @media screen and (max-width:700px){
                 display: flex;
@@ -213,7 +233,10 @@ header{
                 }
             }
             @media screen and (max-width:712px) {
-                padding-top:40px;
+                padding: 20px 0px;
+            }
+            @media screen and (max-width:550px){
+                padding:10px 0px;
             }
             i{
                 font-size: 80px;
@@ -224,6 +247,9 @@ header{
                 font-size: 50px;
                 color: $negrito;
                 font-weight: bold !important;
+                @media screen and (max-width:550px){
+                    padding: 20px 0px;
+                }
                 span {
                     color: $marino;
                 }
@@ -269,6 +295,10 @@ header{
                 }
             }
 
+            @media screen and (max-width:550px){
+                height: 30vh !important;
+            }
+
             //Animacion de las imagenes
 
             @keyframes traslacion {
@@ -293,6 +323,10 @@ header{
 .seccion1{
     width: 100%;
     height: auto;
+    padding: 20px 0px;
+    @media screen and (max-width:550px){
+        padding: 0px !important;
+    }
     h1 {
         text-align: center;
         font-size: 30px;
@@ -315,6 +349,9 @@ header{
             margin: 20px auto;
             border-radius: 50px;
             box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
+            @media screen and (max-width:550px){
+                box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.034);
+            }
             &:hover{
                 transition: all .4s;
                 background: $marino;

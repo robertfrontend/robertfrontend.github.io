@@ -752,7 +752,7 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion2 .divSec2 div {
-  width: 90%;
+  width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,13 +800,14 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion2 .divSec2 div p {
-  font-size: 22px;
+  font-size: 18px;
   color: #434964;
   padding: 10px 0px;
 }
 
 .seccion2 .divSec2 div img {
-  width: 30%;
+  width: 50%;
+  padding: 10px 0px;
 }
 
 .seccion3 {

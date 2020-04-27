@@ -1,38 +1,58 @@
 @charset "UTF-8";
 .contenedor {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media screen and (max-width: 500px) {
   .contenedor {
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 
-#boton-1 {
+#miLogo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #5e17eb;
+}
+
+#miLogo span {
+  color: white;
+}
+
+#miLogo::before {
+  content: '< ';
+}
+
+#miLogo::after {
+  content: '/>';
+}
+
+.boton-1 {
   padding: 10px 30px;
   background: #5e17eb;
   margin: 10px 0px;
-  border-radius: 50px;
+  border-radius: 5px;
   text-decoration: none;
   color: white !important;
   font-weight: 400;
-  font-size: 16px !important;
+  font-size: 20px !important;
   border: 2px solid #5e17eb;
   font-weight: bold;
+  -webkit-box-shadow: 0px 2px 2px #5e17eb;
+          box-shadow: 0px 2px 2px #5e17eb;
 }
 
-#boton-1:hover {
+.boton-1:hover {
   -webkit-transition: all .3s;
   transition: all .3s;
   border: 2px solid #434964;
   background-color: transparent;
-  color: #434964 !important;
+  color: white !important;
 }
 
-#boton-2 {
+.boton-2 {
   padding: 10px 30px;
   background: #00bdd3;
   margin: 10px 0px;
@@ -45,7 +65,7 @@
   font-weight: bold;
 }
 
-#boton-2:hover {
+.boton-2:hover {
   -webkit-transition: all .3s;
   transition: all .3s;
   border: 2px solid #00bdd3;
@@ -54,15 +74,33 @@
 }
 
 .contenedor {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media screen and (max-width: 500px) {
   .contenedor {
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
+}
+
+#miLogo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #5e17eb;
+}
+
+#miLogo span {
+  color: white;
+}
+
+#miLogo::before {
+  content: '< ';
+}
+
+#miLogo::after {
+  content: '/>';
 }
 
 * {
@@ -84,76 +122,7 @@ body {
   font-weight: 400;
   cursor: auto;
   overflow-x: hidden;
-}
-
-.flotar {
-  top: 0;
-  position: fixed;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  background-color: white;
-}
-
-.flotar p {
-  color: #434964 !important;
-}
-
-.flotar a {
-  color: #434964 !important;
-  font-weight: 600;
-}
-
-.flotar a:hover {
-  color: #00bdd3 !important;
-}
-
-.flotar i {
-  margin-left: 80px;
-  color: #5e17eb !important;
-}
-
-@media screen and (max-width: 348px) {
-  .flotar i {
-    margin-left: 30px;
-  }
-}
-
-.activador-menu {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  top: 68px !important;
-  right: 0% !important;
-}
-
-@-webkit-keyframes colorear {
-  0% {
-    color: #5e17eb;
-  }
-  100% {
-    color: #00bdd3;
-  }
-}
-
-@keyframes colorear {
-  0% {
-    color: #5e17eb;
-  }
-  100% {
-    color: #00bdd3;
-  }
-}
-
-.botonm {
-  color: rgba(3, 0, 0, 0.705) !important;
-  display: none !important;
-}
-
-.botom2 {
-  display: block !important;
-  -webkit-transition: all 1.2s;
-  transition: all 1.2s;
-  -webkit-animation: colorear .6s infinite;
-          animation: colorear .6s infinite;
+  background-color: #00000c;
 }
 
 header {
@@ -161,28 +130,51 @@ header {
   height: auto;
 }
 
-header .div-menu {
+header .divMenu {
   width: 100%;
-  height: auto;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 10;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (max-width: 700px) {
-  header .div-menu {
-    background-color: white;
+@media screen and (max-width: 950px) {
+  header .divMenu {
+    height: 10vh;
   }
 }
 
-header .div-menu .divLogo {
-  width: 25%;
-  height: 12vh;
+header .divMenu .logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+  header .divMenu .logo p {
+    font-size: 20px !important;
+  }
+}
+
+header .divMenu nav {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,8 +186,93 @@ header .div-menu .divLogo {
           align-items: center;
 }
 
-header .div-menu .divLogo a {
+header .divMenu nav .divIcoMenu {
+  padding: 10px;
+  width: 40px;
+  border: 5px solid #5e17eb;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 950px) {
+  header .divMenu nav .divIcoMenu {
+    width: 30px;
+  }
+}
+
+header .divMenu nav .divIcoMenu .icoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+  header .divMenu nav .divIcoMenu .icoMenu ion-icon {
+    font-size: 30px !important;
+  }
+}
+
+header .divMenu nav .divIcoMenu .icoMenu ion-icon {
+  font-size: 40px;
+  color: white;
+}
+
+header .divMenu nav .linkMenu {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 0px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+header .divMenu nav .linkMenu p {
+  text-align: center;
+  color: #434964;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header .divMenu nav .linkMenu div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 20px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+header .divMenu nav .linkMenu div #miLogo span {
+  color: #434964 !important;
+}
+
+header .divMenu nav .linkMenu div a {
   text-decoration: none;
+  color: #5e17eb;
+  font-weight: bold;
+  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,184 +282,19 @@ header .div-menu .divLogo a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #5e17eb;
-  font-weight: bold;
 }
 
-header .div-menu .divLogo a img {
-  width: 15%;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 700px) {
-  header .div-menu .divLogo {
-    width: 50% !important;
-    height: 8vh !important;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  header .div-menu .divLogo img {
-    margin-top: 40px !important;
-    width: 40% !important;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  header .div-menu .divLogo img {
-    margin-top: 10px !important;
-    width: 30% !important;
-  }
-}
-
-header .div-menu nav {
-  width: 70%;
-  height: 12vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1000;
-}
-
-@media screen and (max-width: 700px) {
-  header .div-menu nav {
-    max-width: 70%;
-    height: 100vh !important;
-    position: fixed;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    right: -100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background-color: white;
-  }
-}
-
-header .div-menu nav .desc-menu {
-  display: none;
-}
-
-@media screen and (max-width: 700px) {
-  header .div-menu nav .desc-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .div-menu nav .desc-menu p {
-    text-align: center;
-    font-size: 16px;
-    color: #434964;
-    line-height: 30px;
-    font-size: 16px !important;
-  }
-}
-
-@media screen and (max-width: 700px) and (max-width: 700px) {
-  header .div-menu nav .desc-menu p {
-    font-size: 16px;
-  }
-}
-
-header .div-menu nav div {
-  width: auto;
-  padding: 0px 12px;
-}
-
-@media screen and (max-width: 700px) {
-  header .div-menu nav div {
-    padding: 20px 40px;
-  }
-}
-
-header .div-menu nav div a {
-  padding: 10px;
-  font-size: 16px;
+header .divMenu nav .linkMenu div a:hover {
   color: #434964;
-  text-decoration: none;
-  font-weight: bold !important;
 }
 
-header .div-menu nav div a:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  color: #5e17eb;
+header .divMenu nav .linkMenu div a ion-icon {
+  font-size: 20px;
+  padding: 0px 10px;
 }
 
-@media screen and (max-width: 700px) {
-  header .div-menu nav div a {
-    color: #434964;
-  }
-}
-
-header .div-menu .icono-menu {
-  width: 50%;
-  display: none;
-}
-
-header .div-menu .icono-menu #boton-icono {
-  padding: 10px;
-  font-size: 38px;
-  color: #5e17eb;
-}
-
-@media screen and (max-width: 550px) {
-  header .div-menu .icono-menu #boton-icono {
-    font-size: 50px;
-  }
-}
-
-header .div-menu .icono-menu #boton-icono2 {
-  display: none;
-  padding: 10px;
-  font-size: 38px;
-  color: #5e17eb;
-}
-
-@media screen and (max-width: 550px) {
-  header .div-menu .icono-menu #boton-icono2 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  header .div-menu .icono-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+header .divMenu nav .linkMenu div .boton-1:hover {
+  color: #434964 !important;
 }
 
 header .div-header {
@@ -406,8 +318,20 @@ header .div-header {
   margin: 20px 0px;
 }
 
+@media screen and (max-width: 950px) {
+  header .div-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px !important;
+  }
+}
+
 header .div-header .divText {
-  width: 50%;
+  width: 60%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +352,17 @@ header .div-header .divText {
 
 @media screen and (max-width: 950px) {
   header .div-header .divText {
+    padding: 20px 0px !important;
+    margin: 20px 0px !important;
+  }
+}
+
+header .div-header .divText div {
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 950px) {
+  header .div-header .divText {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -437,21 +372,18 @@ header .div-header .divText {
   header .div-header .divText h1 {
     font-size: 40px !important;
   }
-  header .div-header .divText img {
-    width: 50% !important;
-  }
 }
 
 @media screen and (max-width: 712px) {
   header .div-header .divText {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 }
 
 @media screen and (max-width: 550px) {
   header .div-header .divText {
-    padding: 20px 0px;
-    margin: 20px 0px;
+    padding: 10px 0px;
+    margin: 10px 0px;
   }
 }
 
@@ -463,13 +395,13 @@ header .div-header .divText i {
 
 header .div-header .divText h1 {
   font-size: 50px;
-  color: #434964;
+  color: white;
   font-weight: bold !important;
 }
 
 @media screen and (max-width: 550px) {
   header .div-header .divText h1 {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -507,7 +439,7 @@ header .div-header .divText #div-botones {
 }
 
 header .div-header .divImg {
-  width: 50%;
+  width: 40%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,67 +456,59 @@ header .div-header .divImg {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 40px 0px;
-  margin: 40px 0px;
+  padding: 10px 0px;
+  margin: 10px 0px;
 }
 
 @media screen and (max-width: 950px) {
   header .div-header .divImg {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    padding: 0;
+    margin: 0;
   }
-  header .div-header .divImg #svg1 {
-    padding: 10px;
-    width: 40% !important;
-  }
-  header .div-header .divImg #svg2 {
-    padding: 10px;
-    width: 40% !important;
+  header .div-header .divImg img {
+    width: 70% !important;
   }
 }
 
-@media screen and (max-width: 550px) {
-  header .div-header .divImg {
-    padding: 20px 0px;
-    margin: 20px 0px;
-  }
+header .div-header .divImg img {
+  width: 100%;
 }
 
-@-webkit-keyframes traslacion {
-  100% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
+.seccionInfo {
+  width: 100%;
 }
 
-@keyframes traslacion {
-  100% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
+.seccionInfo .divInfo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid rgba(220, 220, 220, 0.158);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.158);
 }
 
-header .div-header .divImg #svg1 {
+.seccionInfo .divInfo div {
   padding: 10px;
-  width: 40%;
-  -webkit-animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-          animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  text-align: center;
 }
 
-header .div-header .divImg #svg2 {
-  padding: 10px;
-  width: 35%;
-  -webkit-animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-          animation: traslacion 1.5s ease-in-out 0s infinite alternate;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+.seccionInfo .divInfo div ion-icon {
+  color: white;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+
+.seccionInfo .divInfo div p {
+  color: white;
+  font-size: 20px;
+  padding: 10px 0px;
 }
 
 .seccion1 {
@@ -601,9 +525,10 @@ header .div-header .divImg #svg2 {
 
 .seccion1 h1 {
   text-align: center;
-  font-size: 30px;
-  padding: 20px 0px 0px;
-  color: #434964;
+  font-size: 40px;
+  padding: 20px 10px;
+  line-height: 50px;
+  color: white;
 }
 
 .seccion1 h1 span {
@@ -626,8 +551,8 @@ header .div-header .divImg #svg2 {
 }
 
 .seccion1 .divSec1 .tarjetaServicio {
-  width: 300px;
-  padding: 40px 35px 40px;
+  width: 250px;
+  padding: 25px 35px;
   margin: 20px auto;
   border-radius: 50px;
   -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
@@ -680,7 +605,7 @@ header .div-header .divImg #svg2 {
 .seccion1 .divSec1 .tarjetaServicio div {
   text-align: center;
   font-weight: bold;
-  color: #434964;
+  color: white;
 }
 
 .seccion1 .divSec1 .tarjetaServicio div a {
@@ -688,7 +613,7 @@ header .div-header .divImg #svg2 {
   color: transparent;
   padding: 6px 30px;
   border-radius: 20px;
-  border: 2px solid #5e17eb;
+  border: 2px solid white;
 }
 
 .seccion1 .divSec1 .tarjetaServicio div a::before {
@@ -696,7 +621,7 @@ header .div-header .divImg #svg2 {
   font-weight: bold;
   background: transparent;
   content: '→';
-  color: #5e17eb;
+  color: white;
 }
 
 .seccion1 .divSec1 .tarjetaServicio .icoTarjeta {
@@ -706,7 +631,7 @@ header .div-header .divImg #svg2 {
 
 .seccion1 .divSec1 .tarjetaServicio .icoTarjeta #icono {
   font-size: 60px;
-  color: #5e17eb;
+  color: white;
 }
 
 .seccion1 .divSec1 .tarjetaServicio .textTarjeta {
@@ -726,12 +651,10 @@ header .div-header .divImg #svg2 {
 
 .seccion2 {
   width: 100%;
-  height: auto;
 }
 
 .seccion2 .divSec2 {
   width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,75 +662,48 @@ header .div-header .divImg #svg2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px 0px;
-  padding: 20px 0px;
-}
-
-.seccion2 .divSec2 div {
-  width: 60%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 5px;
 }
 
 @media screen and (max-width: 950px) {
-  .seccion2 .divSec2 div {
-    width: 100%;
-    height: auto !important;
+  .seccion2 .divSec2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center !important;
-    padding: 20px 0px;
   }
-  .seccion2 .divSec2 div h1 {
+  .seccion2 .divSec2 h1 {
     font-size: 40px !important;
   }
-  .seccion2 .divSec2 div img {
-    width: 70% !important;
-  }
+}
+
+.seccion2 .divSec2 div {
+  padding: 50px 0px;
+  width: 500px;
 }
 
 .seccion2 .divSec2 div h1 {
   font-size: 50px;
-  color: #434964;
-  padding: 10px 0px;
-}
-
-.seccion2 .divSec2 div h1 span {
-  color: #5e17eb;
+  color: white;
 }
 
 .seccion2 .divSec2 div p {
-  font-size: 18px;
   color: #434964;
-  padding: 10px 0px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .seccion2 .divSec2 div img {
-  width: 50%;
-  padding: 10px 0px;
+  width: 100%;
 }
 
 .seccion3 {
@@ -912,7 +808,7 @@ header .div-header .divImg #svg2 {
 .seccion4 .divSec4 div h1 {
   font-size: 40px;
   padding: 10px 0px;
-  color: #434964;
+  color: white;
 }
 
 .seccion4 .divSec4 div h1 span {
@@ -932,8 +828,6 @@ header .div-header .divImg #svg2 {
 .seccion4 .divSec4 div a:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
-  background-color: #25D366;
-  border-radius: 100%;
 }
 
 .seccion4 .divSec4 div a:hover ion-icon {

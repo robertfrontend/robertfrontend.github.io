@@ -1,27 +1,28 @@
 @import './variables';
 // Botones
 
-#boton-1 {
+.boton-1 {
     padding: 10px 30px;
     background: $marino;
     margin: 10px 0px;
-    border-radius:50px;
+    border-radius:5px;
     text-decoration: none;
     color: white !important;
     font-weight: 400;
-    font-size: 16px !important;
+    font-size: 20px !important;
     border: 2px solid $marino;
     font-weight: bold;
+    box-shadow: 0px 2px 2px $marino;
     &:hover{
         transition: all .3s;
         border: 2px solid $negrito;
         background-color: transparent;
-        color: $negrito !important;
+        color: white !important;
     }
 }
 
 
-#boton-2 {
+.boton-2 {
     padding: 10px 30px;
     background: $cielo;
     margin: 10px 0px;

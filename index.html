@@ -22,42 +22,21 @@
 	<header>
 		<div class="color">
 			<!--Menu-->
-			<div id="div-menu" class="div-menu">
-				<div class="divLogo">
-					<a href="#">
-						<img src="https://i.ibb.co/xL8Mv1L/logooriginal.png" alt="logooriginal" border="0">
-					</a>
-				</div>
-				<nav id="menu">
-					<div class="">
-						<a  href="#inicio">
-							Inicio
-						</a>
+			<div class="contenedor">
+				<div class="divMenu">
+					<div class="logo">
+						<p id="miLogo" >Robert <span>Developer </span></p>
 					</div>
-					<div class="">
-						<a href="#servicios">Servicios</a>
-					</div>
-					<div class="">
-						<a href="#nosotros">
-							Nosotros
-						</a>
-					</div>
-					<div class="">
-						<a id="boton-1" href="#contactos">
-							Contactos
-						</a>
-					</div>
-					<br>
-					<div class="desc-menu">
-						<p>Wed Developer &copy; Robertrm0 </p>
-					</div>
-				</nav>
-				<div class="icono-menu">
-					<a href="#menu" id="boton-menu">
-						<ion-icon id="boton-icono" name="menu-outline"></ion-icon>
+					<nav>
+						<div class="divIcoMenu">
+							<a href="#" class="icoMenu">
+								<ion-icon name="menu-outline"></ion-icon>
+							</a>
+						</div>
+						<div class="linkMenu">
 
-						<ion-icon id="boton-icono2" name="close-outline"></ion-icon>
-					</a>
+						</div>
+					</nav>
 				</div>
 			</div>
 			<!--Fin del menu-->
@@ -65,28 +44,24 @@
 				<!--Introduccion-->
 				<div class="div-header">
 					<div class="divText">	
-						<!-- <i class="material-icons">
-							developer_mode
-						</i>
-						<br> -->
-						<h1>
-							Impulsa tu <span>negocio</span> al mundo <span>digital.</span>
-							<ion-icon name="earth-outline"></ion-icon>
-						</h1>
-						<br>
-						<p>
-							Consigue nuevos clientes digitales.
-						</p>
-						<br>
+						<div>
+							<h1>
+								Paginas y sitios web adaptados a tu negocio
+							</h1>
+						</div>
+						<div>
+							<p>
+								Consigue nuevos clientes digitales.
+							</p>
+						</div>
 						<div id="div-botones">
-							<a href="#bot" id="boton-1">
+							<a href="#bot" class="boton-1">
 								Comenzar
 							</a>
 						</div>
 					</div>
 					<div class="divImg">
-						<img id="svg1" src="./imagenes/svg4.svg" alt="">
-						<img id="svg2" src="./imagenes/svg5.svg" alt="">
+						<img id="svg1" src="./images/2-img.svg" alt="">
 					</div>
 
 					<br>
@@ -98,6 +73,31 @@
 	</header>
 
 	<!--Fin del header-->
+
+	<section class="seccionInfo">
+		<div class="contenedor">
+			<div class="divInfo">
+				<div class="">
+					<ion-icon name="desktop-outline"></ion-icon>
+					<p>Modernos</p>
+				</div>
+				<div class="">
+
+					
+					<ion-icon name="phone-portrait-outline"></ion-icon>
+					<p>Adaptables</p>
+				</div>
+				<div class="">
+					<ion-icon name="flash-outline"></ion-icon>
+					<p>Rapidos</p>
+				</div>
+				<div class="">
+					<ion-icon name="happy-outline"></ion-icon>
+					<p>Interactivos</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<section class="seccion1" id="servicios">
 		<div>
@@ -149,23 +149,6 @@
 						<a href="#contactos"></a>
 					</div>
 				</div>
-
-				<!-- <div class="tarjetaServicio">
-					<div class="icoTarjeta">
-						<ion-icon id="icono" name="bar-chart-outline"></ion-icon>
-					</div>
-					<div class="textTarjeta">
-						<h1>Marketing</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, temporibus.
-						</p>
-					</div>
-					<div>
-						<a href=""></a>
-					</div>
-				</div> -->
-
-				<!--Fin de tarjeta de servicios-->
 			</div>
 		</div>
 	</section>
@@ -173,27 +156,19 @@
 	<section class="seccion2" id="nosotros">
 		<div class="contenedor">
 			<div class="divSec2">
-				<div class="">
-					<h1>
-						<!-- Desarrollo <span>digital</span> para tu 
-						<span>empresa</span> -->
-						Quiénes Somos?
-					</h1>
-				</div>
-
-				<div class="">
-					<img src="./imagenes/svg8.svg" alt="">
-				</div>
-
 				<div>
+					<h1>Quienes Somos?</h1>
+					<br>
+					<br>
 					<p>
-						Somos un grupo de jóvenes apasionados por la tecnología y la 
-						innovación, estamos aqui para ayudar a personas, pequeñas y
-						grandes empresa con su transformación digital.
+						Lorem ipsum dolor sit atque nesciunt eaque sunt quam, perferendis, deleniti mollitia obcaecati accusantium. Ipsam, animi.
 					</p>
+					<br>
+					<br>
+					<a href="#" class="boton-1" >Unete!</a>
 				</div>
 				<div>
-					<a id="boton-1" href="#">Comenzar</a>
+					<img src="./images/1-img.svg" alt="">
 				</div>
 			</div>
 		</div>
@@ -208,7 +183,7 @@
 					</h1>
 				</div>
 				<div>
-					<a href="https://wa.me/18095226730?texto=Buenas">
+					<a href="https://wa.me/18299635218?texto=Buenas">
 						<ion-icon name="logo-whatsapp"></ion-icon>
 					</a>
 				</div>
@@ -225,7 +200,7 @@
 		</div>
 	</footer>
 	
-	<script src="index.js"></script>
+	<script src="./Js/script.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -4,10 +4,27 @@ $negrito:  #434964;
 
 
 .contenedor {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     @media screen and (max-width:500px) {
-        margin-right: 2%;
-        margin-left: 2%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+#miLogo{
+    font-size: 30px;
+    font-weight: bold;
+    color: $marino;
+    
+    span {
+        color: white;
+    }
+
+    &::before{
+        content: '< ';
+    }
+    &::after{
+        content: '/>';
     }
 }

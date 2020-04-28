@@ -1,10 +1,10 @@
 @import './botones';
 @import './variables';
 @import './letras';
-
+#00051dd2#00051de3
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
     box-sizing: content-box;
 }
@@ -19,7 +19,8 @@ body{
     font-weight: 400;
     cursor:auto;
     overflow-x: hidden;
-    background-color: rgb(0, 0, 12);
+    // background-color: rgb(0, 0, 12);
+    background-color: white;
 }
 
 $break-700px: 700px;
@@ -29,6 +30,28 @@ $break-iphone7plus: 414px;
 header{
     width: 100%;
     height: auto;   
+    z-index: 10;
+    .sesgo {
+        z-index: -30;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        div {
+            width: 80%;
+            height: 700px;
+            background-color: $marino;
+            border-end-end-radius: 50%;
+            @media screen and (max-width:950px) {
+                width: 100%;
+                height: 800px;
+                border-end-end-radius: 0%;
+    
+            }
+        }   
+    }
     // Menu
     .divMenu {
         width: 100%;
@@ -63,8 +86,9 @@ header{
                 padding: 10px;
                 width: 40px;
                 // background-color: $marino;
-                border: 5px solid $marino;
-                border-radius: 50%;
+                // border: 5px solid $marino;
+                // border-radius: 50%;
+                z-index: 100000;
                 @media screen and (max-width:950px) {
                     width: 30px;
                 }
@@ -73,65 +97,90 @@ header{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    z-index: 100000;
                     @media screen and (max-width:950px) {
                         ion-icon{
                             font-size: 30px !important;
+                            z-index: 100000;
                         }
                     }
                     ion-icon{
-                        font-size: 40px;
-                        color: white;
+                        font-size: 50px;
+                        color: $negrito;
                     }
                 }
             }
             .linkMenu{
                 position: absolute;
-                top: 150px;
+                top: 0px;
                 right: 0;
-                width: 0px;
-                height: auto;
-                background-color: white;
-                border-radius: 10px;
+                width: 0%;
+                height: 0;
+                background-color:rgb(1, 0, 10);
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
                 flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                transition: all .4s;
+                justify-content: flex-start;
+                align-items:flex-start;
+                transition: all .6s;
+                padding: 0px 0px;
+                z-index: 1000;
                 p{
                     text-align: center;
                     color: $negrito;
                     font-weight: bold;
                     font-size: 20px;
                 }
+                .padre{
+                    width: 0%;
+                    height: 0%;
+                    margin: 100px 0px;
+                }
                 div {
+                    width: 50%;
+                    margin: 10px 40px;
                     display: flex;
-                    padding: 30px 20px;
+                    flex-direction: column;
+                    padding: 10px 20px;
                     transition: all .4s;
+                    text-align: left;
+                    justify-content: flex-start;
+                    align-items: flex-start;
                     #miLogo {
                         span{
-                            color: $negrito !important;
+                            color: white !important;
                         }
                     }
                     a {
+                        padding: 10px 0px;
                         text-decoration: none;
-                        color: $marino;
+                        color: white;
                         font-weight: bold;
-                        font-size: 25px;
+                        font-size: 32px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         &:hover {
-                            color: $negrito;   
+                            color: $marino;   
                         }
                         ion-icon{
                             font-size: 20px;
                             padding: 0px 10px;
                         }
+                        &:hover{
+                            transition: all .2s;
+                            &::after{
+                                transition: all .4s;
+                                padding: 0px 5px;
+                                content: '→';
+                                color: white;
+                                font-weight: bold;
+                                
+                            }
+                        }
                     }
 
                     .boton-1 {
-                        &:hover{
-                            color: $negrito !important;
-                        }
+
                     }
                 }
             }
@@ -153,20 +202,28 @@ header{
             padding: 10px 0px !important;
         }
         .divText{
-            width: 60%;
+            width: 50%;
             height: auto;
             display: flex;
             flex-direction: column;
             justify-content:center;
             align-items:flex-start;
-            padding: 40px 0px;
-            margin: 40px 0px;
+            padding: 10px 0px;
+            margin: 10px 0px;
             @media screen and (max-width:950px) {
                 padding: 20px 0px !important;
                 margin: 20px 0px !important;
             }
+            #div-redes{
+                padding: 20px 0px;
+                a {
+                    padding: 20px 10px;
+                    font-size: 30px;
+                    color: $negrito;
+                }
+            }
             div {
-                padding: 10px 0px;
+                padding: 5px 0px;
             }
             @media screen and (max-width:950px) {
                 width: 100%;
@@ -183,14 +240,23 @@ header{
                 padding:10px 0px;
                 margin: 10px 0px;
             }
-            i{
-                font-size: 80px;
-                color: white;
-                cursor: pointer;
+            hr{
+                width: 40px;
+                border:1px solid black;
+                margin: 10px 0px;
+            }
+            h3 {
+                font-size: 25px;
+                font-weight: normal;
+                color:$negrito;
+                span {
+                    color: white;
+                }
             }
             h1{ 
-                font-size: 50px;
+                font-size: 60px;
                 color: white;
+                margin: 0;
                 font-weight: bold !important;
                 @media screen and (max-width:550px){
                     padding: 10px 0px;
@@ -217,15 +283,15 @@ header{
 
         }
         .divImg{
-            width: 40%;
+            width: 50%;
             height: auto;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            padding: 10px 0px;
-            margin: 10px 0px;
+            padding: 0px 0px;
+            margin: 0px 0px;
             @media screen and (max-width:950px) {
                 width: 100%;
                 padding: 0;
@@ -236,32 +302,6 @@ header{
             }
             img {
                 width: 100%;
-            }
-        }
-    }
-}
-
-.seccionInfo{
-    width: 100%;
-    .divInfo{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        border-top: 1px solid rgba(220, 220, 220, 0.158);
-        border-bottom: 1px solid rgba(220, 220, 220, 0.158);
-        div {
-            padding: 10px;
-            text-align: center;
-            ion-icon {
-                color: white;
-                font-size: 40px;
-                padding: 10px 0px;
-            }
-            p {
-                color: white;
-                font-size: 20px;
-                padding: 10px 0px;
             }
         }
     }
@@ -279,7 +319,7 @@ header{
         font-size: 40px;
         padding: 20px 10px;
         line-height: 50px;
-        color: white;
+        color: $negrito;
         span {
             color: $marino;
         }
@@ -291,225 +331,152 @@ header{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        .tarjetaServicio {
-            width: 250px;
-            padding: 25px 35px;
-            margin: 20px auto;
-            border-radius: 50px;
-            box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
-            @media screen and (max-width:550px){
-                box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
+        justify-content: space-around;
+        align-items: center;
+        div {
+            text-align: center;
+            width:300px;
+            height: 40vh;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 20px;
+                color: $marino;
+                font-weight: normal;
             }
-            &:hover{
-                transition: all .4s;
-                background: $marino;
-                a{
-                    transition: all .4s;
-                    color: white;
-                    background: $cielo;
-                    border: 2px solid $cielo;
-                    &::before {
-                        color: white;
-                    }
-                }
-                #icono {
-                    transition: all .4s;
-                    color: white !important;
-                }
-                h1{
-                    transition: all .4s;
-                    color: white;
-                }
-                p{
-                    transition: all .4s;
-                    color: white;
-                }
-            }
-            div {
-                text-align: center;
-                font-weight: bold;
-                color: white;
-                a {
-                    text-decoration: none;
-                    color: transparent;
-                    padding: 6px 30px;
-                    border-radius: 20px;
-                    border: 2px solid white;
-                    &::before{
-                        font-size: 20px;
-                        font-weight: bold;
-                        background: transparent;
-                        content: '→';
-                        color:white;
-                    }
-                }
-            }
-            .icoTarjeta {
-                width: 100%;
-                padding: 20px 0px 10px;
-                #icono{
-                    font-size: 60px;
-                    color: white;
-                }
-            }
-            .textTarjeta {
-                width: 100%;
-                padding: 20px 0px 40px;
-                h1 {
-                    font-size: 25px;
-                    padding: 10px 0px;
-                }
-                p {
-                    font-weight: normal;
-                    font-size: 18px;
-                }
+            p {
+                font-size: 18px;
+                color: $negroso;
+                margin: 0px;
+                padding: 5px 0px;
             }
         }
     }
 }
 
+// Seccion Portafolio
 .seccion2 {
     width: 100%;
+    .titPort{
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        color: $marino;
+    }
     .divSec2 {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: flex-start;
         flex-wrap: wrap;
-        @media screen and (max-width:950px) {
+        margin: 50px 0px;
+        .tarjePor{
+            position: relative;
+            width: 320px;
+            height: 30vh;
+            background-color: rgba(206, 206, 206, 0.404);
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            h1 {
-                font-size: 40px !important;
+            border-radius: 10px;
+
+            .oculto {
+                position: absolute;
+                width: 0%;
+                height: 0;
+                display: none;
+                background-color: black;
+                top: 0;
+                transition: all .10s;
+                border-radius: 10px;
+                .boton-1{
+                    padding: 10px 20px !important; 
+                    font-size: 16px !important;
+                }
+            }
+            &:hover{
+                transition: all .2s;
+                .oculto {
+                    transition: all .2s;
+                    position: absolute;
+                    width: 100%;
+                    height: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgba(0, 6, 39, 0.938);
+                    top: 0;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    h3{
+                        font-size: 16px;
+                        color: white;
+                    }
+
+                }
+                // &::after{
+                //     transition: all .2s;
+                //     position: absolute;
+                //     top: 0;
+                //     content: 'Visitar Sitio';
+                //     width: 100%;
+                //     height: inherit;
+                //     background-color: rgba(0, 0, 0, 0.781);
+                //     display: flex;
+                //     flex-direction: row;
+                //     justify-content: center;
+                //     align-items: center;
+                //     color: white;
+                // }
+            }
+            p {
+                font-size: 20px;
+                color: $negrito;
+                &::after{
+                    content: '🚧';
+                }
+                &::before{
+                    content: '🚧';
+                }
             }
         }
-        div {
-            padding: 50px 0px;
-            width: 500px;
+    }
+}
 
-            h1{
-                font-size: 50px;
-                color: white;
+
+.seccionInfo{
+    width: 100%;
+    .divInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-top: 1px solid rgba(220, 220, 220, 0.158);
+        border-bottom: 1px solid rgba(220, 220, 220, 0.158);
+        margin-top: 50px;
+        div {
+            padding: 10px;
+            text-align: center;
+            ion-icon {
+                color: $negrito;
+                font-size: 40px;
+                padding: 10px 0px;
             }
             p {
                 color: $negrito;
                 font-size: 20px;
-                line-height: 30px;
-            }
-            img {
-                width: 100%;
-            }
-        }
-    }
-}
-
-.seccion3 {
-    width: 100%;
-    background-color: $negrito;
-    .divSec3 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        div{
-            width: 50%;
-            text-align: center;
-            padding: 20px 0px;
-            h1 {
-                color: white;
-                font-size: 50px;
-            }
-            p {
-                font-size: 16px;
-                color: white;
-                span {
-                    color: $cielo;
-                }
-            }
-        }
-    }
-}
-
-.seccion4 {
-    width: 100%;
-    .divSec4{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 20px 0px;
-        padding: 20px 0px;
-        div {
-            width: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            @media screen and (max-width:750px) {
-                width: 100%;
-                height: auto !important;
-                align-items: center;
-                text-align: center !important;
                 padding: 10px 0px;
-                h1 {
-                    font-size: 40px !important;
-                }
-                img {
-                    width: 80% !important;
-                }
-            }
-            
-            h1 {
-                font-size: 40px;
-                padding: 10px 0px;
-                color: white;
-                span {
-                    color: $marino;
-                }
-            }
-            a {
-                padding: 15px 15px;
-                text-decoration: none;
-                ion-icon {
-                    font-size: 50px;
-                    color: #25D366;
-                }
-
-                &:hover{
-                    transition: all .2s;
-                    ion-icon{
-                        transition: all .2s;
-                        color: white;
-                    }
-                }
             }
         }
     }
 }
 
-footer{
-    width: 100%;
-    height: auto;
-    // background-color: rgb(14, 0, 39);
-    .divFooter {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0px;
-        margin: 10px 0px;
-        div {
-            p {
-                color: $negrito;
-                font-weight: bold;
-            }
-        }
-    }
-}
 
 
 @font-face {

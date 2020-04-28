@@ -14,23 +14,27 @@
 
 	<!--material icons-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-
+	  rel="stylesheet">
 </head>
 <body>
 
 	<header>
+		<div class="sesgo">
+			<div></div>
+		</div>
 		<div class="color">
 			<!--Menu-->
 			<div class="contenedor">
 				<div class="divMenu">
 					<div class="logo">
-						<p id="miLogo" >Robert <span>Developer </span></p>
+						<p id="miLogo" >
+							Robert <span>Developer</span>
+						</p>
 					</div>
 					<nav>
 						<div class="divIcoMenu">
 							<a href="#" class="icoMenu">
-								<ion-icon name="menu-outline"></ion-icon>
+								<ion-icon id="icono" name="menu-outline"></ion-icon>
 							</a>
 						</div>
 						<div class="linkMenu">
@@ -45,19 +49,27 @@
 				<div class="div-header">
 					<div class="divText">	
 						<div>
+							<hr  />
+						</div>
+						<div>
+							<h3>Hola, <span>Soy Robert Romero</span>  
+							</h3>
+							<br>
 							<h1>
-								Paginas y sitios web adaptados a tu negocio
+								Web Developer.
 							</h1>
 						</div>
 						<div>
 							<p>
-								Consigue nuevos clientes digitales.
+								Codifico & diseño paginas web hermosas y simples.
+								<br>
+								I❤ Code.
 							</p>
 						</div>
-						<div id="div-botones">
-							<a href="#bot" class="boton-1">
-								Comenzar
-							</a>
+						<div id="div-redes">
+							<a href="#github"><ion-icon name="logo-github"></ion-icon></a>
+							<a href="#instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+							<a href="#twitter"><ion-icon name="logo-twitter"></ion-icon></a>
 						</div>
 					</div>
 					<div class="divImg">
@@ -73,6 +85,76 @@
 	</header>
 
 	<!--Fin del header-->
+	
+	<section class="seccion1" id="servicios">
+		<div>
+			<h1><span>Mis Skills</span></h1>
+		</div>
+		<div class="contenedor">
+			<div class="divSec1">
+				<div>
+					<h3><span>Lenguajes:</span></h3>
+					<p>HTML</p>
+					<p>CSS</p>
+					<p>Sass</p>
+					<p>JavaScript</p>
+				</div>
+				<div>
+					<h3><span>Herramientas de desarrollo:</span></h3>
+					<p>Visual Studio Code</p>
+					<p>Git</p>
+					<p>Github</p>
+					<p>Codepen</p>
+					<p>Bootstrap</p>
+				</div>
+				<div>
+					<h3><span>Lo que hago:</span></h3>
+					<p>Landing Page</p>
+					<p>Paginas Web</p>
+					<p>Maquetacion Web</p>
+					<p>Tiendas Online (Shopify) </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--seccion portafolio-->
+	<section class="seccion2" id="nosotros">
+		<div class="contenedor">
+			<div class="titPort" >
+				<h1>Portafolio:</h1>
+			</div>
+			<div class="divSec2">
+				<div class="tarjePor">
+					<div>
+						<p>Soon</p>
+					</div>
+					<div class="oculto" >
+						<h3>Pizza Hut</h3>
+						<a href="#" class="boton-1">Visitar Web</a>
+					</div>
+				</div>
+				<div class="tarjePor">
+					<div>
+						<p>Soon</p>
+					</div>
+					<div class="oculto" >
+						<h3>Cotiza Seguro</h3>
+						<a href="#" class="boton-1">Visitar Web</a>
+					</div>
+				</div>
+				<div class="tarjePor">
+					<div>
+						<p>Soon</p>
+					</div>
+					<div class="oculto" >
+						<h3>Validacion de Formulario</h3>
+						<a href="#" class="boton-1">Visitar Web</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="seccionInfo">
 		<div class="contenedor">
@@ -82,8 +164,6 @@
 					<p>Modernos</p>
 				</div>
 				<div class="">
-
-					
 					<ion-icon name="phone-portrait-outline"></ion-icon>
 					<p>Adaptables</p>
 				</div>
@@ -98,107 +178,8 @@
 			</div>
 		</div>
 	</section>
-	
-	<section class="seccion1" id="servicios">
-		<div>
-			<h1>Nuestros <span>Servicios</span></h1>
-		</div>
-		<div class="contenedor">
-			<div class="divSec1">
-				<!--Tarjeta de Servicios-->
-				<div class="tarjetaServicio">
-					<div class="icoTarjeta">
-						<!-- <i class="material-icons">web</i> -->
-						<ion-icon id="icono" name="laptop-outline"></ion-icon>
-					</div>
-					<div class="textTarjeta">
-						<h1>Páginas Web</h1>
-						<p>
-							Diseños modernos y adaptados a tu empresa.
-						</p>
-					</div>
-					<div>
-						<a href="#contactos"></a>
-					</div>
-				</div>
-				<div class="tarjetaServicio">
-					<div class="icoTarjeta">
-						<ion-icon id="icono" name="color-palette-outline"></ion-icon>
-					</div>
-					<div class="textTarjeta">
-						<h1>Diseño Gráfico</h1>
-						<p>
-							Diseña tu logo para tu empresa.
-						</p>
-					</div>
-					<div>
-						<a href="#contactos"></a>
-					</div>
-				</div>
-				<div class="tarjetaServicio">
-					<div class="icoTarjeta">
-						<ion-icon id="icono" name="help-outline"></ion-icon>
-					</div>
-					<div class="textTarjeta">
-						<h1>Other</h1>
-						<p>
-							No encuentras el servicio que buscas? Contáctanos.
-						</p>
-					</div>
-					<div>
-						<a href="#contactos"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section class="seccion2" id="nosotros">
-		<div class="contenedor">
-			<div class="divSec2">
-				<div>
-					<h1>Quienes Somos?</h1>
-					<br>
-					<br>
-					<p>
-						Lorem ipsum dolor sit atque nesciunt eaque sunt quam, perferendis, deleniti mollitia obcaecati accusantium. Ipsam, animi.
-					</p>
-					<br>
-					<br>
-					<a href="#" class="boton-1" >Unete!</a>
-				</div>
-				<div>
-					<img src="./images/1-img.svg" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section class="seccion4" id="contactos">
-		<div class="contenedor">
-			<div class="divSec4">
-				<div>
-					<h1>
-						Empieza ya, <span>Contáctanos /</span>
-					</h1>
-				</div>
-				<div>
-					<a href="https://wa.me/18299635218?texto=Buenas">
-						<ion-icon name="logo-whatsapp"></ion-icon>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="contenedor">
-			<div class="divFooter">
-				<div>
-					<p>2020 &copy;Robert Developer</p>
-				</div>
-			</div>
-		</div>
-	</footer>
 	
 	<script src="./Js/script.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

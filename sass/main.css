@@ -14,11 +14,11 @@
 #miLogo {
   font-size: 30px;
   font-weight: bold;
-  color: #5e17eb;
+  color: white !important;
 }
 
 #miLogo span {
-  color: white;
+  color: #00051de8;
 }
 
 #miLogo::before {
@@ -30,7 +30,7 @@
 }
 
 .boton-1 {
-  padding: 10px 30px;
+  padding: 10px 30px !important;
   background: #5e17eb;
   margin: 10px 0px;
   border-radius: 5px;
@@ -45,11 +45,10 @@
 }
 
 .boton-1:hover {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border: 2px solid #434964;
-  background-color: transparent;
-  color: white !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.452);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.452);
 }
 
 .boton-2 {
@@ -88,11 +87,11 @@
 #miLogo {
   font-size: 30px;
   font-weight: bold;
-  color: #5e17eb;
+  color: white !important;
 }
 
 #miLogo span {
-  color: white;
+  color: #00051de8;
 }
 
 #miLogo::before {
@@ -103,9 +102,10 @@
   content: '/>';
 }
 
+#00051dd2#00051de3
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-sizing: content-box;
@@ -122,12 +122,38 @@ body {
   font-weight: 400;
   cursor: auto;
   overflow-x: hidden;
-  background-color: #00000c;
+  background-color: white;
 }
 
 header {
   width: 100%;
   height: auto;
+  z-index: 10;
+}
+
+header .sesgo {
+  z-index: -30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+header .sesgo div {
+  width: 80%;
+  height: 700px;
+  background-color: #5e17eb;
+  border-end-end-radius: 50%;
+}
+
+@media screen and (max-width: 950px) {
+  header .sesgo div {
+    width: 100%;
+    height: 800px;
+    border-end-end-radius: 0%;
+  }
 }
 
 header .divMenu {
@@ -189,8 +215,7 @@ header .divMenu nav {
 header .divMenu nav .divIcoMenu {
   padding: 10px;
   width: 40px;
-  border: 5px solid #5e17eb;
-  border-radius: 50%;
+  z-index: 100000;
 }
 
 @media screen and (max-width: 950px) {
@@ -213,66 +238,91 @@ header .divMenu nav .divIcoMenu .icoMenu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100000;
 }
 
 @media screen and (max-width: 950px) {
   header .divMenu nav .divIcoMenu .icoMenu ion-icon {
     font-size: 30px !important;
+    z-index: 100000;
   }
 }
 
 header .divMenu nav .divIcoMenu .icoMenu ion-icon {
-  font-size: 40px;
-  color: white;
+  font-size: 50px;
+  color: #00051de8;
 }
 
 header .divMenu nav .linkMenu {
   position: absolute;
-  top: 150px;
+  top: 0px;
   right: 0;
-  width: 0px;
-  height: auto;
-  background-color: white;
-  border-radius: 10px;
+  width: 0%;
+  height: 0;
+  background-color: #01000a;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  padding: 0px 0px;
+  z-index: 1000;
 }
 
 header .divMenu nav .linkMenu p {
   text-align: center;
-  color: #434964;
+  color: #00051de8;
   font-weight: bold;
   font-size: 20px;
 }
 
+header .divMenu nav .linkMenu .padre {
+  width: 0%;
+  height: 0%;
+  margin: 100px 0px;
+}
+
 header .divMenu nav .linkMenu div {
+  width: 50%;
+  margin: 10px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px;
   -webkit-transition: all .4s;
   transition: all .4s;
+  text-align: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 header .divMenu nav .linkMenu div #miLogo span {
-  color: #434964 !important;
+  color: white !important;
 }
 
 header .divMenu nav .linkMenu div a {
+  padding: 10px 0px;
   text-decoration: none;
-  color: #5e17eb;
+  color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +335,7 @@ header .divMenu nav .linkMenu div a {
 }
 
 header .divMenu nav .linkMenu div a:hover {
-  color: #434964;
+  color: #5e17eb;
 }
 
 header .divMenu nav .linkMenu div a ion-icon {
@@ -293,8 +343,18 @@ header .divMenu nav .linkMenu div a ion-icon {
   padding: 0px 10px;
 }
 
-header .divMenu nav .linkMenu div .boton-1:hover {
-  color: #434964 !important;
+header .divMenu nav .linkMenu div a:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+header .divMenu nav .linkMenu div a:hover::after {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  padding: 0px 5px;
+  content: '→';
+  color: white;
+  font-weight: bold;
 }
 
 header .div-header {
@@ -331,7 +391,7 @@ header .div-header {
 }
 
 header .div-header .divText {
-  width: 60%;
+  width: 50%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,8 +406,8 @@ header .div-header .divText {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 40px 0px;
-  margin: 40px 0px;
+  padding: 10px 0px;
+  margin: 10px 0px;
 }
 
 @media screen and (max-width: 950px) {
@@ -357,8 +417,18 @@ header .div-header .divText {
   }
 }
 
+header .div-header .divText #div-redes {
+  padding: 20px 0px;
+}
+
+header .div-header .divText #div-redes a {
+  padding: 20px 10px;
+  font-size: 30px;
+  color: #00051de8;
+}
+
 header .div-header .divText div {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 @media screen and (max-width: 950px) {
@@ -387,15 +457,26 @@ header .div-header .divText div {
   }
 }
 
-header .div-header .divText i {
-  font-size: 80px;
+header .div-header .divText hr {
+  width: 40px;
+  border: 1px solid black;
+  margin: 10px 0px;
+}
+
+header .div-header .divText h3 {
+  font-size: 25px;
+  font-weight: normal;
+  color: #00051de8;
+}
+
+header .div-header .divText h3 span {
   color: white;
-  cursor: pointer;
 }
 
 header .div-header .divText h1 {
-  font-size: 50px;
+  font-size: 60px;
   color: white;
+  margin: 0;
   font-weight: bold !important;
 }
 
@@ -411,7 +492,7 @@ header .div-header .divText h1 span {
 
 header .div-header .divText p {
   font-size: 20px;
-  color: #434964;
+  color: #00051de8;
   font-weight: normal;
 }
 
@@ -439,7 +520,7 @@ header .div-header .divText #div-botones {
 }
 
 header .div-header .divImg {
-  width: 40%;
+  width: 50%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,8 +537,8 @@ header .div-header .divImg {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px 0px;
-  margin: 10px 0px;
+  padding: 0px 0px;
+  margin: 0px 0px;
 }
 
 @media screen and (max-width: 950px) {
@@ -473,42 +554,6 @@ header .div-header .divImg {
 
 header .div-header .divImg img {
   width: 100%;
-}
-
-.seccionInfo {
-  width: 100%;
-}
-
-.seccionInfo .divInfo {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-top: 1px solid rgba(220, 220, 220, 0.158);
-  border-bottom: 1px solid rgba(220, 220, 220, 0.158);
-}
-
-.seccionInfo .divInfo div {
-  padding: 10px;
-  text-align: center;
-}
-
-.seccionInfo .divInfo div ion-icon {
-  color: white;
-  font-size: 40px;
-  padding: 10px 0px;
-}
-
-.seccionInfo .divInfo div p {
-  color: white;
-  font-size: 20px;
-  padding: 10px 0px;
 }
 
 .seccion1 {
@@ -528,7 +573,7 @@ header .div-header .divImg img {
   font-size: 40px;
   padding: 20px 10px;
   line-height: 50px;
-  color: white;
+  color: #00051de8;
 }
 
 .seccion1 h1 span {
@@ -548,171 +593,18 @@ header .div-header .divImg img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.seccion1 .divSec1 .tarjetaServicio {
-  width: 250px;
-  padding: 25px 35px;
-  margin: 20px auto;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
-          box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0.123);
-}
-
-@media screen and (max-width: 550px) {
-  .seccion1 .divSec1 .tarjetaServicio {
-    -webkit-box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
-            box-shadow: 0px 15px 32px 5px rgba(0, 0, 0, 0);
-  }
-}
-
-.seccion1 .divSec1 .tarjetaServicio:hover {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  background: #5e17eb;
-}
-
-.seccion1 .divSec1 .tarjetaServicio:hover a {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  color: white;
-  background: #00bdd3;
-  border: 2px solid #00bdd3;
-}
-
-.seccion1 .divSec1 .tarjetaServicio:hover a::before {
-  color: white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio:hover #icono {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  color: white !important;
-}
-
-.seccion1 .divSec1 .tarjetaServicio:hover h1 {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  color: white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio:hover p {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  color: white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio div {
+.seccion1 .divSec1 div {
   text-align: center;
-  font-weight: bold;
-  color: white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio div a {
-  text-decoration: none;
-  color: transparent;
-  padding: 6px 30px;
-  border-radius: 20px;
-  border: 2px solid white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio div a::before {
-  font-size: 20px;
-  font-weight: bold;
-  background: transparent;
-  content: '→';
-  color: white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio .icoTarjeta {
-  width: 100%;
-  padding: 20px 0px 10px;
-}
-
-.seccion1 .divSec1 .tarjetaServicio .icoTarjeta #icono {
-  font-size: 60px;
-  color: white;
-}
-
-.seccion1 .divSec1 .tarjetaServicio .textTarjeta {
-  width: 100%;
-  padding: 20px 0px 40px;
-}
-
-.seccion1 .divSec1 .tarjetaServicio .textTarjeta h1 {
-  font-size: 25px;
-  padding: 10px 0px;
-}
-
-.seccion1 .divSec1 .tarjetaServicio .textTarjeta p {
-  font-weight: normal;
-  font-size: 18px;
-}
-
-.seccion2 {
-  width: 100%;
-}
-
-.seccion2 .divSec2 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media screen and (max-width: 950px) {
-  .seccion2 .divSec2 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .seccion2 .divSec2 h1 {
-    font-size: 40px !important;
-  }
-}
-
-.seccion2 .divSec2 div {
-  padding: 50px 0px;
-  width: 500px;
-}
-
-.seccion2 .divSec2 div h1 {
-  font-size: 50px;
-  color: white;
-}
-
-.seccion2 .divSec2 div p {
-  color: #434964;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.seccion2 .divSec2 div img {
-  width: 100%;
-}
-
-.seccion3 {
-  width: 100%;
-  background-color: #434964;
-}
-
-.seccion3 .divSec3 {
-  width: 100%;
+  width: 300px;
+  height: 40vh;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,31 +620,140 @@ header .div-header .divImg img {
           align-items: center;
 }
 
-.seccion3 .divSec3 div {
-  width: 50%;
+.seccion1 .divSec1 div h3 {
+  font-size: 20px;
+  color: #5e17eb;
+  font-weight: normal;
+}
+
+.seccion1 .divSec1 div p {
+  font-size: 18px;
+  color: #00051dc4;
+  margin: 0px;
+  padding: 5px 0px;
+}
+
+.seccion2 {
+  width: 100%;
+}
+
+.seccion2 .titPort {
+  padding: 20px;
+  width: 100%;
   text-align: center;
-  padding: 20px 0px;
+  font-size: 25px;
+  color: #5e17eb;
 }
 
-.seccion3 .divSec3 div h1 {
-  color: white;
-  font-size: 50px;
+.seccion2 .divSec2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0px;
 }
 
-.seccion3 .divSec3 div p {
+.seccion2 .divSec2 .tarjePor {
+  position: relative;
+  width: 320px;
+  height: 30vh;
+  background-color: rgba(206, 206, 206, 0.404);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.seccion2 .divSec2 .tarjePor .oculto {
+  position: absolute;
+  width: 0%;
+  height: 0;
+  display: none;
+  background-color: black;
+  top: 0;
+  -webkit-transition: all .10s;
+  transition: all .10s;
+  border-radius: 10px;
+}
+
+.seccion2 .divSec2 .tarjePor .oculto .boton-1 {
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+}
+
+.seccion2 .divSec2 .tarjePor:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.seccion2 .divSec2 .tarjePor:hover .oculto {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 6, 39, 0.938);
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.seccion2 .divSec2 .tarjePor:hover .oculto h3 {
   font-size: 16px;
   color: white;
 }
 
-.seccion3 .divSec3 div p span {
-  color: #00bdd3;
+.seccion2 .divSec2 .tarjePor p {
+  font-size: 20px;
+  color: #00051de8;
 }
 
-.seccion4 {
+.seccion2 .divSec2 .tarjePor p::after {
+  content: '🚧';
+}
+
+.seccion2 .divSec2 .tarjePor p::before {
+  content: '🚧';
+}
+
+.seccionInfo {
   width: 100%;
 }
 
-.seccion4 .divSec4 {
+.seccionInfo .divInfo {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,108 +762,28 @@ header .div-header .divImg img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 20px 0px;
-  padding: 20px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid rgba(220, 220, 220, 0.158);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.158);
+  margin-top: 50px;
 }
 
-.seccion4 .divSec4 div {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.seccionInfo .divInfo div {
+  padding: 10px;
+  text-align: center;
 }
 
-@media screen and (max-width: 750px) {
-  .seccion4 .divSec4 div {
-    width: 100%;
-    height: auto !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center !important;
-    padding: 10px 0px;
-  }
-  .seccion4 .divSec4 div h1 {
-    font-size: 40px !important;
-  }
-  .seccion4 .divSec4 div img {
-    width: 80% !important;
-  }
-}
-
-.seccion4 .divSec4 div h1 {
+.seccionInfo .divInfo div ion-icon {
+  color: #00051de8;
   font-size: 40px;
   padding: 10px 0px;
-  color: white;
 }
 
-.seccion4 .divSec4 div h1 span {
-  color: #5e17eb;
-}
-
-.seccion4 .divSec4 div a {
-  padding: 15px 15px;
-  text-decoration: none;
-}
-
-.seccion4 .divSec4 div a ion-icon {
-  font-size: 50px;
-  color: #25D366;
-}
-
-.seccion4 .divSec4 div a:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.seccion4 .divSec4 div a:hover ion-icon {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  color: white;
-}
-
-footer {
-  width: 100%;
-  height: auto;
-}
-
-footer .divFooter {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.seccionInfo .divInfo div p {
+  color: #00051de8;
+  font-size: 20px;
   padding: 10px 0px;
-  margin: 10px 0px;
-}
-
-footer .divFooter div p {
-  color: #434964;
-  font-weight: bold;
 }
 
 @font-face {

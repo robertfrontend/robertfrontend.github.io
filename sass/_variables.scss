@@ -1,6 +1,7 @@
 $marino: #5e17eb;
 $cielo: #00bdd3;
-$negrito:  #434964;
+$negrito:  #00051de8;
+$negroso:  #00051dc4;
 
 
 .contenedor {
@@ -15,10 +16,10 @@ $negrito:  #434964;
 #miLogo{
     font-size: 30px;
     font-weight: bold;
-    color: $marino;
+    color: white !important;
     
     span {
-        color: white;
+        color: $negrito;
     }
 
     &::before{

@@ -1,0 +1,157 @@
+// Menu
+.divMenu {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:950px) {
+        height: 8vh;
+    }
+    .logo {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @media screen and (max-width:950px) {
+            p {
+                font-size: 20px !important;
+            }
+        }
+    }
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .divIcoMenu{
+            padding: 10px;
+            width: 40px;
+            // background-color: $marino;
+            // border: 5px solid $marino;
+            // border-radius: 50%;
+            z-index: 100000;
+            @media screen and (max-width:950px) {
+                width: 30px;
+            }
+            .icoMenu{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 100000;
+                ion-icon{
+                    font-size: 50px;
+                    color: $negrito;
+                }
+                @media screen and (max-width:950px) {
+                    ion-icon{
+                        z-index: 100000;
+                        color: $negrito ;
+                    }
+                }
+            }
+        }
+        .linkMenu{
+            position: absolute;
+            top: 0px;
+            right: 0;
+            width: 0%;
+            height: 0;
+            background-color:rgb(1, 0, 10);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            transition: all .6s;
+            padding: 0px 0px;
+            z-index: 1000;
+            p{
+                text-align: center;
+                color: $negrito;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+        }
+    }
+}
+
+.openMenu{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 450px;
+    height: 100vh;
+    background-color:rgb(1, 0, 10);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transition: all .6s;
+    padding: 0px 0px;
+    z-index: 1000;
+    @media screen and (max-width:950px) {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    @media screen and (max-width:712px) {
+        width: 100% !important;
+        height: 100vh;
+    }
+    
+    .padre {
+        width: 50%;
+        height: 80vh;
+        // margin: 100px 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 40px;
+        transition: all .4s;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        @media screen and (max-width:950px) {
+            height: 80vh;
+            margin: 0px ;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        #miLogo {
+            span{
+                color: white !important;
+            }
+        }
+        a {
+            padding: 10px 0px;
+            text-decoration: none;
+            color: white !important;
+            font-weight: bold;
+            font-size: 32px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &:hover {
+                color: $marino;   
+            }
+            ion-icon{
+                font-size: 20px;
+                padding: 0px 10px;
+                color: white !important;
+            }
+            &:hover{
+                transition: all .2s;
+                &::after{
+                    transition: all .4s;
+                    padding: 0px 5px;
+                    content: '→';
+                    color: white;
+                    font-weight: bold;
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,13 @@
 @import './botones';
 @import './variables';
 @import './letras';
+@import './menu';
 #00051dd2#00051de3
-* {
+
+*{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
-    box-sizing: content-box;
 }
 
 html{
@@ -21,6 +22,8 @@ body{
     overflow-x: hidden;
     // background-color: rgb(0, 0, 12);
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 $break-700px: 700px;
@@ -29,163 +32,8 @@ $break-iphone7plus: 414px;
 
 header{
     width: 100%;
-    height: auto;   
+    height: auto;
     z-index: 10;
-    .sesgo {
-        z-index: -30;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        div {
-            width: 80%;
-            height: 700px;
-            background-color: $marino;
-            border-end-end-radius: 50%;
-            @media screen and (max-width:950px) {
-                width: 100%;
-                height: 800px;
-                border-end-end-radius: 0%;
-    
-            }
-        }   
-    }
-    // Menu
-    .divMenu {
-        width: 100%;
-        height: 15vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        @media screen and (max-width:950px) {
-            height: 10vh;
-
-        }
-        .logo {
-            width: 50%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            @media screen and (max-width:950px) {
-                p {
-                    font-size: 20px !important;
-                }
-            }
-
-        }
-        nav {
-            width: 50%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
-            .divIcoMenu{
-                padding: 10px;
-                width: 40px;
-                // background-color: $marino;
-                // border: 5px solid $marino;
-                // border-radius: 50%;
-                z-index: 100000;
-                @media screen and (max-width:950px) {
-                    width: 30px;
-                }
-                .icoMenu{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 100000;
-                    @media screen and (max-width:950px) {
-                        ion-icon{
-                            font-size: 30px !important;
-                            z-index: 100000;
-                        }
-                    }
-                    ion-icon{
-                        font-size: 50px;
-                        color: $negrito;
-                    }
-                }
-            }
-            .linkMenu{
-                position: absolute;
-                top: 0px;
-                right: 0;
-                width: 0%;
-                height: 0;
-                background-color:rgb(1, 0, 10);
-                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items:flex-start;
-                transition: all .6s;
-                padding: 0px 0px;
-                z-index: 1000;
-                p{
-                    text-align: center;
-                    color: $negrito;
-                    font-weight: bold;
-                    font-size: 20px;
-                }
-                .padre{
-                    width: 0%;
-                    height: 0%;
-                    margin: 100px 0px;
-                }
-                div {
-                    width: 50%;
-                    margin: 10px 40px;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px 20px;
-                    transition: all .4s;
-                    text-align: left;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    #miLogo {
-                        span{
-                            color: white !important;
-                        }
-                    }
-                    a {
-                        padding: 10px 0px;
-                        text-decoration: none;
-                        color: white;
-                        font-weight: bold;
-                        font-size: 32px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &:hover {
-                            color: $marino;   
-                        }
-                        ion-icon{
-                            font-size: 20px;
-                            padding: 0px 10px;
-                        }
-                        &:hover{
-                            transition: all .2s;
-                            &::after{
-                                transition: all .4s;
-                                padding: 0px 5px;
-                                content: '→';
-                                color: white;
-                                font-weight: bold;
-                                
-                            }
-                        }
-                    }
-
-                    .boton-1 {
-
-                    }
-                }
-            }
-        }
-    }
     //  introduccion
     .div-header{
         width: 100%;
@@ -202,17 +50,23 @@ header{
             padding: 10px 0px !important;
         }
         .divText{
-            width: 50%;
+            width: 45%;
             height: auto;
             display: flex;
             flex-direction: column;
             justify-content:center;
             align-items:flex-start;
-            padding: 10px 0px;
-            margin: 10px 0px;
             @media screen and (max-width:950px) {
-                padding: 20px 0px !important;
-                margin: 20px 0px !important;
+                padding: 10px 0px !important;
+                margin: 10px 0px !important;
+                align-items: center !important;
+                text-align: center !important;
+                h3 {
+                    margin: 0;
+                }
+                hr {
+                    display: none;
+                }
             }
             #div-redes{
                 padding: 20px 0px;
@@ -228,13 +82,13 @@ header{
             @media screen and (max-width:950px) {
                 width: 100%;
                 align-items: center;
-                text-align: center;
-                h1 {
-                    font-size: 40px !important;
-                }
+                text-align: left;
             }
             @media screen and (max-width:712px) {
                 padding: 10px 0px;
+                h1 {
+                    font-size: 45px !important;
+                }
             }
             @media screen and (max-width:550px){
                 padding:10px 0px;
@@ -250,12 +104,13 @@ header{
                 font-weight: normal;
                 color:$negrito;
                 span {
-                    color: white;
+                    color: $marino;
+                    font-weight: bold;
                 }
             }
             h1{ 
                 font-size: 60px;
-                color: white;
+                color: $negrito;
                 margin: 0;
                 font-weight: bold !important;
                 @media screen and (max-width:550px){
@@ -268,7 +123,15 @@ header{
             p {
                 font-size: 20px;
                 color: $negrito;
+                line-height:30px;
                 font-weight: normal;
+                a{
+                    text-decoration: none;
+                    color: $marino;
+                    &::after{
+                        content: '📲';
+                    }
+                }
             }
             #div-botones{
                 width: 100%;
@@ -283,7 +146,7 @@ header{
 
         }
         .divImg{
-            width: 50%;
+            width: 55%;
             height: auto;
             display: flex;
             flex-direction: row;
@@ -307,177 +170,282 @@ header{
     }
 }
 
-.seccion1{
+.seccionMi{
     width: 100%;
-    height: auto;
-    padding: 20px 0px;
-    @media screen and (max-width:550px){
-        padding: 0px !important;
-    }
-    h1 {
-        text-align: center;
-        font-size: 40px;
-        padding: 20px 10px;
-        line-height: 50px;
-        color: $negrito;
-        span {
-            color: $marino;
-        }
-    }
-    .divSec1 {
-        margin: 20px 0px;
+    .divSecMi{
         width: 100%;
-        height: auto;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
         flex-wrap: wrap;
-        justify-content: space-around;
+        div {
+            width: 700px;
+            margin: 0px auto;
+            h3{
+                position: relative;
+                font-size: 25px;
+                font-weight: normal;
+                color:$negrito;
+                padding: 0;
+                margin: 0;
+            }
+            h1 {
+                font-size: 50px;
+                color: $negrito;
+                margin: 0;
+            }
+            p{
+                font-size: 18px;
+                line-height: 30px;
+                color: $negroso;
+            }
+        }
+        .desc{
+            position: relative;
+            width: 300px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:712px) {
+            padding: 50px 0px;
+            div {
+                width: 100% ;
+                text-align: center;
+                margin:20px 0px;
+                h1{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.seccionSk{
+    width: 100%;
+    .divSecSk{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 40px;
+            color: $negrito;
+        }
+        .skilss{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+            div {
+                position: relative;
+                width: 30%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: $marino;
+                margin: 20px 0px;
+                padding: 20px 50px;
+                box-shadow: 0px 0px 50px rgba(26, 26, 26, 0.226);
+                border-radius: 10px;
+                h3 {
+                    color: white;
+                    font-size: 25px;
+                    padding: 12px 0px;
+                    margin: 0;
+
+                }
+                p{
+                    margin: 0;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: normal;
+                    padding: 5px 0px;
+                }
+            }
+        }
+        @media screen and (max-width:712px){
+            .skilss{
+                div {
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center ;
+                }
+            }
+        }
+    }
+}
+
+.seccion-portafolio{
+    width: 100%;
+
+    .tit{
+        width: 100%;
+        text-align: center;
+        
+        h1{
+            color: $negrito;
+            font-size: 40px;
+            margin: 0;
+            padding: 10px 0px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+    .div-portafolio{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        .tarjeta-portafolio{
+            position: relative;
+            width:350px;
+            height: 30vh;
+            background-color: rgba(201, 201, 201, 0.795);
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 10px auto;
+            @media screen and(max-width:950px){
+                width: 100% !important;
+            }
+            img {
+                width: 100%;
+            }
+            .divArri{
+                top: 0;
+                width: 100%;
+                height: inherit;
+                background-color: transparent;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                transition: all .2s;
+                text-align: center;
+                h1 {
+                    color: transparent;
+                    font-size: 0;
+                }
+                p {
+                    color: transparent;
+                    font-size: 0;
+
+                }
+                a{
+                    display: none;
+                }
+
+            }
+            &:hover, &:focus{
+                transition: all .2s;
+                .divArri{
+                transition: all .2s;
+                    width:100%!important;
+                    height: inherit !important;
+                    background-color: $negrito;
+                    h1 {
+                        transition: all .2s;
+
+                        color: white;
+                        font-size: 20px;
+                    }
+                    a{
+                        transition: all .2s;
+
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.seccion-trab{
+    width: 100%;
+    background-color: $marino;
+    .div-trab{
+        padding: 50px 0px;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         div {
             text-align: center;
-            width:300px;
-            height: 40vh;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width: 80%;
+            margin: 0;
+            padding: 10px 0px;
             h3 {
+                color: rgba(255, 255, 255, 0.829);
                 font-size: 20px;
-                color: $marino;
-                font-weight: normal;
             }
-            p {
-                font-size: 18px;
-                color: $negroso;
-                margin: 0px;
-                padding: 5px 0px;
+            h1 {
+                font-size: 35px;
+                color: white;
+            }
+        }
+        @media screen and (max-width:712px){
+            div{
+                width: 100%;
+                h3 {
+                    font-size: 18px;
+                }
+                h1 {
+                    font-size: 25px;
+                }
             }
         }
     }
 }
 
-// Seccion Portafolio
-.seccion2 {
+footer{
     width: 100%;
-    .titPort{
-        padding: 20px;
-        width: 100%;
-        text-align: center;
-        font-size: 25px;
-        color: $marino;
+    background-color: $marino;
+    hr {
+        width: 50%;
+        color: rgba(255, 255, 255, 0.164);
     }
-    .divSec2 {
-        width: 100%;
+    .divFooter{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin: 50px 0px;
-        .tarjePor{
-            position: relative;
-            width: 320px;
-            height: 30vh;
-            background-color: rgba(206, 206, 206, 0.404);
+        justify-content: space-evenly;
+        
+        div {
+            padding: 10px 0px;
+            width: 50%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
-
-            .oculto {
-                position: absolute;
-                width: 0%;
-                height: 0;
-                display: none;
-                background-color: black;
-                top: 0;
-                transition: all .10s;
-                border-radius: 10px;
-                .boton-1{
-                    padding: 10px 20px !important; 
-                    font-size: 16px !important;
-                }
+            p{
+                color: white;
             }
-            &:hover{
-                transition: all .2s;
-                .oculto {
-                    transition: all .2s;
-                    position: absolute;
-                    width: 100%;
-                    height: inherit;
-                    display: flex;
-                    flex-direction: column;
-                    background-color: rgba(0, 6, 39, 0.938);
-                    top: 0;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    h3{
-                        font-size: 16px;
-                        color: white;
-                    }
-
-                }
-                // &::after{
-                //     transition: all .2s;
-                //     position: absolute;
-                //     top: 0;
-                //     content: 'Visitar Sitio';
-                //     width: 100%;
-                //     height: inherit;
-                //     background-color: rgba(0, 0, 0, 0.781);
-                //     display: flex;
-                //     flex-direction: row;
-                //     justify-content: center;
-                //     align-items: center;
-                //     color: white;
-                // }
-            }
-            p {
-                font-size: 20px;
-                color: $negrito;
-                &::after{
-                    content: '🚧';
-                }
-                &::before{
-                    content: '🚧';
+            a{
+                text-decoration: none;
+                ion-icon{
+                    color: white;
+                    font-size: 30px;
+                    padding: 0px 10px;
                 }
             }
         }
     }
 }
-
-
-.seccionInfo{
-    width: 100%;
-    .divInfo{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        border-top: 1px solid rgba(220, 220, 220, 0.158);
-        border-bottom: 1px solid rgba(220, 220, 220, 0.158);
-        margin-top: 50px;
-        div {
-            padding: 10px;
-            text-align: center;
-            ion-icon {
-                color: $negrito;
-                font-size: 40px;
-                padding: 10px 0px;
-            }
-            p {
-                color: $negrito;
-                font-size: 20px;
-                padding: 10px 0px;
-            }
-        }
-    }
-}
-
-
 
 @font-face {
     font-family: 'Material Icons';

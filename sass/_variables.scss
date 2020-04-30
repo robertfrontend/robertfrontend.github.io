@@ -16,8 +16,12 @@ $negroso:  #00051dc4;
 #miLogo{
     font-size: 30px;
     font-weight: bold;
-    color: white !important;
-    
+    color: $marino !important;
+    @media screen and (max-width:712px) {
+        h1 {
+            font-size: 20px !important;
+        }
+    }
     span {
         color: $negrito;
     }

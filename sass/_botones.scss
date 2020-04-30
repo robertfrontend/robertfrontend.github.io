@@ -5,11 +5,11 @@
     padding: 10px 30px !important;
     background: $marino;
     margin: 10px 0px;
-    border-radius:5px;
+    border-radius:50px;
     text-decoration: none;
     color: white !important;
     font-weight: 400;
-    font-size: 20px !important;
+    font-size: 18px !important;
     border: 2px solid $marino;
     font-weight: bold;
     box-shadow: 0px 2px 2px $marino;
@@ -22,19 +22,18 @@
 
 .boton-2 {
     padding: 10px 30px;
-    background: $cielo;
+    background: $negrito;
     margin: 10px 0px;
     border-radius:50px;
     text-decoration: none;
     color: white !important;
     font-weight: 400;
-    font-size: 16px !important;
-    border: 2px solid $cielo;
+    font-size: 18px !important;
+    border: 2px solid $negrito;
     font-weight: bold;
     &:hover{
         transition: all .3s;
-        border: 2px solid $cielo;
-        background-color:transparent;
+        background-color:$negroso;
         color:white !important;
     }
 }

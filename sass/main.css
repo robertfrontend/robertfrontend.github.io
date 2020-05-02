@@ -614,6 +614,7 @@ header .div-header .divImg img {
 
 .seccionMi {
   width: 100%;
+  position: relative;
 }
 
 .seccionMi .divSecMi {

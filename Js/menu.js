@@ -1,16 +1,10 @@
 // Variables
 const botonMenu = document.querySelector('.icoMenu');
 let contentMenu = document.querySelector('.linkMenu');
-let estadoM = false;
 let iconoMenu = document.getElementById('icono');
+let estadoM = false;
 
 // Templates
-
-const logo = `
-    <p id="miLogo" >Robert <span>Developer </span></p>
-
-`
-
 const templateMenu = `
 <div class="padre">
     <div>
@@ -23,28 +17,41 @@ const templateMenu = `
         <a href="#contacto" class="boton-1">Contactos</a>
     </div>
 </div>
-`
+`;
+
+//Clases
+class AbMenu{
+    openMenu(tipo){
+        if(tipo === 'open'){
+            contentMenu.innerHTML = templateMenu
+            contentMenu.className = 'openMenu';
+            iconoMenu.name = 'close-outline';
+            iconoMenu.style.color = 'white'; 
+        }
+        if(tipo === 'close'){
+            contentMenu.innerHTML = "";
+            contentMenu.className = 'linkMenu'
+            iconoMenu.name = 'menu-outline'
+            iconoMenu.style.color = 'black';
+        }
+    };
+};
 // Event listener
 botonMenu.addEventListener('click', abrirMenu);
 
-
 // Funciones
-function abrirMenu() {
+function abrirMenu() {  
+
+    const abMen = new AbMenu();
     switch(estadoM){
         case false:
-            contentMenu.innerHTML = templateMenu;
-            contentMenu.className = 'openMenu';
-            iconoMenu.name = 'close-outline';
-            iconoMenu.style.color = 'white';
+            abMen.openMenu('open')
             estadoM = true;
             break;
 
         case true:
             estadoM = false;
-            contentMenu.innerHTML = "";
-            contentMenu.className = 'linkMenu'
-            iconoMenu.name = 'menu-outline'
-            iconoMenu.style.color = 'black';
+            abMen.openMenu('close')
             break;
         // default:
         //     return false

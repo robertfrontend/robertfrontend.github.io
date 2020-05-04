@@ -942,13 +942,13 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .img1 {
+  background: url(../images/pro1.png);
   width: 100%;
   height: inherit;
   background-size: cover;
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
-  background: url(../images/pro1.png);
 }
 
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .img2 {

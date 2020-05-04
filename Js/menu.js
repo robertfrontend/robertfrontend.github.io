@@ -27,6 +27,8 @@ class AbMenu{
             contentMenu.className = 'openMenu';
             iconoMenu.name = 'close-outline';
             iconoMenu.style.color = 'white'; 
+            iconoMenu.style.position = 'fixed'; 
+            contentMenu.style.position = 'fixed'
         }
         if(tipo === 'close'){
             contentMenu.innerHTML = "";

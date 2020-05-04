@@ -401,16 +401,13 @@ header{
             img {
                 width: 100%;
             }
-            @mixin imgs {
+            .img1{
+                background: url(../images/pro1.png);
                 width: 100%;
                 height: inherit;
                 background-size: cover;
                 background-position: center;
                 object-fit: cover;
-            }
-            .img1{
-                @include imgs;
-                background: url(../images/pro1.png);
             }
             .img2{
                 width: 100%;

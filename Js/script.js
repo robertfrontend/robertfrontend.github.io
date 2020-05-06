@@ -4,6 +4,7 @@ document.write('<script src="./Js/menu.js"></script>')
 
 let abrirMen = document.querySelector('.mensajeBienvenida');
 let btnCerrarC = document.getElementById('cerrarCon');
+let botonContactame = document.getElementById('botContactame')
 
 
 //Event Listeners
@@ -11,6 +12,8 @@ let btnCerrarC = document.getElementById('cerrarCon');
 //event listeners del window cargando
 window.onload = load;
 btnCerrarC.addEventListener('click', cerrarMen)
+
+botonContactame.addEventListener('click', abrirContacto )
 
 //compontenes
 
@@ -21,6 +24,11 @@ btnCerrarC.addEventListener('click', cerrarMen)
 
 
 //Funciones
+
+// abrir contacto new
+function abrirContacto() {
+    abrirMen.style.top = '0px';
+}
 
 //funcion mostrar mensaje de contacto cuando la pagina cargue
 function load(){
@@ -34,4 +42,3 @@ function load(){
 function cerrarMen() {
     abrirMen.style.top = '-1000px'
 }
-;

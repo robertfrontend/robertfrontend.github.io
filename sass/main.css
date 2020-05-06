@@ -470,6 +470,7 @@ header .div-header .divText #div-redes a {
   padding: 20px 10px;
   font-size: 30px;
   color: #00051de8;
+  text-decoration: none;
 }
 
 header .div-header .divText div {
@@ -676,6 +677,7 @@ header .div-header .divImg img {
 .mensajeBienvenida .tarjeB div {
   text-align: center;
   padding: 5px;
+  text-decoration: none;
 }
 
 .mensajeBienvenida .tarjeB div p {
@@ -686,6 +688,10 @@ header .div-header .divImg img {
 .mensajeBienvenida .tarjeB div h2 {
   font-size: 30px;
   color: #5e17eb;
+}
+
+.mensajeBienvenida .tarjeB div a {
+  text-decoration: none;
 }
 
 .mensajeBienvenida .tarjeB div ion-icon {
@@ -931,12 +937,6 @@ header .div-header .divImg img {
      object-fit: cover;
 }
 
-@media screen and (max-width: 950px) {
-  .seccion-portafolio .div-portafolio .tarjeta-portafolio {
-    width: 100% !important;
-  }
-}
-
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg {
   width: 100%;
   height: inherit;
@@ -947,6 +947,12 @@ header .div-header .divImg img {
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg img {
   width: 100%;
   height: inherit !important;
+}
+
+@media screen and (max-width: 950px) {
+  .seccion-portafolio .div-portafolio .tarjeta-portafolio {
+    width: 100% !important;
+  }
 }
 
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .divArri {

@@ -398,49 +398,14 @@ header{
             @media screen and(max-width:950px){
                 width: 100% !important;
             }
-            img {
-                width: 100%;
-            }
-            .img1{
-                background: url(../images/pro1.png);
+            .divImg{
                 width: 100%;
                 height: inherit;
-                background-size: cover;
-                background-position: center;
                 object-fit: cover;
-            }
-            .img2{
-                width: 100%;
-                height: inherit;
-                background: url(../images/pro2.png);
-                background-size: cover;
-                background-position: center;
-                object-fit: cover;
-
-            }
-            .img3{
-                width: 100%;
-                height: inherit;
-                background: url(../images/pro3.png);
-                background-size: cover;
-                background-position: center;
-                object-fit: cover;
-            }
-            .img4{
-                width: 100%;
-                height: inherit;
-                background: url(../images/pro4.png);
-                background-size: cover;
-                background-position: center;
-                object-fit: cover;
-            }
-            .img5{
-                width: 100%;
-                height: inherit;
-                background: url(../images/pro5.png);
-                background-size: cover;
-                background-position: center;
-                object-fit: cover;
+                img {
+                    width: 100%;
+                    height: inherit !important;
+                }
             }
             .divArri{
                 top: 0;
@@ -469,7 +434,7 @@ header{
                 }
 
             }
-            &:hover, &:focus{
+            &:hover{
                 transition: all .2s;
                 .divArri{
                 transition: all .2s;

@@ -937,58 +937,16 @@ header .div-header .divImg img {
   }
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio img {
-  width: 100%;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .img1 {
-  background: url(../images/pro1.png);
+.seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg {
   width: 100%;
   height: inherit;
-  background-size: cover;
-  background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .img2 {
+.seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg img {
   width: 100%;
-  height: inherit;
-  background: url(../images/pro2.png);
-  background-size: cover;
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .img3 {
-  width: 100%;
-  height: inherit;
-  background: url(../images/pro3.png);
-  background-size: cover;
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .img4 {
-  width: 100%;
-  height: inherit;
-  background: url(../images/pro4.png);
-  background-size: cover;
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .img5 {
-  width: 100%;
-  height: inherit;
-  background: url(../images/pro5.png);
-  background-size: cover;
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: inherit !important;
 }
 
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .divArri {
@@ -1030,12 +988,12 @@ header .div-header .divImg img {
   display: none;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover, .seccion-portafolio .div-portafolio .tarjeta-portafolio:focus {
+.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri, .seccion-portafolio .div-portafolio .tarjeta-portafolio:focus .divArri {
+.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri {
   -webkit-transition: all .2s;
   transition: all .2s;
   width: 100% !important;
@@ -1043,21 +1001,21 @@ header .div-header .divImg img {
   background-color: #00051de8;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri h1, .seccion-portafolio .div-portafolio .tarjeta-portafolio:focus .divArri h1 {
+.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri h1 {
   -webkit-transition: all .2s;
   transition: all .2s;
   color: white;
   font-size: 20px;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri p, .seccion-portafolio .div-portafolio .tarjeta-portafolio:focus .divArri p {
+.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri p {
   color: white;
   font-size: 16px;
   margin: 0;
   padding-bottom: 10px;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri a, .seccion-portafolio .div-portafolio .tarjeta-portafolio:focus .divArri a {
+.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri a {
   -webkit-transition: all .2s;
   transition: all .2s;
   display: block;

@@ -399,11 +399,9 @@ header{
             overflow: hidden;
             border-radius: 10px;
             margin: 10px auto;
-            object-fit: cover;
             .divImg{
                 width: 100%;
                 height: inherit;
-                object-fit: cover;
                 img {
                     width: 100%;
                     height: inherit !important;
@@ -432,7 +430,6 @@ header{
                 p {
                     color: white;
                     font-size: 0;
-
                 }
                 a{
                     display: none;
@@ -467,7 +464,6 @@ header{
         }
     }
 }
-
 
 .seccion-trab{
     width: 100%;

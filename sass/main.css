@@ -933,15 +933,11 @@ header .div-header .divImg img {
   overflow: hidden;
   border-radius: 10px;
   margin: 10px auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg {
   width: 100%;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg img {

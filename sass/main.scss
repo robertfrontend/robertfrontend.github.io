@@ -391,75 +391,33 @@ header{
         justify-content: space-evenly;
         padding: 20px 0px;
         flex-wrap: wrap;
-        .tarjeta-portafolio{
-            position: relative;
-            width:350px;
-            height: 30vh;
-            background-color: rgba(201, 201, 201, 0.795);
-            overflow: hidden;
-            border-radius: 10px;
-            margin: 10px auto;
-            .divImg{
+
+        .tarjt-portafolio{
+            width: 500px;
+            padding: 20px;
+            margin: 50px auto;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 30px #00000021;
+            border-radius: 30px;
+            img {
                 width: 100%;
-                height: inherit;
-                img {
-                    width: 100%;
-                    height: inherit !important;
-                }
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
             }
-            @media screen and(max-width:950px){
-                width: 100% !important;
-            }
-            .divArri{
-                top: 0;
+            div {
                 width: 100%;
-                height: inherit;
-                background-color: transparent;
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
-                transition: all .2s;
                 text-align: center;
-                h1 {
-                    color: transparent;
-                    font-size: 0;
-                }
+                padding: 10px 0px;
+            
                 p {
-                    color: white;
-                    font-size: 0;
-                }
-                a{
-                    display: none;
+                    color: $negrito;
+                    span {
+                        font-weight: bold;
+                        font-style: oblique;
+                        text-transform: uppercase;
+                    }
                 }
 
-            }
-            &:hover{
-                transition: all .2s;
-                .divArri{
-                transition: all .2s;
-                    width:100%!important;
-                    height: inherit !important;
-                    background-color: $negrito;
-                    h1 {
-                        transition: all .2s;
-                        color: white;
-                        font-size: 20px;
-                    }
-                    p {
-                        color: white;
-                        font-size: 16px;
-                        margin: 0;
-                        padding-bottom: 10px;
-                    }
-                    a{
-                        transition: all .2s;
-
-                        display: block;
-                    }
-                }
             }
         }
     }

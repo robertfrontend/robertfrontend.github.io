@@ -36,25 +36,21 @@
 }
 
 .boton-1 {
-  padding: 10px 30px !important;
-  background: #5e17eb;
-  margin: 10px 0px;
-  border-radius: 50px;
-  text-decoration: none;
-  color: white !important;
-  font-weight: 400;
-  font-size: 18px !important;
-  border: 2px solid #5e17eb;
   font-weight: bold;
-  -webkit-box-shadow: 0px 2px 2px #5e17eb;
-          box-shadow: 0px 2px 2px #5e17eb;
+  color: #5e17eb;
+  text-decoration: none;
+  border: 2px solid #5e17eb;
+  padding: 12px 40px;
+  border-radius: 2px;
 }
 
 .boton-1:hover {
+  background-color: #5e17eb !important;
+  color: white;
   -webkit-transition: all .2s;
   transition: all .2s;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.452);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.452);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
 }
 
 .boton-2 {
@@ -925,102 +921,37 @@ header .div-header .divImg img {
       flex-wrap: wrap;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio {
-  position: relative;
-  width: 350px;
-  height: 30vh;
-  background-color: rgba(201, 201, 201, 0.795);
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 10px auto;
+.seccion-portafolio .div-portafolio .tarjt-portafolio {
+  width: 500px;
+  padding: 20px;
+  margin: 50px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 30px #00000021;
+          box-shadow: 10px 10px 30px #00000021;
+  border-radius: 30px;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg {
+.seccion-portafolio .div-portafolio .tarjt-portafolio img {
   width: 100%;
-  height: inherit;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .divImg img {
+.seccion-portafolio .div-portafolio .tarjt-portafolio div {
   width: 100%;
-  height: inherit !important;
-}
-
-@media screen and (max-width: 950px) {
-  .seccion-portafolio .div-portafolio .tarjeta-portafolio {
-    width: 100% !important;
-  }
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .divArri {
-  top: 0;
-  width: 100%;
-  height: inherit;
-  background-color: transparent;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
   text-align: center;
+  padding: 10px 0px;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .divArri h1 {
-  color: transparent;
-  font-size: 0;
+.seccion-portafolio .div-portafolio .tarjt-portafolio div p {
+  color: #00051de8;
 }
 
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .divArri p {
-  color: white;
-  font-size: 0;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio .divArri a {
-  display: none;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  width: 100% !important;
-  height: inherit !important;
-  background-color: #00051de8;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri h1 {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  color: white;
-  font-size: 20px;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri p {
-  color: white;
-  font-size: 16px;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.seccion-portafolio .div-portafolio .tarjeta-portafolio:hover .divArri a {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  display: block;
+.seccion-portafolio .div-portafolio .tarjt-portafolio div p span {
+  font-weight: bold;
+  font-style: oblique;
+  text-transform: uppercase;
 }
 
 .seccion-trab {

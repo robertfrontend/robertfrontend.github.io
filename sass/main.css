@@ -40,7 +40,7 @@
   color: #5e17eb;
   text-decoration: none;
   border: 2px solid #5e17eb;
-  padding: 12px 40px;
+  padding: 12px 40px !important;
   border-radius: 2px;
 }
 

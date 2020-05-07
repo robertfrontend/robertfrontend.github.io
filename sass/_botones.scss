@@ -6,7 +6,7 @@
     color: $marino;
     text-decoration: none;
     border: 2px solid $marino;
-    padding: 12px 40px;
+    padding: 12px 40px !important;
     border-radius: 2px;
     &:hover{
         background-color: $marino !important;

@@ -384,6 +384,93 @@ body {
   padding: 0;
 }
 
+body h1 {
+  color: #00051de8;
+}
+
+body h3 {
+  color: #00051de8;
+}
+
+body p {
+  color: #00051de8;
+}
+
+body a {
+  color: #00051de8;
+}
+
+.cambiar {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: #05001b;
+}
+
+.cambiar h1,
+.cambiar h3,
+.cambiar p,
+.cambiar a {
+  color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.cambiar .icoMenu ion-icon {
+  color: white !important;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.cambiar #miLogo span {
+  color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.cambiar .camb-color {
+  background-color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.cambiar .camb-color ion-icon {
+  color: #00051de8;
+}
+
+.div-color-pagina {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: transparent;
+}
+
+.div-color-pagina div {
+  margin-top: auto;
+  padding: 15px;
+  background-color: #00051de8;
+  border-radius: 100%;
+  margin: 12px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.div-color-pagina div ion-icon {
+  font-size: 40px;
+  color: white;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -465,7 +552,6 @@ header .div-header .divText #div-redes {
 header .div-header .divText #div-redes a {
   padding: 20px 10px;
   font-size: 30px;
-  color: #00051de8;
   text-decoration: none;
 }
 
@@ -508,7 +594,6 @@ header .div-header .divText hr {
 header .div-header .divText h3 {
   font-size: 25px;
   font-weight: normal;
-  color: #00051de8;
 }
 
 header .div-header .divText h3 span {
@@ -518,7 +603,6 @@ header .div-header .divText h3 span {
 
 header .div-header .divText h1 {
   font-size: 60px;
-  color: #00051de8;
   margin: 0;
   font-weight: bold !important;
 }
@@ -535,7 +619,6 @@ header .div-header .divText h1 span {
 
 header .div-header .divText p {
   font-size: 20px;
-  color: #00051de8;
   line-height: 30px;
   font-weight: normal;
 }
@@ -678,7 +761,6 @@ header .div-header .divImg img {
 
 .mensajeBienvenida .tarjeB div p {
   font-size: 20px;
-  color: #00051de8;
 }
 
 .mensajeBienvenida .tarjeB div h2 {
@@ -738,21 +820,18 @@ header .div-header .divImg img {
   position: relative;
   font-size: 25px;
   font-weight: normal;
-  color: #00051de8;
   padding: 0;
   margin: 0;
 }
 
 .seccionMi .divSecMi div h1 {
   font-size: 50px;
-  color: #00051de8;
   margin: 0;
 }
 
 .seccionMi .divSecMi div p {
   font-size: 18px;
   line-height: 30px;
-  color: #00051dc4;
 }
 
 .seccionMi .divSecMi .desc {
@@ -892,7 +971,6 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .tit h1 {
-  color: #00051de8;
   font-size: 40px;
   margin: 0;
   padding: 10px 0px;
@@ -922,8 +1000,7 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio {
-  width: 500px;
-  padding: 20px;
+  width: 460px;
   margin: 50px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -932,25 +1009,37 @@ header .div-header .divImg img {
   border-radius: 30px;
 }
 
-.seccion-portafolio .div-portafolio .tarjt-portafolio img {
+.seccion-portafolio .div-portafolio .tarjt-portafolio div {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio div img {
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.seccion-portafolio .div-portafolio .tarjt-portafolio div {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio div p {
-  color: #00051de8;
+.seccion-portafolio .div-portafolio .tarjt-portafolio div h1 {
+  font-size: 20px;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div p span {
   font-weight: bold;
-  font-style: oblique;
   text-transform: uppercase;
 }
 

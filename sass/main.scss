@@ -24,6 +24,78 @@ body{
     background-color: white;
     margin: 0;
     padding: 0;
+    h1 {
+        color: $negrito;
+    }
+    h3 {
+        color: $negrito;
+    }
+    p {
+        color: $negrito;
+    }
+    a{
+        color:$negrito
+    }
+}
+
+.cambiar{
+    transition: all .4s;
+    background-color: rgb(5, 0, 27);
+    h1,
+    h3,
+    p,
+    a{
+        color: white;
+        transition: all .4s;
+
+    }
+    .icoMenu{
+        
+        ion-icon {
+            color: white !important;
+        transition: all .4s;
+
+        }
+    }
+    #miLogo {
+        span {
+            color: white;
+        transition: all .4s;
+
+        }
+    }
+    .camb-color{
+        background-color: white;
+        transition: all .4s;
+        ion-icon {
+            color: $negrito;
+        }
+    }
+}
+
+.div-color-pagina{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: flex-end;
+    background-color: transparent;
+    div {
+        margin-top: auto;
+        padding: 15px;
+        background-color: $negrito;
+        border-radius: 100%;
+        margin: 12px;
+        z-index: 1000;
+        cursor: pointer;
+        ion-icon {
+            font-size: 40px;
+            color: white;
+        }
+    }
 }
 
 $break-700px: 700px;
@@ -73,7 +145,6 @@ header{
                 a {
                     padding: 20px 10px;
                     font-size: 30px;
-                    color: $negrito;
                     text-decoration: none;
                 }
             }
@@ -103,7 +174,6 @@ header{
             h3 {
                 font-size: 25px;
                 font-weight: normal;
-                color:$negrito;
                 span {
                     color: $marino;
                     font-weight: bold;
@@ -111,7 +181,6 @@ header{
             }
             h1{ 
                 font-size: 60px;
-                color: $negrito;
                 margin: 0;
                 font-weight: bold !important;
                 @media screen and (max-width:550px){
@@ -123,7 +192,6 @@ header{
             }
             p {
                 font-size: 20px;
-                color: $negrito;
                 line-height:30px;
                 font-weight: normal;
                 a{
@@ -214,7 +282,6 @@ header{
             text-decoration: none;
             p {
                 font-size: 20px;
-                color: $negrito;
             }
             h2 {
                 font-size: 30px;
@@ -258,19 +325,16 @@ header{
                 position: relative;
                 font-size: 25px;
                 font-weight: normal;
-                color:$negrito;
                 padding: 0;
                 margin: 0;
             }
             h1 {
                 font-size: 50px;
-                color: $negrito;
                 margin: 0;
             }
             p{
                 font-size: 18px;
                 line-height: 30px;
-                color: $negroso;
             }
         }
         .desc{
@@ -365,6 +429,8 @@ header{
     }
 }
 
+
+
 .seccion-portafolio{
     width: 100%;
     padding: 40px 0px;
@@ -373,7 +439,6 @@ header{
         text-align: center;
         
         h1{
-            color: $negrito;
             font-size: 40px;
             margin: 0;
             padding: 10px 0px;
@@ -393,27 +458,31 @@ header{
         flex-wrap: wrap;
 
         .tarjt-portafolio{
-            width: 500px;
-            padding: 20px;
+            width: 460px;
             margin: 50px auto;
             box-sizing: border-box;
             box-shadow: 10px 10px 30px #0000001e;
             border-radius: 30px;
-            img {
-                width: 100%;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
             div {
                 width: 100%;
                 text-align: center;
                 padding: 10px 0px;
-            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                h1 {
+                    font-size: 20px;
+                }
                 p {
-                    color: $negrito;
+
                     span {
                         font-weight: bold;
-                        font-style: oblique;
                         text-transform: uppercase;
                     }
                 }

@@ -42,3 +42,30 @@ function load(){
 function cerrarMen() {
     abrirMen.style.top = '-1000px'
 }
+
+
+
+//cambiar color de la pagina
+const botonColor = document.querySelector('.camb-color');
+const body = document.querySelector('body');
+const icoCam = document.getElementById('icoCol')
+var estado = 'blanco';
+
+botonColor.addEventListener('click', () => {
+    switch(estado) {
+        case 'blanco':
+            body.className = 'cambiar'
+            icoCam.name = 'sunny'
+            icoCam.style.transition = 'all .4s'
+            estado = 'negro';
+            break;
+        case 'negro':
+            estado = 'blanco';
+            icoCam.name = 'moon'
+            icoCam.style.transition = 'all .4s'
+            body.className = ''
+
+            break
+    }
+
+})

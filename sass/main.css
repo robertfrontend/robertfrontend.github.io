@@ -42,6 +42,8 @@
   border: 2px solid #5e17eb;
   padding: 12px 40px !important;
   border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer !important;
 }
 
 .boton-1:hover {
@@ -378,7 +380,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   cursor: auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -738,9 +740,10 @@ header .div-header .divImg img {
 .mensajeBienvenida .tarjeB .quit {
   position: absolute;
   width: auto;
-  top: -20px;
-  right: 10px;
+  top: -50px;
+  right: 0px;
   text-align: right;
+  padding: 20px;
 }
 
 .mensajeBienvenida .tarjeB .quit p {
@@ -748,9 +751,9 @@ header .div-header .divImg img {
   font-weight: bold;
   color: white;
   cursor: pointer;
-  padding: 12px 15px;
-  border-radius: 100%;
   background: red;
+  padding: 10px 20px;
+  border-radius: 50%;
 }
 
 .mensajeBienvenida .tarjeB div {
@@ -1041,6 +1044,115 @@ header .div-header .divImg img {
 .seccion-portafolio .div-portafolio .tarjt-portafolio div p span {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.seccion-form {
+  width: 100%;
+  overflow: hidden;
+}
+
+.seccion-form .div-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-form .div-form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.seccion-form .div-form form div {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0px;
+  margin: 5px 50px;
+}
+
+.seccion-form .div-form form label {
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.seccion-form .div-form form input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #5e17eb;
+  border-radius: 5px;
+}
+
+.seccion-form .div-form form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #5e17eb;
+  border-radius: 5px;
+}
+
+.seccion-form .div-form form .boton-1 {
+  width: auto;
+}
+
+.otra {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.otra h1 {
+  color: white;
 }
 
 .seccion-trab {

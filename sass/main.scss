@@ -19,7 +19,7 @@ body{
     // font-family: 'Merriweather', serif;
     font-weight: 400;
     cursor:auto;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     // background-color: rgb(0, 0, 12);
     background-color: white;
     margin: 0;
@@ -262,17 +262,18 @@ header{
         .quit{
             position: absolute;
             width: auto;
-            top: -20px;
-            right: 10px;
+            top: -50px;
+            right: 0px;
             text-align: right;
+            padding: 20px;
             p{
                 font-size: 22px;
                 font-weight: bold;
                 color: white;
                 cursor: pointer;
-                padding: 12px 15px;
-                border-radius: 100%;
                 background: red;
+                padding: 10px 20px;
+                border-radius: 50%;
             }
         }
         div {
@@ -491,6 +492,69 @@ header{
     }
 }
 
+.seccion-form {
+    width: 100%;
+    overflow: hidden;
+    .div-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap !important;
+            div {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 0px;
+                margin: 5px 50px;
+            }
+            label {
+                width: 100%;
+                font-size: 16px;
+                color: white;
+                font-weight: bold;
+            }
+            input {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+                border: 2px solid $marino;
+                border-radius: 5px;
+            }
+            textarea{
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 2px solid $marino;
+                border-radius: 5px;
+            }
+            .boton-1 {
+                width: auto;
+            }
+        }
+    }
+}
+
+.otra {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    h1{
+        color: white;
+    }
+}
 .seccion-trab{
     width: 100%;
     background-color: $marino;

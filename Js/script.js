@@ -69,4 +69,30 @@ botonColor.addEventListener('click', () => {
             break
     }
 
+});
+
+
+
+// validar formulario
+
+const nombre = document.querySelector('.nombre')
+const correo = document.querySelector('.email')
+const botonValidar = document.querySelector('#btnValidar')
+const alerta = document.getElementById('alerta')
+
+var mensajeHTML = `
+    <div class="alert alert-danger" role="alert">
+        Llena todoos los campos.
+    </div>
+`
+
+// funcion validar formulario
+botonValidar.addEventListener('click', () => {
+    if(nombre.value === '' || correo.value === ''){
+        alerta.innerHTML = mensajeHTML
+    }
+    else {
+        alerta.innerHTML = ''
+
+    }
 })

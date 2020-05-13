@@ -401,8 +401,8 @@ body a {
 }
 
 .cambiar {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
   background-color: #05001b;
 }
 
@@ -429,8 +429,8 @@ body a {
 
 .cambiar .camb-color {
   background-color: white;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .cambiar .camb-color ion-icon {
@@ -462,7 +462,7 @@ body a {
   background-color: #00051de8;
   border-radius: 100%;
   margin: 12px;
-  z-index: 1000;
+  z-index: 10000;
   cursor: pointer;
 }
 
@@ -812,7 +812,7 @@ header .div-header .divImg img {
 }
 
 .seccionMi .divSecMi div {
-  width: 700px;
+  width: 600px;
   margin: 0px auto;
 }
 
@@ -825,7 +825,7 @@ header .div-header .divImg img {
 }
 
 .seccionMi .divSecMi div h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
 }
 

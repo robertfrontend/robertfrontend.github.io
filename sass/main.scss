@@ -39,7 +39,7 @@ body{
 }
 
 .cambiar{
-    transition: all .4s;
+    transition: all .8s;
     background-color: rgb(5, 0, 27);
     h1,
     h3,
@@ -50,7 +50,6 @@ body{
 
     }
     .icoMenu{
-        
         ion-icon {
             color: white !important;
         transition: all .4s;
@@ -66,7 +65,7 @@ body{
     }
     .camb-color{
         background-color: white;
-        transition: all .4s;
+        transition: all .8s;
         ion-icon {
             color: $negrito;
         }
@@ -89,7 +88,7 @@ body{
         background-color: $negrito;
         border-radius: 100%;
         margin: 12px;
-        z-index: 1000;
+        z-index: 10000;
         cursor: pointer;
         ion-icon {
             font-size: 40px;
@@ -319,7 +318,7 @@ header{
         flex-wrap: wrap;
         padding: 50px 0px;
         div {
-            width: 700px;
+            width: 600px;
             margin: 0px auto;
             h3{
                 position: relative;
@@ -329,7 +328,7 @@ header{
                 margin: 0;
             }
             h1 {
-                font-size: 50px;
+                font-size: 40px;
                 margin: 0;
             }
             p{

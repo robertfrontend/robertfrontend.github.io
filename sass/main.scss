@@ -37,7 +37,6 @@ body{
         color:$negrito
     }
 }
-
 .cambiar{
     transition: all .8s;
     background-color: rgb(5, 0, 27);
@@ -74,22 +73,24 @@ body{
 
 .div-color-pagina{
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 30px;
+    right: 30px;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
     align-items: flex-end;
     background-color: transparent;
+    z-index: 100000;
+
     div {
         margin-top: auto;
-        padding: 15px;
-        background-color: $negrito;
-        border-radius: 100%;
         margin: 12px;
-        z-index: 10000;
         cursor: pointer;
+        background-color: $negrito;
+        padding: 10px;
+        border-radius: 100%;
         ion-icon {
             font-size: 40px;
             color: white;
@@ -99,6 +100,7 @@ body{
 
 $break-700px: 700px;
 $break-iphone7plus: 414px;
+
 
 
 header{
@@ -423,6 +425,12 @@ header{
                     width: 100%;
                     justify-content: center;
                     align-items: center ;
+                    h3 {
+                        font-size: 25px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -516,6 +524,11 @@ header{
                 align-items: center;
                 padding: 12px 0px;
                 margin: 5px 50px;
+                @media screen and (max-width:955px) {
+                    width: 100%;
+                    padding: 5px 0px;
+                    margin: 0px;
+                }
             }
             label {
                 width: 100%;
@@ -553,6 +566,7 @@ header{
     padding: 20px 0px;
     h1{
         color: white;
+        text-align: center;
     }
 }
 .seccion-trab{

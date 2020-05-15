@@ -54,19 +54,18 @@ var estado = 'blanco';
 botonColor.addEventListener('click', () => {
     switch(estado) {
         case 'blanco':
-            body.className = 'cambiar'
-            icoCam.name = 'sunny'
-            icoCam.style.transition = 'all .8s'
+            body.className = 'cambiar';
+            icoCam.name = 'sunny';
+            icoCam.style.transition = 'all .8s';
             estado = 'negro';
             break;
         case 'negro':
             estado = 'blanco';
-            icoCam.name = 'moon'
-            icoCam.style.transition = 'all .8s'
-            body.style.transition = 'all .8s'
-            body.className = ''
-
-            break
+            icoCam.name = 'moon';
+            icoCam.style.transition = 'all .8s';
+            body.style.transition = 'all .8s';
+            body.className = '';
+            break;
     }
 
 });

@@ -60,7 +60,7 @@
   padding: 10px 30px;
   background: #00051de8;
   margin: 10px 0px;
-  border-radius: 50px;
+  border-radius: 2px;
   text-decoration: none;
   color: white !important;
   font-weight: 400;
@@ -129,12 +129,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 950px) {
-  .divMenu {
-    height: 8vh;
-  }
 }
 
 .divMenu .logo {
@@ -324,6 +318,11 @@
   color: white !important;
 }
 
+.openMenu .padre .boton-1 {
+  font-size: 20px;
+  padding: 12px 40px !important;
+}
+
 .openMenu .padre a {
   padding: 10px 0px;
   text-decoration: none;
@@ -354,15 +353,6 @@
 .openMenu .padre a:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
-}
-
-.openMenu .padre a:hover::after {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  padding: 0px 5px;
-  content: '→';
-  color: white;
-  font-weight: bold;
 }
 
 #00051dd2#00051de3
@@ -417,6 +407,12 @@ body a {
   color: white;
   -webkit-transition: all .4s;
   transition: all .4s;
+}
+
+.cambiar .seccionSk .color {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: rgba(0, 0, 0, 0.808);
 }
 
 .cambiar .icoMenu ion-icon {
@@ -597,7 +593,7 @@ header .div-header .divText hr {
 }
 
 header .div-header .divText h3 {
-  font-size: 25px;
+  font-size: 150%;
   font-weight: normal;
 }
 
@@ -607,7 +603,7 @@ header .div-header .divText h3 span {
 }
 
 header .div-header .divText h1 {
-  font-size: 60px;
+  font-size: 350%;
   margin: 0;
   font-weight: bold !important;
 }
@@ -623,8 +619,7 @@ header .div-header .divText h1 span {
 }
 
 header .div-header .divText p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 120%;
   font-weight: normal;
 }
 
@@ -824,19 +819,20 @@ header .div-header .divImg img {
 
 .seccionMi .divSecMi div h3 {
   position: relative;
-  font-size: 25px;
+  font-size: 150%;
   font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 .seccionMi .divSecMi div h1 {
-  font-size: 40px;
+  font-size: 250%;
   margin: 0;
+  font-weight: bold;
 }
 
 .seccionMi .divSecMi div p {
-  font-size: 18px;
+  font-size: 120%;
   line-height: 30px;
 }
 
@@ -983,15 +979,16 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .tit h1 {
-  font-size: 40px;
+  font-size: 300%;
   margin: 0;
+  font-weight: bold;
   padding: 10px 0px;
 }
 
 .seccion-portafolio .tit p {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 130%;
 }
 
 .seccion-portafolio .div-portafolio {
@@ -1132,10 +1129,10 @@ header .div-header .divImg img {
 
 .seccion-form .div-form form input {
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   font-size: 16px;
   border: 2px solid #5e17eb;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .seccion-form .div-form form textarea {

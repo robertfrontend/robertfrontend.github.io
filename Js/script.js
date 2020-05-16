@@ -34,7 +34,7 @@ function abrirContacto() {
 function load(){
     if(window.onload = true) {
        setTimeout(function() {
-            // abrirMen.style.top = '0px';
+            abrirMen.style.top = '0px';
        },2000)
     }
 };
@@ -43,15 +43,13 @@ function cerrarMen() {
     abrirMen.style.top = '-1000px'
 }
 
-
-
 //cambiar color de la pagina
 const botonColor = document.querySelector('.camb-color');
 const body = document.querySelector('body');
 const icoCam = document.getElementById('icoCol')
 var estado = 'blanco';
 
-botonColor.addEventListener('click', () => {
+botonColor.addEventListener('click', () => { 
     switch(estado) {
         case 'blanco':
             body.className = 'cambiar';
@@ -74,8 +72,8 @@ botonColor.addEventListener('click', () => {
 
 // validar formulario
 
-const nombre = document.querySelector('.nombre')
-const correo = document.querySelector('.email')
+const nombre = document.querySelector('.nombre').value
+const correo = document.querySelector('.email').value
 const botonValidar = document.querySelector('#btnValidar')
 const alerta = document.getElementById('alerta')
 
@@ -87,7 +85,7 @@ var mensajeHTML = `
 
 // funcion validar formulario
 botonValidar.addEventListener('click', () => {
-    if(nombre.value === '' || correo.value === ''){
+    if(nombre === '' || correo === ''){
         alerta.innerHTML = mensajeHTML
     }
     else {

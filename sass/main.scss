@@ -36,6 +36,7 @@ body{
     a{
         color:$negrito
     }
+
 }
 .cambiar{
     transition: all .8s;
@@ -47,6 +48,10 @@ body{
         color: white;
         transition: all .4s;
 
+    }
+    .seccionSk .color{
+        transition: all .4s;
+        background-color: rgba(0, 0, 0, 0.808);
     }
     .icoMenu{
         ion-icon {
@@ -100,8 +105,6 @@ body{
 
 $break-700px: 700px;
 $break-iphone7plus: 414px;
-
-
 
 header{
     width: 100%;
@@ -173,7 +176,7 @@ header{
                 margin: 10px 0px;
             }
             h3 {
-                font-size: 25px;
+                font-size: 150%; // 25px
                 font-weight: normal;
                 span {
                     color: $marino;
@@ -181,7 +184,7 @@ header{
                 }
             }
             h1{ 
-                font-size: 60px;
+                font-size: 350%; //60px
                 margin: 0;
                 font-weight: bold !important;
                 @media screen and (max-width:550px){
@@ -192,8 +195,7 @@ header{
                 }
             }
             p {
-                font-size: 20px;
-                line-height:30px;
+                font-size: 120%; // 20px
                 font-weight: normal;
                 a{
                     text-decoration: none;
@@ -213,7 +215,6 @@ header{
                     align-items: center;
                 }
             }
-
         }
         .divImg{
             width: 55%;
@@ -325,17 +326,18 @@ header{
             margin: 0px auto;
             h3{
                 position: relative;
-                font-size: 25px;
+                font-size: 150%; //25px
                 font-weight: normal;
                 padding: 0;
                 margin: 0;
             }
             h1 {
-                font-size: 40px;
+                font-size: 250%; //40px
                 margin: 0;
+                font-weight: bold;
             }
             p{
-                font-size: 18px;
+                font-size: 120%; // 18px
                 line-height: 30px;
             }
         }
@@ -361,7 +363,6 @@ header{
         }
     }
 }
-
 
 .seccionSk{
     width: 100%;
@@ -408,7 +409,6 @@ header{
                     font-size: 30px;
                     padding: 12px 0px;
                     margin: 0;
-
                 }
                 p{
                     margin: 0;
@@ -436,9 +436,6 @@ header{
         }
     }
 }
-
-
-
 .seccion-portafolio{
     width: 100%;
     padding: 40px 0px;
@@ -447,14 +444,15 @@ header{
         text-align: center;
         
         h1{
-            font-size: 40px;
+            font-size: 300%; //40px
             margin: 0;
+            font-weight: bold;
             padding: 10px 0px;
         }
         p {
             margin: 0;
             padding: 0;
-            font-size: 20px;
+            font-size: 130%; // 20px
         }
     }
     .div-portafolio{
@@ -464,7 +462,6 @@ header{
         justify-content: space-evenly;
         padding: 20px 0px;
         flex-wrap: wrap;
-
         .tarjt-portafolio{
             width: 460px;
             margin: 50px auto;
@@ -488,7 +485,6 @@ header{
                     font-size: 20px;
                 }
                 p {
-
                     span {
                         font-weight: bold;
                         text-transform: uppercase;
@@ -538,10 +534,10 @@ header{
             }
             input {
                 width: 100%;
-                padding: 15px;
+                padding: 12px;
                 font-size: 16px;
                 border: 2px solid $marino;
-                border-radius: 5px;
+                border-radius: 8px;
             }
             textarea{
                 width: 100%;

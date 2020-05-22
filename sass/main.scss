@@ -463,7 +463,7 @@ header{
         padding: 20px 0px;
         flex-wrap: wrap;
         .tarjt-portafolio{
-            width: 320px;
+            width: 450px;
             margin: 50px auto;
             box-sizing: border-box;
             overflow: hidden !important;
@@ -488,6 +488,17 @@ header{
                     span {
                         font-weight: bold;
                         text-transform: uppercase;
+                    }
+                }
+
+                .boton-1 {
+                    padding: 5px 20px !important;
+                    border: 2px solid transparent;
+
+                    &:hover {
+                        color: $negrito;
+                        background-color: transparent !important;
+                        border: 2px solid $marino;
                     }
                 }
 

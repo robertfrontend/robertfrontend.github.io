@@ -1024,7 +1024,7 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio {
-  width: 320px;
+  width: 450px;
   margin: 50px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1062,6 +1062,17 @@ header .div-header .divImg img {
 .seccion-portafolio .div-portafolio .tarjt-portafolio div p span {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio div .boton-1 {
+  padding: 5px 20px !important;
+  border: 2px solid transparent;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio div .boton-1:hover {
+  color: #00051de8;
+  background-color: transparent !important;
+  border: 2px solid #5e17eb;
 }
 
 .seccion-form {

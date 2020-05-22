@@ -438,7 +438,7 @@ header{
 }
 .seccion-portafolio{
     width: 100%;
-    padding: 40px 0px;
+    padding: 100px 0px;
     .tit{
         width: 100%;
         text-align: center;
@@ -463,23 +463,23 @@ header{
         padding: 20px 0px;
         flex-wrap: wrap;
         .tarjt-portafolio{
-            width: 460px;
+            width: 320px;
             margin: 50px auto;
             box-sizing: border-box;
-            box-shadow: 10px 10px 30px #0000001e;
-            border-radius: 30px;
+            overflow: hidden !important;
+            padding: 0px 20px;
             div {
                 width: 100%;
                 text-align: center;
-                padding: 10px 0px;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                overflow: hidden !important;
                 img {
-                    width: 100%;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
+                    width: 100% !important;
+
                 }
                 h1 {
                     font-size: 20px;

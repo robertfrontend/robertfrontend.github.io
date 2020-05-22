@@ -135,6 +135,9 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+            @media screen and (max-width:950px) {
+                font-size: 20px;
+            }
             &:hover {
                 color: $marino;   
             }
@@ -145,6 +148,11 @@
             }
             &:hover{
                 transition: all .2s;
+            }
+        }
+        .boton-1 {
+            @media screen and (max-width:950px) {
+                padding: 5px 10px !important;
             }
         }
     }

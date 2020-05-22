@@ -42,6 +42,8 @@ class AbMenu{
 // Event listener
 botonMenu.addEventListener('click', abrirMenu);
 
+
+
 // Funciones
 function abrirMenu() {  
 

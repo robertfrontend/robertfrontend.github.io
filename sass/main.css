@@ -44,6 +44,7 @@
   border-radius: 2px;
   font-size: 16px;
   cursor: pointer !important;
+  text-decoration: none;
 }
 
 .boton-1:hover {
@@ -53,6 +54,7 @@
   transition: all .2s;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
+  text-decoration: none;
   text-decoration: none;
 }
 
@@ -75,6 +77,7 @@
   transition: all .3s;
   background-color: #00051dc4;
   color: white !important;
+  text-decoration: none;
 }
 
 .contenedor {
@@ -340,6 +343,12 @@
           align-items: flex-start;
 }
 
+@media screen and (max-width: 950px) {
+  .openMenu .padre a {
+    font-size: 20px;
+  }
+}
+
 .openMenu .padre a:hover {
   color: #5e17eb;
 }
@@ -353,6 +362,12 @@
 .openMenu .padre a:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
+}
+
+@media screen and (max-width: 950px) {
+  .openMenu .padre .boton-1 {
+    padding: 5px 10px !important;
+  }
 }
 
 #00051dd2#00051de3
@@ -970,7 +985,7 @@ header .div-header .divImg img {
 
 .seccion-portafolio {
   width: 100%;
-  padding: 40px 0px;
+  padding: 100px 0px;
 }
 
 .seccion-portafolio .tit {
@@ -1009,19 +1024,17 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio {
-  width: 460px;
+  width: 320px;
   margin: 50px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 10px 10px 30px #0000001e;
-          box-shadow: 10px 10px 30px #0000001e;
-  border-radius: 30px;
+  overflow: hidden !important;
+  padding: 0px 20px;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div {
   width: 100%;
   text-align: center;
-  padding: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,12 +1048,11 @@ header .div-header .divImg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden !important;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div img {
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  width: 100% !important;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div h1 {

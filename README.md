@@ -1,3 +1,13 @@
-# 2019 Renovacion de mi primera pagina
+# Portafolio Personal 😎
+_Pagina web personal donde habla sobre mi y muestro mis proyectos.
 
-*Modernizacion y agregando javascript al maximo*
+## Construido con 🛠
+
+_HTML, Sass, JavaScript
+
+* [IonicIcons](https://ionicons.com/) -Iconos
+* [FreePik](https://www.freepik.es/) -Imagenes
+
+## Creador✒
+
+* **Robert Romero** 

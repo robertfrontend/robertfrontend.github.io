@@ -990,20 +990,33 @@ header .div-header .divImg img {
 
 .seccion-portafolio .tit {
   width: 100%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
 }
 
-.seccion-portafolio .tit h1 {
-  font-size: 300%;
+.seccion-portafolio .tit div {
+  width: 100%;
+}
+
+.seccion-portafolio .tit div h1 {
+  font-size: 280%;
   margin: 0;
   font-weight: bold;
   padding: 10px 0px;
 }
 
-.seccion-portafolio .tit p {
+.seccion-portafolio .tit div p {
   margin: 0;
   padding: 0;
-  font-size: 130%;
+  font-size: 120%;
 }
 
 .seccion-portafolio .div-portafolio {
@@ -1035,6 +1048,7 @@ header .div-header .divImg img {
 .seccion-portafolio .div-portafolio .tarjt-portafolio div {
   width: 100%;
   text-align: center;
+  padding: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

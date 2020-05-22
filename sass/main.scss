@@ -441,18 +441,23 @@ header{
     padding: 100px 0px;
     .tit{
         width: 100%;
-        text-align: center;
-        
-        h1{
-            font-size: 300%; //40px
-            margin: 0;
-            font-weight: bold;
-            padding: 10px 0px;
-        }
-        p {
-            margin: 0;
-            padding: 0;
-            font-size: 130%; // 20px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        div {
+            width: 100%;
+            h1{
+                font-size: 280%; //40px
+                margin: 0;
+                font-weight: bold;
+                padding: 10px 0px;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 120%; // 20px
+            }
         }
     }
     .div-portafolio{
@@ -471,7 +476,7 @@ header{
             div {
                 width: 100%;
                 text-align: center;
-
+                padding: 10px 0px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;

@@ -1038,17 +1038,65 @@ header .div-header .divImg img {
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio {
   width: 450px;
-  margin: 50px auto;
+  height: 30vh;
+  margin: 20px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden !important;
-  padding: 0px 20px;
+  position: relative;
+  background-color: red;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 455px) {
+  .seccion-portafolio .div-portafolio .tarjt-portafolio {
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .seccion-portafolio .div-portafolio .tarjt-portafolio {
+    height: 20vh;
+  }
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text {
+  width: 0%;
+  height: 0vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(131, 0, 218, 0.925);
+  border-radius: 20px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text p {
+  color: white;
+  font-size: 16px !important;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text p span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text {
+  width: 100%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  height: inherit;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div {
   width: 100%;
   text-align: center;
-  padding: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,30 +1111,20 @@ header .div-header .divImg img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div img {
   width: 100% !important;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio div h1 {
-  font-size: 20px;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio div p span {
-  font-weight: bold;
-  text-transform: uppercase;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div .boton-1 {
+  color: white !important;
   padding: 5px 20px !important;
   border: 2px solid transparent;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio div .boton-1:hover {
-  color: #00051de8;
-  background-color: transparent !important;
-  border: 2px solid #5e17eb;
 }
 
 .seccion-form {

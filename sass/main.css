@@ -36,48 +36,49 @@
 }
 
 .boton-1 {
-  font-weight: bold;
-  color: #5e17eb;
+  padding: 10px 30px;
+  background: #5e17eb;
+  margin: 10px 0px;
+  border-radius: 5px;
   text-decoration: none;
+  color: white !important;
+  font-weight: 400;
+  font-size: 16px !important;
   border: 2px solid #5e17eb;
-  padding: 12px 40px !important;
-  border-radius: 2px;
-  font-size: 16px;
-  cursor: pointer !important;
-  text-decoration: none;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 2px 2px #5e17eb;
+          box-shadow: 0px 2px 2px #5e17eb;
 }
 
 .boton-1:hover {
-  background-color: #5e17eb !important;
-  color: white;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
-  text-decoration: none;
-  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 2px solid #00051de8;
+  background-color: transparent;
+  color: #00051de8 !important;
 }
 
 .boton-2 {
   padding: 10px 30px;
   background: #00051de8;
   margin: 10px 0px;
-  border-radius: 2px;
+  border-radius: 5px;
   text-decoration: none;
   color: white !important;
   font-weight: 400;
-  font-size: 18px !important;
+  font-size: 16px !important;
   border: 2px solid #00051de8;
   font-weight: bold;
-  text-decoration: none;
+  -webkit-box-shadow: 0px 2px 2px #00051de8;
+          box-shadow: 0px 2px 2px #00051de8;
 }
 
 .boton-2:hover {
   -webkit-transition: all .3s;
   transition: all .3s;
-  background-color: #00051dc4;
+  border: 2px solid #5e17eb;
+  background-color: transparent;
   color: white !important;
-  text-decoration: none;
 }
 
 .contenedor {
@@ -900,13 +901,14 @@ header .div-header .divImg img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.seccionSk .divSecSk h1 {
-  font-size: 55px;
+.seccionSk .divSecSk div {
+  text-align: center;
+}
+
+.seccionSk .divSecSk div h1 {
+  font-size: 250%;
   color: white;
 }
 
@@ -952,7 +954,7 @@ header .div-header .divImg img {
 
 .seccionSk .divSecSk .skilss div h3 {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   padding: 12px 0px;
   margin: 0;
 }
@@ -960,7 +962,7 @@ header .div-header .divImg img {
 .seccionSk .divSecSk .skilss div p {
   margin: 0;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   padding: 5px 0px;
 }
@@ -1044,7 +1046,7 @@ header .div-header .divImg img {
           box-sizing: border-box;
   overflow: hidden !important;
   position: relative;
-  background-color: red;
+  background-color: #5e17eb;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1069,7 +1071,6 @@ header .div-header .divImg img {
   top: 0;
   left: 0;
   background-color: rgba(131, 0, 218, 0.925);
-  border-radius: 20px;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio .text h1 {
@@ -1089,6 +1090,7 @@ header .div-header .divImg img {
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text {
   width: 100%;
+  height: inherit;
   -webkit-transition: all .4s;
   transition: all .4s;
   height: inherit;
@@ -1121,10 +1123,8 @@ header .div-header .divImg img {
      object-fit: cover;
 }
 
-.seccion-portafolio .div-portafolio .tarjt-portafolio div .boton-1 {
-  color: white !important;
-  padding: 5px 20px !important;
-  border: 2px solid transparent;
+.seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas {
+  width: 100%;
 }
 
 .seccion-form {
@@ -1218,8 +1218,28 @@ header .div-header .divImg img {
   border-radius: 5px;
 }
 
-.seccion-form .div-form form .boton-1 {
+.seccion-form .div-form form #btnValidar {
   width: auto;
+  padding: 10px 30px;
+  background: #00051de8;
+  margin: 10px 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white !important;
+  font-weight: 400;
+  font-size: 16px !important;
+  border: 2px solid #00051de8;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 2px 2px #00051de8;
+          box-shadow: 0px 2px 2px #00051de8;
+}
+
+.seccion-form .div-form form #btnValidar:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 2px solid #5e17eb;
+  background-color: transparent;
+  color: white !important;
 }
 
 .otra {

@@ -35,7 +35,7 @@ body{
         color: $negrito;
     }
     a{
-        color:$negrito
+        color:$negrito;
     }
 
 }
@@ -383,10 +383,13 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        h1 {
-            font-size: 55px;
-            color: white;
+        div {
+            text-align: center;
+            h1 {
+                font-size: 250%;
+                color: white;
+            }
+
         }
         .skilss{
             width: 100%;
@@ -409,14 +412,14 @@ header{
                 border-radius: 10px;
                 h3 {
                     color: white;
-                    font-size: 30px;
+                    font-size: 25px;
                     padding: 12px 0px;
                     margin: 0;
                 }
                 p{
                     margin: 0;
                     color: white;
-                    font-size: 25px;
+                    font-size: 20px;
                     font-weight: normal;
                     padding: 5px 0px;
                 }
@@ -477,7 +480,7 @@ header{
             box-sizing: border-box;
             overflow: hidden !important;
             position: relative;
-            background-color: red;
+            background-color: $marino;
             border-radius: 20px;
             object-fit: cover;
             @media screen and (max-width:455px){
@@ -493,7 +496,6 @@ header{
                 top: 0;
                 left: 0;
                 background-color: rgba(131, 0, 218, 0.925);
-                border-radius: 20px;
 
                 h1 {
                     font-size: 20px;
@@ -511,6 +513,7 @@ header{
             &:hover {
                 .text {
                     width: 100%;
+                    height: inherit;
                     transition: all .4s;
                     height: inherit;
                 }
@@ -529,13 +532,10 @@ header{
                     object-fit: cover;
                 }
 
-                .boton-1 {
-                    color: white !important;
-                    padding: 5px 20px !important;
-                    border: 2px solid transparent;
-
-                }
-
+            }
+            .d-vermas{
+                width: 100%;
+            
             }
         }
     }
@@ -591,9 +591,27 @@ header{
                 border: 2px solid $marino;
                 border-radius: 5px;
             }
-            .boton-1 {
-                width: auto;
+            #btnValidar{
+                width:auto;
+                padding: 10px 30px;
+                background: $negrito;
+                margin: 10px 0px;
+                border-radius:5px;
+                text-decoration: none;
+                color: white !important;
+                font-weight: 400;
+                font-size: 16px !important;
+                border: 2px solid $negrito;
+                font-weight: bold;
+                box-shadow: 0px 2px 2px $negrito;
+                &:hover{
+                    transition: all .3s;
+                    border: 2px solid $marino;
+                    background-color: transparent;
+                    color: white !important;
+                }
             }
+
         }
     }
 }

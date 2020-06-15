@@ -2,45 +2,40 @@
 // Botones
 
 .boton-1 {
-    font-weight: bold;
-    color: $marino;
+    padding: 10px 30px;
+    background: $marino;
+    margin: 10px 0px;
+    border-radius:5px;
     text-decoration: none;
+    color: white !important;
+    font-weight: 400;
+    font-size: 16px !important;
     border: 2px solid $marino;
-    padding: 12px 40px !important;
-    border-radius: 2px;
-    font-size: 16px;
-    cursor: pointer !important;
-    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px $marino;
     &:hover{
-        background-color: $marino !important;
-        color: white;
-        transition: all .2s;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
-        text-decoration: none;
-        text-decoration: none;
-
-
+        transition: all .3s;
+        border: 2px solid $negrito;
+        background-color: transparent;
+        color: $negrito !important;
     }
 }
 .boton-2 {
     padding: 10px 30px;
     background: $negrito;
     margin: 10px 0px;
-    border-radius: 2px;
+    border-radius:5px;
     text-decoration: none;
     color: white !important;
     font-weight: 400;
-    font-size: 18px !important;
+    font-size: 16px !important;
     border: 2px solid $negrito;
     font-weight: bold;
-    text-decoration: none;
-    
-
+    box-shadow: 0px 2px 2px $negrito;
     &:hover{
         transition: all .3s;
-        background-color:$negroso;
-        color:white !important;
-        text-decoration: none;
-
+        border: 2px solid $marino;
+        background-color: transparent;
+        color: white !important;
     }
 }

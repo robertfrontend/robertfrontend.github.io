@@ -6,7 +6,6 @@ let abrirMen = document.querySelector('.mensajeBienvenida');
 let btnCerrarC = document.getElementById('cerrarCon');
 let botonContactame = document.getElementById('botContactame')
 
-
 //Event Listeners
 
 //event listeners del window cargando
@@ -14,14 +13,6 @@ window.onload = load;
 btnCerrarC.addEventListener('click', cerrarMen)
 
 botonContactame.addEventListener('click', abrirContacto )
-
-//compontenes
-
-
-
-//Clasess
-
-
 
 //Funciones
 
@@ -34,9 +25,10 @@ function abrirContacto() {
 function load(){
     if(window.onload = true) {
        setTimeout(function() {
-            // abrirMen.style.top = '0px';
+            //  abrirMen.style.top = '0px';
        },2000)
     }
+
 };
 //funcion cerrar mensaje contacto
 function cerrarMen() {
@@ -68,8 +60,6 @@ botonColor.addEventListener('click', () => {
 
 });
 
-
-
 // validar formulario
 
 const nombre = document.querySelector('.nombre').value
@@ -90,6 +80,5 @@ botonValidar.addEventListener('click', () => {
     }
     else {
         alerta.innerHTML = ''
-
     }
 })

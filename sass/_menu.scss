@@ -10,6 +10,7 @@
     }
     .logo {
         width: 50%;
+        height: inherit;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -21,6 +22,7 @@
     }
     nav {
         width: 50%;
+        height: inherit;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -41,8 +43,12 @@
                 align-items: center;
                 z-index: 100000;
                 ion-icon{
-                    font-size: 50px;
-                    color: $negrito;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: $marino
                 }
                 @media screen and (max-width:950px) {
                     ion-icon{
@@ -115,11 +121,6 @@
             margin: 0px ;
             align-items: center !important;
             justify-content: center !important;
-        }
-        #miLogo {
-            span{
-                color: white !important;
-            }
         }
         .boton-1 {
             font-size: 20px;

@@ -37,9 +37,7 @@ body{
     a{
         color:$negrito;
     }
-
 }
-
 
 .cambiar{
     transition: all .8s;
@@ -53,7 +51,7 @@ body{
 
     }
     .seccionSk .color{
-        transition: all .4s;
+       transition: all .4s;
         background-color: rgba(0, 0, 0, 0.808);
     }
     .icoMenu{
@@ -66,8 +64,7 @@ body{
     #miLogo {
         span {
             color: white;
-        transition: all .4s;
-
+            transition: all .4s;
         }
     }
     .camb-color{
@@ -91,7 +88,6 @@ body{
     align-items: flex-end;
     background-color: transparent;
     z-index: 100000;
-
     div {
         margin-top: auto;
         margin: 12px;

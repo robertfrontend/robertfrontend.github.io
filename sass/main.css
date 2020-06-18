@@ -13,7 +13,7 @@
 
 #miLogo {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 900;
   color: #5e17eb !important;
 }
 
@@ -28,7 +28,7 @@
 }
 
 #miLogo::before {
-  content: '< ';
+  content: '<';
 }
 
 #miLogo::after {
@@ -55,7 +55,7 @@
   transition: all .3s;
   border: 2px solid #00051de8;
   background-color: transparent;
-  color: #00051de8 !important;
+  color: #5e17eb !important;
 }
 
 .boton-2 {
@@ -95,7 +95,7 @@
 
 #miLogo {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 900;
   color: #5e17eb !important;
 }
 
@@ -110,7 +110,7 @@
 }
 
 #miLogo::before {
-  content: '< ';
+  content: '<';
 }
 
 #miLogo::after {
@@ -137,6 +137,7 @@
 
 .divMenu .logo {
   width: 50%;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +157,7 @@
 
 .divMenu nav {
   width: 50%;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,8 +199,12 @@
 }
 
 .divMenu nav .divIcoMenu .icoMenu ion-icon {
-  font-size: 50px;
-  color: #00051de8;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #5e17eb;
 }
 
 @media screen and (max-width: 950px) {
@@ -316,10 +322,6 @@
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-}
-
-.openMenu .padre #miLogo span {
-  color: white !important;
 }
 
 .openMenu .padre .boton-1 {

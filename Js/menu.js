@@ -34,7 +34,7 @@ class AbMenu{
             contentMenu.innerHTML = "";
             contentMenu.className = 'linkMenu'
             iconoMenu.name = 'menu-outline'
-            iconoMenu.style.color = 'black';
+            iconoMenu.style.color = 'white';
             iconoMenu.style.position = 'relative'; 
         }
     };

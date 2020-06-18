@@ -14,7 +14,7 @@ $negroso:  #00051dc4;
 
 #miLogo{
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 900;
     color: $marino !important;
     @media screen and (max-width:712px) {
         h1 {
@@ -26,7 +26,7 @@ $negroso:  #00051dc4;
     }
 
     &::before{
-        content: '< ';
+        content: '<';
     }
     &::after{
         content: '/>';

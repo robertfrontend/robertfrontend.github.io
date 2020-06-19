@@ -84,20 +84,25 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-self: flex-end;
-    align-items: flex-end;
+    justify-self: center;
+    align-items: center;
     background-color: transparent;
     z-index: 100000;
     div {
         margin-top: auto;
-        margin: 12px;
         cursor: pointer;
         background-color: $negrito;
-        padding: 10px;
-        border-radius: 100%;
+        border-radius: 50% !important;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
         ion-icon {
-            font-size: 40px;
+            font-size:30px;
             color: white;
+            margin: 0px;
+            padding: 0px;
         }
     }
 }

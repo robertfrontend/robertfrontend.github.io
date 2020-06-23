@@ -25,7 +25,7 @@ function abrirContacto() {
 function load(){
     if(window.onload = true) {
        setTimeout(function() {
-            abrirMen.style.top = '0px';
+            // abrirMen.style.top = '0px';
        },2000)
     }
 
@@ -57,7 +57,6 @@ botonColor.addEventListener('click', () => {
             body.className = '';
             break;
     }
-
 });
 
 // validar formulario

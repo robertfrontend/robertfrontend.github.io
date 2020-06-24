@@ -347,6 +347,19 @@ header{
             position: relative;
             width: 300px;
             text-align: center;
+            .boton-1 {
+                position: relative;
+                padding: 10px 35px;
+                ion-icon {
+                    position: absolute;
+                    top: 1;
+                    margin: 0;
+                    padding-top: 2px;
+                    padding-left: 2px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
         }
         @media screen and (max-width:712px) {
             padding: 50px 0px;
@@ -513,7 +526,23 @@ header{
                     height: inherit;
                     transition: all .4s;
                     height: inherit;
-                    background-color: rgba(131, 0, 218, 0.925);;
+                    background-color: rgba(131, 0, 218, 0.925);
+                    .boton-2 {
+                        padding: 10px 40px;
+                        ion-icon {
+                            position: absolute;
+                            top: 1;
+                            margin: 0;
+                            padding-top: 2px;
+                            padding-left: 4px;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        &:hover {
+                            background-color: $negrito;
+                            border: 2px solid $negrito;
+                        }
+                    }
                 }
             }
             div {
@@ -533,7 +562,19 @@ header{
             }
             .d-vermas{
                 width: 100%;
-            
+                .boton-1 {
+                    padding: 10px 35px;
+                    position: relative;
+                    ion-icon {
+                        position: absolute;
+                        top: 1;
+                        margin: 0;
+                        padding-top: 4px;
+                        padding-left: 4px;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
             }
         }
     }

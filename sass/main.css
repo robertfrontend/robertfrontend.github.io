@@ -56,6 +56,7 @@
   border: 2px solid #00051de8;
   background-color: transparent;
   color: #5e17eb !important;
+  text-decoration: none !important;
 }
 
 .boton-2 {
@@ -78,6 +79,7 @@
   transition: all .3s;
   border: 2px solid #5e17eb;
   background-color: transparent;
+  text-decoration: none !important;
   color: white !important;
 }
 
@@ -872,6 +874,21 @@ header .div-header .divImg img {
   text-align: center;
 }
 
+.seccionMi .divSecMi .desc .boton-1 {
+  position: relative;
+  padding: 10px 35px;
+}
+
+.seccionMi .divSecMi .desc .boton-1 ion-icon {
+  position: absolute;
+  top: 1;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 712px) {
   .seccionMi .divSecMi {
     padding: 50px 0px;
@@ -1111,6 +1128,25 @@ header .div-header .divImg img {
   background-color: rgba(131, 0, 218, 0.925);
 }
 
+.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2 {
+  padding: 10px 40px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2 ion-icon {
+  position: absolute;
+  top: 1;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 4px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2:hover {
+  background-color: #00051de8;
+  border: 2px solid #00051de8;
+}
+
 .seccion-portafolio .div-portafolio .tarjt-portafolio div {
   width: 100%;
   text-align: center;
@@ -1140,6 +1176,21 @@ header .div-header .divImg img {
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas {
   width: 100%;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas .boton-1 {
+  padding: 10px 35px;
+  position: relative;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas .boton-1 ion-icon {
+  position: absolute;
+  top: 1;
+  margin: 0;
+  padding-top: 4px;
+  padding-left: 4px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .seccion-form {

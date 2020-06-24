@@ -18,6 +18,7 @@
         border: 2px solid $negrito;
         background-color: transparent;
         color: $marino !important;
+        text-decoration: none !important;
     }
 }
 .boton-2 {
@@ -36,6 +37,7 @@
         transition: all .3s;
         border: 2px solid $marino;
         background-color: transparent;
+        text-decoration: none !important;
         color: white !important;
     }
 }

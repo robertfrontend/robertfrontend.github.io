@@ -244,6 +244,8 @@ header{
         }
     }
 }
+
+// Modal de Bienvenida
 .mensajeBienvenida{
     position: fixed;
     top: -1000px;
@@ -311,7 +313,9 @@ header{
         }
     }
 }
+// fin de modal de bienvenida
 
+// Seccion de mi resumen
 .seccionMi{
     width: 100%;
     position: relative;
@@ -377,7 +381,9 @@ header{
         }
     }
 }
+// fin de la seccion de mi resumen
 
+// seccion de mis skill
 .seccionSk{
     width: 100%;
     background: url(../images/33290.jpg);
@@ -452,9 +458,14 @@ header{
         }
     }
 }
+// fin de la seccion de mi skill
+
+// seccion portafolio
 .seccion-portafolio{
     width: 100%;
     padding: 100px 0px;
+
+    // .tit - div para agregar titulo 
     .tit{
         width: 100%;
         display: flex;
@@ -476,6 +487,7 @@ header{
             }
         }
     }
+    // cajon donde estan los proyectos
     .div-portafolio{
         width: 100%;
         display: flex;
@@ -483,6 +495,8 @@ header{
         justify-content: space-evenly;
         padding: 20px 0px;
         flex-wrap: wrap;
+
+        // tarjeta de los proyectos
         .tarjt-portafolio{
             width: 450px;
             height: 30vh;
@@ -576,10 +590,11 @@ header{
                     }
                 }
             }
-        }
-    }
+        } // fin de tarjeta de los proyectos
+    }// fin cajon portafolio
 }
 
+// Seccion de formulario
 .seccion-form {
     width: 100%;
     overflow: hidden;
@@ -653,7 +668,8 @@ header{
 
         }
     }
-}
+} 
+//fin de seccion formulario
 
 .otra {
     width: 100%;
@@ -705,6 +721,7 @@ header{
     }
 }
 
+// final
 footer{
     width: 100%;
     background-color: $marino;

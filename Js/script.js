@@ -1,36 +1,33 @@
 document.write('<script src="./Js/menu.js"></script>')
 
 // Variables
-
 let abrirMen = document.querySelector('.mensajeBienvenida');
 let btnCerrarC = document.getElementById('cerrarCon');
 let botonContactame = document.getElementById('botContactame')
 
-//Event Listeners
-
 //event listeners del window cargando
 window.onload = load;
-btnCerrarC.addEventListener('click', cerrarMen)
-
-botonContactame.addEventListener('click', abrirContacto )
-
 //Funciones
 
-// abrir contacto new
+// abrir badge de bienvenida
+botonContactame.addEventListener('click', abrirContacto )
+
 function abrirContacto() {
     abrirMen.style.top = '0px';
 }
-
 //funcion mostrar mensaje de contacto cuando la pagina cargue
 function load(){
     if(window.onload = true) {
        setTimeout(function() {
+           // abrir el modal cuando el window termine de cargar
             // abrirMen.style.top = '0px';
        },2000)
     }
 
 };
 //funcion cerrar mensaje contacto
+btnCerrarC.addEventListener('click', cerrarMen)
+
 function cerrarMen() {
     abrirMen.style.top = '-1000px'
 }
@@ -60,7 +57,6 @@ botonColor.addEventListener('click', () => {
 });
 
 // validar formulario
-
 const nombre = document.querySelector('.nombre').value
 const correo = document.querySelector('.email').value
 const botonValidar = document.querySelector('#btnValidar')
@@ -76,9 +72,10 @@ var mensajeHTML = `
 botonValidar.addEventListener('click', () => {
     let valid = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     if(nombre === '' || correo === '' && correo === valid){
-        alerta.innerHTML = mensajeHTML
+        alerta.innerHTML = mensajeHTML;
     }
     else {
-        alerta.innerHTML = ''
+        alerta.innerHTML = '';
     }
 })
+

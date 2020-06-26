@@ -36,12 +36,12 @@ function cerrarMen() {
 const botonColor = document.querySelector('.camb-color');
 const body = document.querySelector('body');
 const icoCam = document.getElementById('icoCol')
-var estado = 'blanco';
+var estado = 'negro';
 
 botonColor.addEventListener('click', () => { 
     switch(estado) {
         case 'blanco':
-            body.className = 'cambiar';
+            body.className = 'dark';
             icoCam.name = 'sunny';
             icoCam.style.transition = 'all .8s';
             estado = 'negro';
@@ -51,7 +51,7 @@ botonColor.addEventListener('click', () => {
             icoCam.name = 'moon';
             icoCam.style.transition = 'all .8s';
             body.style.transition = 'all .8s';
-            body.className = '';
+            body.className = 'ligth';
             break;
     }
 });

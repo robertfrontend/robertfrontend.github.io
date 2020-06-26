@@ -22,9 +22,13 @@ body{
     cursor:auto;
     overflow-x: hidden !important;
     // background-color: rgb(0, 0, 12);
-    background-color: white;
+
     margin: 0;
     padding: 0;
+}
+
+.ligth{
+    background-color: white;
     h1 {
         color: $negrito;
     }
@@ -39,7 +43,7 @@ body{
     }
 }
 
-.cambiar{
+.dark{
     transition: all .8s;
     background-color: rgb(5, 0, 27);
     h1,
@@ -355,13 +359,8 @@ header{
                 position: relative;
                 padding: 10px 35px;
                 ion-icon {
-                    position: absolute;
-                    top: 1;
-                    margin: 0;
-                    padding-top: 2px;
-                    padding-left: 2px;
                     font-size: 20px;
-                    font-weight: bold;
+                    margin: -3px 2px;
                 }
             }
         }
@@ -417,15 +416,16 @@ header{
             overflow: hidden;
             div {
                 position: relative;
-                width: 30%;
+                width: 100%;
                 height: auto;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 margin: 10px 0px;
                 padding: 10px 50px;
                 border-radius: 10px;
+                flex-wrap: wrap;
                 h3 {
                     color: white;
                     font-size: 25px;
@@ -433,11 +433,21 @@ header{
                     margin: 0;
                 }
                 p{
-                    margin: 0;
+                    margin: 2px auto;
                     color: white;
-                    font-size: 20px;
-                    font-weight: normal;
-                    padding: 5px 0px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 8px 30px;
+                    background-color: rgba(17, 0, 78, 0.637);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    ion-icon{
+                        margin: -3px 2px;
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        background-color:  rgb(17, 0, 78);
+                    }
                 }
             }
         }
@@ -540,17 +550,12 @@ header{
                     height: inherit;
                     transition: all .4s;
                     height: inherit;
-                    background-color: rgba(131, 0, 218, 0.925);
+                    background-color: rgba(131, 0, 218, 0.692);
                     .boton-2 {
                         padding: 10px 40px;
                         ion-icon {
-                            position: absolute;
-                            top: 1;
-                            margin: 0;
-                            padding-top: 2px;
-                            padding-left: 4px;
                             font-size: 20px;
-                            font-weight: bold;
+                            margin: -3px 2px;
                         }
                         &:hover {
                             background-color: $negrito;
@@ -577,16 +582,11 @@ header{
             .d-vermas{
                 width: 100%;
                 .boton-1 {
-                    padding: 10px 35px;
+                    padding: 10px 35px !important;
                     position: relative;
                     ion-icon {
-                        position: absolute;
-                        top: 1;
-                        margin: 0;
-                        padding-top: 4px;
-                        padding-left: 4px;
                         font-size: 20px;
-                        font-weight: bold;
+                        margin: -3px 2px;
                     }
                 }
             }

@@ -393,67 +393,70 @@ body {
   font-weight: 400;
   cursor: auto;
   overflow-x: hidden !important;
-  background-color: white;
   margin: 0;
   padding: 0;
 }
 
-body h1 {
+.ligth {
+  background-color: white;
+}
+
+.ligth h1 {
   color: #00051de8;
 }
 
-body h3 {
+.ligth h3 {
   color: #00051de8;
 }
 
-body p {
+.ligth p {
   color: #00051de8;
 }
 
-body a {
+.ligth a {
   color: #00051de8;
 }
 
-.cambiar {
+.dark {
   -webkit-transition: all .8s;
   transition: all .8s;
   background-color: #05001b;
 }
 
-.cambiar h1,
-.cambiar h3,
-.cambiar p,
-.cambiar a {
+.dark h1,
+.dark h3,
+.dark p,
+.dark a {
   color: white;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.cambiar .seccionSk .color {
+.dark .seccionSk .color {
   -webkit-transition: all .4s;
   transition: all .4s;
   background-color: rgba(0, 0, 0, 0.808);
 }
 
-.cambiar .icoMenu ion-icon {
+.dark .icoMenu ion-icon {
   color: white !important;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.cambiar #miLogo span {
+.dark #miLogo span {
   color: white;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.cambiar .camb-color {
+.dark .camb-color {
   background-color: white;
   -webkit-transition: all .8s;
   transition: all .8s;
 }
 
-.cambiar .camb-color ion-icon {
+.dark .camb-color ion-icon {
   color: #00051de8;
 }
 
@@ -880,13 +883,8 @@ header .div-header .divImg img {
 }
 
 .seccionMi .divSecMi .desc .boton-1 ion-icon {
-  position: absolute;
-  top: 1;
-  margin: 0;
-  padding-top: 2px;
-  padding-left: 2px;
   font-size: 20px;
-  font-weight: bold;
+  margin: -3px 2px;
 }
 
 @media screen and (max-width: 712px) {
@@ -963,15 +961,15 @@ header .div-header .divImg img {
 
 .seccionSk .divSecSk .skilss div {
   position: relative;
-  width: 30%;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -981,6 +979,8 @@ header .div-header .divImg img {
   margin: 10px 0px;
   padding: 10px 50px;
   border-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .seccionSk .divSecSk .skilss div h3 {
@@ -991,11 +991,23 @@ header .div-header .divImg img {
 }
 
 .seccionSk .divSecSk .skilss div p {
-  margin: 0;
+  margin: 2px auto;
   color: white;
-  font-size: 20px;
-  font-weight: normal;
-  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 30px;
+  background-color: rgba(17, 0, 78, 0.637);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seccionSk .divSecSk .skilss div p ion-icon {
+  margin: -3px 2px;
+  font-size: 18px;
+}
+
+.seccionSk .divSecSk .skilss div p:hover {
+  background-color: #11004e;
 }
 
 @media screen and (max-width: 712px) {
@@ -1125,7 +1137,7 @@ header .div-header .divImg img {
   -webkit-transition: all .4s;
   transition: all .4s;
   height: inherit;
-  background-color: rgba(131, 0, 218, 0.925);
+  background-color: rgba(131, 0, 218, 0.692);
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2 {
@@ -1133,13 +1145,8 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2 ion-icon {
-  position: absolute;
-  top: 1;
-  margin: 0;
-  padding-top: 2px;
-  padding-left: 4px;
   font-size: 20px;
-  font-weight: bold;
+  margin: -3px 2px;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2:hover {
@@ -1179,18 +1186,13 @@ header .div-header .divImg img {
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas .boton-1 {
-  padding: 10px 35px;
+  padding: 10px 35px !important;
   position: relative;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas .boton-1 ion-icon {
-  position: absolute;
-  top: 1;
-  margin: 0;
-  padding-top: 4px;
-  padding-left: 4px;
   font-size: 20px;
-  font-weight: bold;
+  margin: -3px 2px;
 }
 
 .seccion-form {

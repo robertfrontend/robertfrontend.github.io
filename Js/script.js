@@ -23,7 +23,6 @@ function load(){
             // abrirMen.style.top = '0px';
        },2000)
     }
-
 };
 //funcion cerrar mensaje contacto
 btnCerrarC.addEventListener('click', cerrarMen)
@@ -66,7 +65,7 @@ var mensajeHTML = `
     <div class="alert alert-danger" role="alert">
         Llena todoos los campos.
     </div>
-`
+`;
 
 // funcion validar formulario
 botonValidar.addEventListener('click', () => {

@@ -41,6 +41,28 @@ body{
     a{
         color:$negrito;
     }
+    .tar-learn{
+        background-color: white !important;
+        h3 {
+            color: $negrito;
+        }
+        p {
+            color:$negrito
+        }
+        &:hover {
+            transition: all .4s;
+            background-color: $marino !important;
+            h3 {
+                transition: all .4s;
+
+                color: white !important;
+            }
+            p {
+                transition: all .4s;
+                color: white !important;
+            }
+        }
+    }
 }
 
 .dark{
@@ -592,6 +614,57 @@ header{
             }
         } // fin de tarjeta de los proyectos
     }// fin cajon portafolio
+}
+
+.seccion-learning{
+    width: 100%;
+    .tit {
+        width: 100%;
+        text-align: left;
+        h1 {
+            font-size: 280%; //40px
+            margin: 0;
+            font-weight: bold;
+            padding: 10px 0px;
+        }
+    }
+    .div-learn{
+        padding: 50px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap !important;
+        a{
+            width: 31%;
+            border: 2px solid $marino;
+            padding: 12px 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #00051de8;
+            margin: 10px 10px;
+            div {
+                width: 100%;
+                text-align: left;
+                h3 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            &:hover {
+                background-color: $marino;
+            }
+        }
+        @media screen and (max-width:935px){
+            a {
+                width: 100% !important;
+            }
+        }
+    }
 }
 
 // Seccion de formulario

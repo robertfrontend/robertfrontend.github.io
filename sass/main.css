@@ -417,31 +417,35 @@ body {
   color: #00051de8;
 }
 
-.ligth .tar-learn {
+.ligth .port-learn {
   background-color: white !important;
 }
 
-.ligth .tar-learn h3 {
+.ligth .port-learn .tar-learn {
+  background-color: white !important;
+}
+
+.ligth .port-learn .tar-learn h3 {
   color: #00051de8;
 }
 
-.ligth .tar-learn p {
+.ligth .port-learn .tar-learn p {
   color: #00051de8;
 }
 
-.ligth .tar-learn:hover {
+.ligth .port-learn .tar-learn:hover {
   -webkit-transition: all .4s;
   transition: all .4s;
   background-color: #5e17eb !important;
 }
 
-.ligth .tar-learn:hover h3 {
+.ligth .port-learn .tar-learn:hover h3 {
   -webkit-transition: all .4s;
   transition: all .4s;
   color: white !important;
 }
 
-.ligth .tar-learn:hover p {
+.ligth .port-learn .tar-learn:hover p {
   -webkit-transition: all .4s;
   transition: all .4s;
   color: white !important;
@@ -1231,7 +1235,19 @@ header .div-header .divImg img {
 
 .seccion-learning .tit {
   width: 100%;
-  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .seccion-learning .tit h1 {
@@ -1242,6 +1258,7 @@ header .div-header .divImg img {
 }
 
 .seccion-learning .div-learn {
+  position: relative;
   padding: 50px 0px;
   width: 100%;
   display: -webkit-box;
@@ -1257,11 +1274,57 @@ header .div-header .divImg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap !important;
-      flex-wrap: wrap !important;
 }
 
-.seccion-learning .div-learn a {
+.seccion-learning .div-learn .port-learn {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: -100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #00051d;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.459);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.459);
+  z-index: 10;
+}
+
+.seccion-learning .div-learn .port-learn .quit {
+  position: absolute;
+  width: auto;
+  top: -50px;
+  right: 0px;
+  text-align: right;
+  padding: 20px;
+}
+
+.seccion-learning .div-learn .port-learn .quit button {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background: red;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: none;
+}
+
+.seccion-learning .div-learn .port-learn a {
   width: 31%;
   border: 2px solid #5e17eb;
   padding: 12px 12px;
@@ -1271,21 +1334,21 @@ header .div-header .divImg img {
   margin: 10px 10px;
 }
 
-.seccion-learning .div-learn a div {
+.seccion-learning .div-learn .port-learn a div {
   width: 100%;
   text-align: left;
 }
 
-.seccion-learning .div-learn a div h3 {
+.seccion-learning .div-learn .port-learn a div h3 {
   font-size: 20px;
   font-weight: bold;
 }
 
-.seccion-learning .div-learn a div p {
+.seccion-learning .div-learn .port-learn a div p {
   margin: 0;
 }
 
-.seccion-learning .div-learn a:hover {
+.seccion-learning .div-learn .port-learn a:hover {
   background-color: #5e17eb;
 }
 

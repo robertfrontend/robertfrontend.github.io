@@ -20,7 +20,7 @@ function load(){
     if(window.onload = true) {
        setTimeout(function() {
            // abrir el modal cuando el window termine de cargar
-            // abrirMen.style.top = '0px';
+            abrirMen.style.top = '0px';
        },2000)
     }
 };
@@ -78,3 +78,21 @@ botonValidar.addEventListener('click', () => {
     }
 })
 
+const botonLearn = document.getElementById('abrirCursos')
+const portLearn = document.querySelector('.port-learn')
+const botonQuitarLearn = document.querySelector('#quitar')
+
+botonLearn.addEventListener('click', () => {
+    portLearn.style.transition = ' all .4s';
+    portLearn.style.width = '100%';
+    portLearn.style.left = '0';
+})
+
+botonQuitarLearn.addEventListener('click', () => {
+    quitarLeanrn();
+})
+
+function quitarLeanrn() {
+    portLearn.style.transition = ' all .4s';
+    portLearn.style.left = '-100vw';
+}

@@ -41,25 +41,28 @@ body{
     a{
         color:$negrito;
     }
-    .tar-learn{
+    .port-learn{
         background-color: white !important;
-        h3 {
-            color: $negrito;
-        }
-        p {
-            color:$negrito
-        }
-        &:hover {
-            transition: all .4s;
-            background-color: $marino !important;
+        .tar-learn{
+            background-color: white !important;
             h3 {
-                transition: all .4s;
-
-                color: white !important;
+                color: $negrito;
             }
             p {
+                color:$negrito
+            }
+            &:hover {
                 transition: all .4s;
-                color: white !important;
+                background-color: $marino !important;
+                h3 {
+                    transition: all .4s;
+    
+                    color: white !important;
+                }
+                p {
+                    transition: all .4s;
+                    color: white !important;
+                }
             }
         }
     }
@@ -620,7 +623,10 @@ header{
     width: 100%;
     .tit {
         width: 100%;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h1 {
             font-size: 280%; //40px
             margin: 0;
@@ -629,34 +635,68 @@ header{
         }
     }
     .div-learn{
+        position: relative;
         padding: 50px 0px;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap !important;
-        a{
-            width: 31%;
-            border: 2px solid $marino;
-            padding: 12px 12px;
-            text-decoration: none;
-            border-radius: 8px;
-            background-color: #00051de8;
-            margin: 10px 10px;
-            div {
-                width: 100%;
-                text-align: left;
-                h3 {
-                    font-size: 20px;
+        .port-learn{
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: -100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #00051d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.459);
+            z-index: 10;
+            .quit{
+                position: absolute;
+                width: auto;
+                top: -50px;
+                right: 0px;
+                text-align: right;
+                padding: 20px;
+                button{
+                    font-size: 22px;
                     font-weight: bold;
-                }
-                p {
-                    margin: 0;
+                    color: white;
+                    cursor: pointer;
+                    background: red;
+                    padding: 10px 20px;
+                    border-radius: 50%;
+                    border: none;
                 }
             }
-            &:hover {
-                background-color: $marino;
+            a{
+                width: 31%;
+                border: 2px solid $marino;
+                padding: 12px 12px;
+                text-decoration: none;
+                border-radius: 8px;
+                background-color: #00051de8;
+                margin: 10px 10px;
+                div {
+                    width: 100%;
+                    text-align: left;
+                    h3 {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+                &:hover {
+                    background-color: $marino;
+                }
             }
         }
         @media screen and (max-width:935px){

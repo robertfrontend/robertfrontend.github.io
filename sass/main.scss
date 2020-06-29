@@ -589,6 +589,26 @@ header{
                     }
                 }
             }
+            &:focus {
+                .text {
+                    width: 100%;
+                    height: inherit;
+                    transition: all .4s;
+                    height: inherit;
+                    background-color: rgba(131, 0, 218, 0.692);
+                    .boton-2 {
+                        padding: 10px 40px;
+                        ion-icon {
+                            font-size: 20px;
+                            margin: -3px 2px;
+                        }
+                        &:hover {
+                            background-color: $negrito;
+                            border: 2px solid $negrito;
+                        }
+                    }
+                }
+            }
             div {
                 width: 100%;
                 text-align: center;

@@ -1188,6 +1188,29 @@ header .div-header .divImg img {
   border: 2px solid #00051de8;
 }
 
+.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text {
+  width: 100%;
+  height: inherit;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  height: inherit;
+  background-color: rgba(131, 0, 218, 0.692);
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text .boton-2 {
+  padding: 10px 40px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text .boton-2 ion-icon {
+  font-size: 20px;
+  margin: -3px 2px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text .boton-2:hover {
+  background-color: #00051de8;
+  border: 2px solid #00051de8;
+}
+
 .seccion-portafolio .div-portafolio .tarjt-portafolio div {
   width: 100%;
   text-align: center;

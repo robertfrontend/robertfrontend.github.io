@@ -69,11 +69,10 @@ var mensajeHTML = `
 
 // funcion validar formulario
 botonValidar.addEventListener('click', () => {
-    let valid = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    if(nombre === '' || correo === '' && correo === valid){
+
+    if(nombre === '' || correo === ''){
         alerta.innerHTML = mensajeHTML;
-    }
-    else {
+    }else {
         alerta.innerHTML = '';
     }
 })

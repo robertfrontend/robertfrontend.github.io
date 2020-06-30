@@ -82,8 +82,7 @@ const portLearn = document.querySelector('.port-learn')
 const botonQuitarLearn = document.querySelector('#quitar')
 
 botonLearn.addEventListener('click', () => {
-    portLearn.style.transition = ' all .4s';
-    portLearn.style.width = '100%';
+    portLearn.style.transition = ' all .8s';
     portLearn.style.left = '0';
 })
 

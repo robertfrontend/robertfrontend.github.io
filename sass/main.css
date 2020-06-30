@@ -198,6 +198,10 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 100000;
+  border: none !important;
+  background: transparent !important;
+  cursor: pointer;
+  margin: 0;
 }
 
 .divMenu nav .divIcoMenu .icoMenu ion-icon {

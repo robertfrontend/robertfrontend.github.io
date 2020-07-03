@@ -695,23 +695,37 @@ header{
                     border: none;
                 }
             }
-            a{
-                width: 31%;
+            .tar-learn{
+                width: 300px;
                 border: 2px solid $marino;
                 padding: 12px 12px;
                 text-decoration: none;
                 border-radius: 8px;
                 background-color: #00051de8;
                 margin: 10px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                flex-wrap: wrap;
                 div {
                     width: 100%;
-                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2px 0px;
+                    flex-wrap: wrap;
                     h3 {
                         font-size: 20px;
                         font-weight: bold;
                     }
                     p {
                         margin: 0;
+                    }
+                    img {
+                        width: 50px;
                     }
                 }
                 &:hover {

@@ -149,8 +149,8 @@ header{
         height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         margin: 20px 0px;
         @media screen and (max-width:950px) {
@@ -196,7 +196,7 @@ header{
             @media screen and (max-width:712px) {
                 padding: 10px 0px;
                 h1 {
-                    font-size: 45px !important;
+                    font-size: 200% !important;
                 }
             }
             @media screen and (max-width:550px){
@@ -217,7 +217,7 @@ header{
                 }
             }
             h1{ 
-                font-size: 350%; //60px
+                font-size: 280%; //60px
                 margin: 0;
                 font-weight: bold !important;
                 @media screen and (max-width:550px){
@@ -250,7 +250,7 @@ header{
             }
         }
         .divImg{
-            width: 55%;
+            width: 45%;
             height: auto;
             display: flex;
             flex-direction: row;
@@ -356,8 +356,8 @@ header{
         align-items: center;
         flex-wrap: wrap;
         padding: 50px 0px;
-        div {
-            width: 600px;
+        .text {
+            width: 700px;
             margin: 0px auto;
             h3{
                 position: relative;
@@ -365,15 +365,32 @@ header{
                 font-weight: normal;
                 padding: 0;
                 margin: 0;
+                font-weight: bold;
             }
             h1 {
-                font-size: 250%; //40px
+                font-size: 200%; //40px
                 margin: 0;
                 font-weight: bold;
             }
             p{
-                font-size: 120%; // 18px
+                font-size: 130%; // 18px
                 line-height: 30px;
+            }
+            .habi {
+                width: 100%;
+                flex-wrap: wrap;
+                p {
+                    padding: 10px;
+                    margin: 0px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    &::before{
+                        content: '⇉';
+                        padding: 0px 10px;
+                        color: $marino;
+                        font-weight: bold;
+                    }
+                }
             }
         }
         .desc{
@@ -407,99 +424,10 @@ header{
 }
 // fin de la seccion de mi resumen
 
-// seccion de mis skill
-.seccionSk{
-    width: 100%;
-    background: url(../images/33290.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    .color {
-        width: 100%;
-        height: inherit;
-        background: rgba(78, 0, 202, 0.685);
-    }
-    .divSecSk{
-        padding: 50px 0px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        div {
-            text-align: center;
-            h1 {
-                font-size: 250%;
-                color: white;
-            }
-        }
-        .skilss{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            margin: 20px 0px;
-            overflow: hidden;
-            div {
-                position: relative;
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin: 10px 0px;
-                padding: 10px 50px;
-                border-radius: 10px;
-                flex-wrap: wrap;
-                h3 {
-                    color: white;
-                    font-size: 25px;
-                    padding: 12px 0px;
-                    margin: 0;
-                }
-                p{
-                    margin: 2px auto;
-                    color: white;
-                    font-size: 18px;
-                    font-weight: bold;
-                    padding: 8px 30px;
-                    background-color: rgba(17, 0, 78, 0.637);
-                    border-radius: 5px;
-                    cursor: pointer;
-                    ion-icon{
-                        margin: -3px 2px;
-                        font-size: 18px;
-                    }
-                    &:hover {
-                        background-color:  rgb(17, 0, 78);
-                    }
-                }
-            }
-        }
-        @media screen and (max-width:712px){
-            .skilss{
-                div {
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center ;
-                    h3 {
-                        font-size: 25px;
-                    }
-                    p {
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-// fin de la seccion de mi skill
-
 // seccion portafolio
 .seccion-portafolio{
     width: 100%;
-    padding: 100px 0px;
-
+    padding-bottom: 80px;
     // .tit - div para agregar titulo 
     .tit{
         width: 100%;
@@ -637,108 +565,6 @@ header{
             }
         } // fin de tarjeta de los proyectos
     }// fin cajon portafolio
-}
-
-.seccion-learning{
-    width: 100%;
-    .tit {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h1 {
-            font-size: 280%; //40px
-            margin: 0;
-            font-weight: bold;
-            padding: 10px 0px;
-        }
-    }
-    .div-learn{
-        position: relative;
-        padding: 50px 0px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .port-learn{
-            width: 100%;
-            position: absolute;
-            top: 0px;
-            left: -100vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            background-color: #00051d;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.459);
-            z-index: 10;
-            .quit{
-                position: absolute;
-                width: auto;
-                top: -50px;
-                right: 0px;
-                text-align: right;
-                padding: 20px;
-                button{
-                    font-size: 22px;
-                    font-weight: bold;
-                    color: white;
-                    cursor: pointer;
-                    background: red;
-                    padding: 10px 20px;
-                    border-radius: 50%;
-                    border: none;
-                }
-            }
-            .tar-learn{
-                width: 300px;
-                border: 2px solid $marino;
-                padding: 12px 12px;
-                text-decoration: none;
-                border-radius: 8px;
-                background-color: #00051de8;
-                margin: 10px 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                flex-wrap: wrap;
-                div {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 2px 0px;
-                    flex-wrap: wrap;
-                    h3 {
-                        font-size: 20px;
-                        font-weight: bold;
-                    }
-                    p {
-                        margin: 0;
-                    }
-                    img {
-                        width: 50px;
-                    }
-                }
-                &:hover {
-                    background-color: $marino;
-                }
-            }
-        }
-        @media screen and (max-width:935px){
-            a {
-                width: 100% !important;
-            }
-        }
-    }
 }
 
 // Seccion de formulario

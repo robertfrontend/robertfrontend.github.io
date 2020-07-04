@@ -76,21 +76,3 @@ botonValidar.addEventListener('click', () => {
         alerta.innerHTML = '';
     }
 })
-
-const botonLearn = document.getElementById('abrirCursos')
-const portLearn = document.querySelector('.port-learn')
-const botonQuitarLearn = document.querySelector('#quitar')
-
-botonLearn.addEventListener('click', () => {
-    portLearn.style.transition = ' all .8s';
-    portLearn.style.left = '0';
-})
-
-botonQuitarLearn.addEventListener('click', () => {
-    quitarLeanrn();
-})
-
-function quitarLeanrn() {
-    portLearn.style.transition = ' all .4s';
-    portLearn.style.left = '-100vw';
-}

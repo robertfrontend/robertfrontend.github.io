@@ -30,30 +30,30 @@ body{
 .ligth{
     background-color: white;
     h1 {
-        color: $negrito;
+        color: $color-secundary;
     }
     h3 {
-        color: $negrito;
+        color: $color-secundary;
     }
     p {
-        color: $negrito;
+        color: $color-secundary;
     }
     a{
-        color:$negrito;
+        color:$color-secundary;
     }
     .port-learn{
         background-color: white !important;
         .tar-learn{
             background-color: white !important;
             h3 {
-                color: $negrito;
+                color: $color-secundary;
             }
             p {
-                color:$negrito
+                color:$color-secundary
             }
             &:hover {
                 transition: all .4s;
-                background-color: $marino !important;
+                background-color: $color-primary !important;
                 h3 {
                     transition: all .4s;
     
@@ -100,8 +100,11 @@ body{
         background-color: white;
         transition: all .8s;
         ion-icon {
-            color: $negrito;
+            color: $color-secundary;
         }
+    }
+    .tarjeB{
+        background-color: $color-secundary !important; 
     }
 }
 
@@ -120,7 +123,7 @@ body{
     div {
         margin-top: auto;
         cursor: pointer;
-        background-color: $negrito;
+        background-color: $color-secundary;
         border-radius: 50% !important;
         padding: 15px;
         display: flex;
@@ -212,7 +215,7 @@ header{
                 font-size: 150%; // 25px
                 font-weight: normal;
                 span {
-                    color: $marino;
+                    color: $color-primary;
                     font-weight: bold;
                 }
             }
@@ -224,7 +227,7 @@ header{
                     padding: 10px 0px;
                 }
                 span {
-                    color: $marino;
+                    color: $color-primary;
                 }
             }
             p {
@@ -232,7 +235,7 @@ header{
                 font-weight: normal;
                 a{
                     text-decoration: none;
-                    color: $marino;
+                    color: $color-primary;
                     &::after{
                         content: '📲';
                     }
@@ -284,7 +287,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(2px);
     z-index: 100000000;
     .tarjeB{
         position: relative;
@@ -322,13 +325,13 @@ header{
             }
             h2 {
                 font-size: 30px;
-                color: $marino;
+                color: $color-primary;
             }
             a {
                 text-decoration: none;
             }
             ion-icon {
-                background-color: $marino;
+                background-color: $color-primary;
                 font-size: 40px;
                 color: white;
                 padding: 12px;
@@ -387,7 +390,7 @@ header{
                     &::before{
                         content: '⇉';
                         padding: 0px 10px;
-                        color: $marino;
+                        color: $color-primary;
                         font-weight: bold;
                     }
                 }
@@ -467,7 +470,7 @@ header{
             box-sizing: border-box;
             overflow: hidden !important;
             position: relative;
-            background-color: $marino;
+            background-color: $color-primary;
             border-radius: 8px;
             object-fit: cover;
             @media screen and (max-width:455px){
@@ -511,8 +514,8 @@ header{
                             margin: -3px 2px;
                         }
                         &:hover {
-                            background-color: $negrito;
-                            border: 2px solid $negrito;
+                            background-color: $color-secundary;
+                            border: 2px solid $color-secundary;
                         }
                     }
                 }
@@ -531,8 +534,8 @@ header{
                             margin: -3px 2px;
                         }
                         &:hover {
-                            background-color: $negrito;
-                            border: 2px solid $negrito;
+                            background-color: $color-secundary;
+                            border: 2px solid $color-secundary;
                         }
                     }
                 }
@@ -608,32 +611,32 @@ header{
                 width: 100%;
                 padding: 12px;
                 font-size: 16px;
-                border: 2px solid $marino;
+                border: 2px solid $color-primary;
                 border-radius: 8px;
             }
             textarea{
                 width: 100%;
                 padding: 10px;
                 font-size: 16px;
-                border: 2px solid $marino;
+                border: 2px solid $color-primary;
                 border-radius: 5px;
             }
             #btnValidar{
                 width:auto;
                 padding: 10px 30px;
-                background: $negrito;
+                background: $color-secundary;
                 margin: 10px 0px;
                 border-radius:5px;
                 text-decoration: none;
                 color: white !important;
                 font-weight: 400;
                 font-size: 16px !important;
-                border: 2px solid $negrito;
+                border: 2px solid $color-secundary;
                 font-weight: bold;
-                box-shadow: 0px 2px 2px $negrito;
+                box-shadow: 0px 2px 2px $color-secundary;
                 &:hover{
                     transition: all .3s;
-                    border: 2px solid $marino;
+                    border: 2px solid $color-primary;
                     background-color: transparent;
                     color: white !important;
                 }
@@ -658,7 +661,7 @@ header{
 }
 .seccion-trab{
     width: 100%;
-    background-color: $marino;
+    background-color: $color-primary;
     .div-trab{
         padding: 50px 0px;
         width: 100%;
@@ -697,7 +700,7 @@ header{
 // final
 footer{
     width: 100%;
-    background-color: $marino;
+    background-color: $color-primary;
     hr {
         width: 50%;
         color: rgba(255, 255, 255, 0.164);

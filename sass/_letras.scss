@@ -1,7 +1,7 @@
 
 @mixin titulo-black {
     font-size: 40px;
-    color: $negrito;
+    color: $color-secundary;
     font-weight: 400;
     @media screen and (max-width:700px) {
         font-size: 30px;
@@ -10,7 +10,7 @@
 
 @mixin titulo-2-black {
     font-size: 20px;
-    color: $negrito;
+    color: $color-secundary;
     line-height: 25px;
     @media screen and (max-width:700px) {
         font-size: 20px;
@@ -20,7 +20,7 @@
 @mixin subtitulo-black {
     text-align: center;
     font-size: 16px;
-    color: $negrito;
+    color: $color-secundary;
     line-height: 30px;
     @media screen and (max-width:700px) {
         font-size: 16px;

@@ -1,7 +1,5 @@
-$marino: #5e17eb;
-$cielo: #00bdd3;
-$negrito:  #00051de8;
-$negroso:  #00051dc4;
+$color-primary: #5e17eb;
+$color-secundary:  #00051de8;
 
 .contenedor {
     margin-left: 10%;
@@ -15,14 +13,14 @@ $negroso:  #00051dc4;
 #miLogo{
     font-size: 30px;
     font-weight: 900;
-    color: $marino !important;
+    color: $color-primary !important;
     @media screen and (max-width:712px) {
         h1 {
             font-size: 20px !important;
         }
     }
     span {
-        color: $negrito;
+        color: $color-secundary;
     }
 
     &::before{

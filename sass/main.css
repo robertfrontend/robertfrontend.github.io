@@ -498,6 +498,10 @@ body {
   color: #00051de8;
 }
 
+.dark .tarjeB {
+  background-color: #00051de8 !important;
+}
+
 .div-color-pagina {
   position: fixed;
   bottom: 30px;
@@ -783,7 +787,8 @@ header .div-header .divImg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.411);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   z-index: 100000000;
 }
 

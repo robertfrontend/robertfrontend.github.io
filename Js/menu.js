@@ -10,7 +10,7 @@ const templateMenu = `
     <div>
         <a id="links" href="#">Inicio</a>
         <a id="links" href="#sobreMi">Sobre Mi</a>
-        <a id="links" href="#Skills">Skills</a>
+        <a id="links" href="#skills">Skills</a>
         <a id="links" href="#portafolio">Portafolio</a>
     </div>
     <div>

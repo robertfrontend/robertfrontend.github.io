@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     @media screen and (max-width:950px) {
     }
     .logo {
@@ -30,8 +31,8 @@
             padding: 10px;
             width: 40px;
 
-            // background-color: $marino;
-            // border: 5px solid $marino;
+            // background-color: $color-primary;
+            // border: 5px solid $color-primary;
             // border-radius: 50%;
             z-index: 100000;
             @media screen and (max-width:950px) {
@@ -53,12 +54,12 @@
                     font-weight: bold;
                     padding: 10px;
                     border-radius: 50%;
-                    background-color: $marino
+                    background-color: $color-primary
                 }
                 @media screen and (max-width:950px) {
                     ion-icon{
                         z-index: 100000;
-                        color: $negrito ;
+                        color: $color-secundary ;
                     }
                 }
             }
@@ -79,7 +80,7 @@
             z-index: 1000;
             p{
                 text-align: center;
-                color: $negrito;
+                color: $color-secundary;
                 font-weight: bold;
                 font-size: 20px;
             }
@@ -144,7 +145,7 @@
                 font-size: 20px;
             }
             &:hover {
-                color: $marino;   
+                color: $color-primary;   
             }
             ion-icon{
                 font-size: 20px;

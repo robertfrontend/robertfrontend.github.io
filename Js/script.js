@@ -24,6 +24,14 @@ function load(){
        },2000)
     }
 };
+
+let segundo = 1000;
+let minuto = segundo * 60;
+
+setInterval(() => {
+    abrirMen.style.top = '0px';
+},minuto)
+
 //funcion cerrar mensaje contacto
 btnCerrarC.addEventListener('click', cerrarMen)
 

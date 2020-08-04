@@ -400,14 +400,6 @@ header{
             position: relative;
             width: 300px;
             text-align: center;
-            .boton-1 {
-                position: relative;
-                padding: 10px 35px;
-                ion-icon {
-                    font-size: 20px;
-                    margin: -3px 2px;
-                }
-            }
         }
         @media screen and (max-width:712px) {
             padding: 50px 0px;
@@ -507,17 +499,6 @@ header{
                     transition: all .4s;
                     height: inherit;
                     background-color: rgba(131, 0, 218, 0.692);
-                    .boton-2 {
-                        padding: 10px 40px;
-                        ion-icon {
-                            font-size: 20px;
-                            margin: -3px 2px;
-                        }
-                        &:hover {
-                            background-color: $color-secundary;
-                            border: 2px solid $color-secundary;
-                        }
-                    }
                 }
             }
             &:focus {
@@ -527,17 +508,6 @@ header{
                     transition: all .4s;
                     height: inherit;
                     background-color: rgba(131, 0, 218, 0.692);
-                    .boton-2 {
-                        padding: 10px 40px;
-                        ion-icon {
-                            font-size: 20px;
-                            margin: -3px 2px;
-                        }
-                        &:hover {
-                            background-color: $color-secundary;
-                            border: 2px solid $color-secundary;
-                        }
-                    }
                 }
             }
             div {
@@ -557,14 +527,6 @@ header{
             }
             .d-vermas{
                 width: 100%;
-                .boton-1 {
-                    padding: 10px 35px !important;
-                    position: relative;
-                    ion-icon {
-                        font-size: 20px;
-                        margin: -3px 2px;
-                    }
-                }
             }
         } // fin de tarjeta de los proyectos
     }// fin cajon portafolio

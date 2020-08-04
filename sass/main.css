@@ -50,6 +50,11 @@
           box-shadow: 0px 2px 2px #5e17eb;
 }
 
+.boton-1 ion-icon {
+  font-size: 20px;
+  margin: -3px 2px;
+}
+
 .boton-1:hover {
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -72,6 +77,11 @@
   font-weight: bold;
   -webkit-box-shadow: 0px 2px 2px #00051de8;
           box-shadow: 0px 2px 2px #00051de8;
+}
+
+.boton-2 ion-icon {
+  font-size: 20px;
+  margin: -3px 2px;
 }
 
 .boton-2:hover {
@@ -941,16 +951,6 @@ header .div-header .divImg img {
   text-align: center;
 }
 
-.seccionMi .divSecMi .desc .boton-1 {
-  position: relative;
-  padding: 10px 35px;
-}
-
-.seccionMi .divSecMi .desc .boton-1 ion-icon {
-  font-size: 20px;
-  margin: -3px 2px;
-}
-
 @media screen and (max-width: 712px) {
   .seccionMi .divSecMi {
     padding: 50px 0px;
@@ -1080,20 +1080,6 @@ header .div-header .divImg img {
   background-color: rgba(131, 0, 218, 0.692);
 }
 
-.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2 {
-  padding: 10px 40px;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2 ion-icon {
-  font-size: 20px;
-  margin: -3px 2px;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio:hover .text .boton-2:hover {
-  background-color: #00051de8;
-  border: 2px solid #00051de8;
-}
-
 .seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text {
   width: 100%;
   height: inherit;
@@ -1101,20 +1087,6 @@ header .div-header .divImg img {
   transition: all .4s;
   height: inherit;
   background-color: rgba(131, 0, 218, 0.692);
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text .boton-2 {
-  padding: 10px 40px;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text .boton-2 ion-icon {
-  font-size: 20px;
-  margin: -3px 2px;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio:focus .text .boton-2:hover {
-  background-color: #00051de8;
-  border: 2px solid #00051de8;
 }
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div {
@@ -1146,16 +1118,6 @@ header .div-header .divImg img {
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas {
   width: 100%;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas .boton-1 {
-  padding: 10px 35px !important;
-  position: relative;
-}
-
-.seccion-portafolio .div-portafolio .tarjt-portafolio .d-vermas .boton-1 ion-icon {
-  font-size: 20px;
-  margin: -3px 2px;
 }
 
 .seccion-form {

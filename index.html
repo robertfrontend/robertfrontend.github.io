@@ -22,6 +22,8 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
 	crossorigin="anonymous"/>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body id="body" class="dark">
 
@@ -51,7 +53,7 @@
 			<div class="contenedor">
 				<!--Introduccion-->
 				<div class="div-header">
-					<div class="divText">	
+					<div class="divText" data-aos="fade-up">	
 						<div>
 							<h3><hr>  Hola, <span>Soy Robert Romero</span>  
 							</h3>
@@ -84,7 +86,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="divImg">
+					<div class="divImg" data-aos="fade-up">
 						<img id="svg1" src="./images/2-img.svg" alt="">
 					</div>
 
@@ -97,7 +99,7 @@
 
 		<!--Modal de bienvenida -->
 		<div class="mensajeBienvenida" id="contactame" >
-			<div class="tarjeB">
+			<div class="tarjeB" >
 				<div class="quit"><p id="cerrarCon">X</p></div>
 				<div>
 					<p>Trabajemos Juntos!</p>
@@ -129,7 +131,7 @@
 	<section class="seccionMi" id="sobreMi">
 		<div class="contenedor">
 			<div class="divSecMi">
-				<div class="text">
+				<div class="text" data-aos="fade-up">
 					<div>
 						<h3>Sobre mi:</h3>
 						<br>
@@ -148,10 +150,10 @@
 							Frontend Developer.
 						</p>
 					</div>
-					<div  id="skills">
+					<div  id="skills" data-aos="fade-up">
 						<h3>Habilidades:</h3>
 					</div>
-					<div class="row habi" >
+					<div class="row habi" data-aos="fade-up">
 						<p>JavaScript</p>
 						<p>HTML & (S) CSS </p>
 						<p>Bootstrap</p>
@@ -160,7 +162,7 @@
 						<p>Responsive Web Desing</p>
 					</div>
 				</div>
-				<div class="desc">
+				<div class="desc" data-aos="fade-up">
 					<a href="./Js/CvRobert.pdf" download 
 					class="boton-1">
 						Descargar Resumen
@@ -176,7 +178,7 @@
 	<!--seccion portafolio-->
 	<section class="seccion-portafolio" id="portafolio">
 		<div class="contenedor">
-			<div class="tit">
+			<div class="tit" data-aos="fade-up">
 				<div>
 					<h1>Portafolio</h1>
 					<p>Ultimos Proyectos Realizados.</p>
@@ -184,7 +186,7 @@
 			</div>
 			<div class="div-portafolio">
 
-				<div class="tarjt-portafolio">
+				<div class="tarjt-portafolio" >
 					<div>
 						<img src="./images/pass.png" alt="">
 					</div>
@@ -382,5 +384,10 @@
 	
 	<script src="./Js/script.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 </body>
 </html>

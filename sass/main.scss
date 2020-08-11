@@ -545,18 +545,17 @@ header{
         form {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap !important;
             div {
-                width: 400px;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 padding: 12px 0px;
-                margin: 5px 50px;
                 @media screen and (max-width:955px) {
                     width: 100%;
                     padding: 5px 0px;

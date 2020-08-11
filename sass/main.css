@@ -1147,10 +1147,10 @@ header .div-header .divImg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1162,7 +1162,7 @@ header .div-header .divImg img {
 }
 
 .seccion-form .div-form form div {
-  width: 400px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,7 +1177,6 @@ header .div-header .divImg img {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 0px;
-  margin: 5px 50px;
 }
 
 @media screen and (max-width: 955px) {

@@ -21,7 +21,7 @@ function load(){
        setTimeout(function() {
            // abrir el modal cuando el window termine de cargar
             abrirMen.style.top = '0px';
-       },10000)
+       },20000)
     }
 };
 

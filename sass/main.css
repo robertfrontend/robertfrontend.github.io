@@ -56,11 +56,11 @@
 }
 
 .boton-1:hover {
+  color: white;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: 2px solid #00051de8;
   background-color: transparent;
-  color: #5e17eb !important;
   text-decoration: none !important;
 }
 
@@ -463,6 +463,14 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
   color: white !important;
+}
+
+.ligth .boton-1:hover {
+  color: #5e17eb !important;
+}
+
+.ligth .boton-2:hover {
+  color: #5e17eb !important;
 }
 
 .dark {

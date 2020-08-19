@@ -66,6 +66,16 @@ body{
             }
         }
     }
+    .boton-1{
+        &:hover {
+            color: $color-primary !important;
+        }
+    }
+    .boton-2{
+        &:hover {
+            color: $color-primary !important;
+        }
+    }
 }
 
 .dark{

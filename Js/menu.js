@@ -2,6 +2,7 @@
 const botonMenu = document.querySelector('.icoMenu');
 let contentMenu = document.querySelector('.linkMenu');
 let iconoMenu = document.getElementById('icono');
+
 let estadoM = false;
 
 // Templates

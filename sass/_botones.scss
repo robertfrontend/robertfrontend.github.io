@@ -18,10 +18,10 @@
         margin: -3px 2px;
     }
     &:hover{
+        color: white;
         transition: all .3s;
         border: 2px solid $color-secundary;
         background-color: transparent;
-        color: $color-primary !important;
         text-decoration: none !important;
     }
 }

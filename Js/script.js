@@ -4,10 +4,13 @@ document.write('<script src="./Js/menu.js"></script>')
 let abrirMen = document.querySelector('.mensajeBienvenida');
 let btnCerrarC = document.getElementById('cerrarCon');
 let botonContactame = document.getElementById('botContactame')
+let contentLogo = document.querySelector('#miLogo')
 
 //event listeners del window cargando
 window.onload = load;
 //Funciones
+
+contentLogo.innerHTML = `Robert<span>rm0</span>`;
 
 // abrir badge de bienvenida
 botonContactame.addEventListener('click', abrirContacto )

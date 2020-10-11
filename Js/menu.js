@@ -11,7 +11,7 @@ const templateMenu = `
     <div>
         <a id="links" href="#">Inicio</a>
         <a id="links" href="#sobreMi">Sobre Mi</a>
-        <a id="links" href="#skills">Skills</a>
+        <a id="links" href="#habilidades">Habilidades</a>
         <a id="links" href="#portafolio">Portafolio</a>
     </div>
     <div>
@@ -57,8 +57,6 @@ function abrirMenu() {
             estadoM = false;
             abMen.openMenu('close')
             break;
-        // default:
-        //     return false
     }
 }
 

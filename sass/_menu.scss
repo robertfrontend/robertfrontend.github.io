@@ -7,27 +7,30 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width:950px) {
-    }
+    @media screen and (max-width:950px) {}
+
     .logo {
         width: 50%;
         height: inherit;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
         @media screen and (max-width:950px) {
             p {
                 font-size: 20px !important;
             }
         }
     }
+
     nav {
         width: 50%;
         height: inherit;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        .divIcoMenu{
+
+        .divIcoMenu {
             padding: 10px;
             width: 40px;
 
@@ -35,10 +38,12 @@
             // border: 5px solid $color-primary;
             // border-radius: 50%;
             z-index: 100000;
+
             @media screen and (max-width:950px) {
                 width: 30px;
             }
-            .icoMenu{
+
+            .icoMenu {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -48,7 +53,8 @@
                 background: transparent !important;
                 cursor: pointer;
                 margin: 0;
-                ion-icon{
+
+                ion-icon {
                     font-size: 30px;
                     color: white;
                     font-weight: bold;
@@ -56,29 +62,32 @@
                     border-radius: 50%;
                     background-color: $color-primary
                 }
+
                 @media screen and (max-width:950px) {
-                    ion-icon{
+                    ion-icon {
                         z-index: 100000;
-                        color: $color-secundary ;
+                        color: $color-secundary;
                     }
                 }
             }
         }
-        .linkMenu{
+
+        .linkMenu {
             position: absolute;
             top: 0px;
             right: 0;
             width: 0%;
             height: 0;
-            background-color:rgb(1, 0, 10);
+            background-color: rgb(1, 0, 10);
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
             flex-direction: column;
             justify-content: center;
-            align-items:center;
+            align-items: center;
             transition: all .6s;
             padding: 0px 0px;
             z-index: 1000;
-            p{
+
+            p {
                 text-align: center;
                 color: $color-secundary;
                 font-weight: bold;
@@ -89,20 +98,21 @@
     }
 }
 
-.openMenu{
+.openMenu {
     position: absolute;
     top: 0px;
     right: 0;
     width: 450px;
     height: 100vh;
-    background-color:rgb(1, 0, 10);
+    background-color: rgb(1, 0, 10);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     transition: all .6s;
     padding: 0px 0px;
     z-index: 1000;
+
     @media screen and (max-width:950px) {
         justify-content: flex-start !important;
         align-items: flex-start !important;
@@ -112,6 +122,7 @@
         width: 100% !important;
         height: 100vh;
     }
+
     .padre {
         width: 50%;
         height: 80vh;
@@ -122,16 +133,19 @@
         justify-content: center;
         align-items: flex-start;
         text-align: left;
+
         @media screen and (max-width:950px) {
             height: 80vh;
-            margin: 0px ;
+            margin: 0px;
             align-items: center !important;
             justify-content: center !important;
         }
+
         .boton-1 {
             font-size: 20px;
             padding: 12px 40px !important;
         }
+
         a {
             padding: 10px 0px;
             text-decoration: none;
@@ -141,21 +155,26 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+
             @media screen and (max-width:950px) {
                 font-size: 20px;
             }
+
             &:hover {
-                color: $color-primary;   
+                color: $color-primary;
             }
-            ion-icon{
+
+            ion-icon {
                 font-size: 20px;
                 padding: 0px 10px;
                 color: white !important;
             }
-            &:hover{
+
+            &:hover {
                 transition: all .2s;
             }
         }
+
         .boton-1 {
             @media screen and (max-width:950px) {
                 padding: 5px 10px !important;

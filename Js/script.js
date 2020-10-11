@@ -22,8 +22,6 @@ function abrirContacto() {
 function load(){
     if(window.onload = true) {
        setTimeout(function() {
-           // abrir el modal cuando el window termine de cargar
-            abrirMen.style.top = '0px';
        },30000)
     }
 };

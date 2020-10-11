@@ -1,32 +1,36 @@
 $color-primary: #5e17eb;
-$color-secundary:  #00051de8;
+$color-secundary: #00051de8;
 
 .contenedor {
     margin-left: 10%;
     margin-right: 10%;
+
     @media screen and (max-width:500px) {
         margin-right: 5%;
         margin-left: 5%;
     }
 }
 
-#miLogo{
+#miLogo {
     font-size: 30px;
     font-weight: 900;
     color: $color-primary !important;
+
     @media screen and (max-width:712px) {
         h1 {
             font-size: 20px !important;
         }
     }
+
     span {
         color: $color-secundary;
     }
 
-    &::before{
+    &::before {
         content: '<';
     }
-    &::after{
+
+    &::after {
         content: '/>';
     }
 }

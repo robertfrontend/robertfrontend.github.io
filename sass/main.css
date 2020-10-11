@@ -389,8 +389,7 @@
   }
 }
 
-#00051dd2#00051de3
-* {
+#00051dd2#00051de3 * {
   margin: 0 !important;
   padding: 0 !important;
   -webkit-box-sizing: border-box;
@@ -947,7 +946,8 @@ header .div-header .divImg img {
 }
 
 .seccionMi .divSecMi .text .habi p::before {
-  content: '⇉';
+  content: '⇨';
+  font-size: 25px;
   padding: 0px 10px;
   color: #5e17eb;
   font-weight: bold;
@@ -1366,6 +1366,16 @@ footer .divFooter div a ion-icon {
   color: white;
   font-size: 30px;
   padding: 0px 10px;
+}
+
+.arrayBottom {
+  width: 100%;
+  text-align: left;
+}
+
+.arrayBottom ion-icon {
+  color: #5e17eb;
+  font-size: 40px;
 }
 
 @font-face {

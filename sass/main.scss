@@ -2,24 +2,23 @@
 @import './variables';
 @import './letras';
 @import './menu';
-#00051dd2#00051de3
 
-*{
+#00051dd2#00051de3 * {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: auto;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     // font-family: 'Merriweather', serif;
     font-weight: 400;
-    cursor:auto;
+    cursor: auto;
     overflow-x: hidden !important;
     // background-color: rgb(0, 0, 12);
 
@@ -27,38 +26,49 @@ body{
     padding: 0;
 }
 
-.ligth{
+.ligth {
     background-color: white;
+
     h1 {
         color: $color-secundary;
     }
+
     h3 {
         color: $color-secundary;
     }
+
     p {
         color: $color-secundary;
     }
-    a{
-        color:$color-secundary;
+
+    a {
+        color: $color-secundary;
     }
-    .port-learn{
+
+    .port-learn {
         background-color: white !important;
-        .tar-learn{
+
+        .tar-learn {
             background-color: white !important;
+
             h3 {
                 color: $color-secundary;
             }
+
             p {
-                color:$color-secundary
+                color: $color-secundary
             }
+
             &:hover {
                 transition: all .4s;
                 background-color: $color-primary !important;
+
                 h3 {
                     transition: all .4s;
-    
+
                     color: white !important;
                 }
+
                 p {
                     transition: all .4s;
                     color: white !important;
@@ -66,59 +76,68 @@ body{
             }
         }
     }
-    .boton-1{
+
+    .boton-1 {
         &:hover {
             color: $color-primary !important;
         }
     }
-    .boton-2{
+
+    .boton-2 {
         &:hover {
             color: $color-primary !important;
         }
     }
 }
 
-.dark{
+.dark {
     transition: all .8s;
     background-color: rgb(5, 0, 27);
+
     h1,
     h3,
     p,
-    a{
+    a {
         color: white;
         transition: all .4s;
 
     }
-    .seccionSk .color{
-       transition: all .4s;
+
+    .seccionSk .color {
+        transition: all .4s;
         background-color: rgba(0, 0, 0, 0.808);
     }
-    .icoMenu{
+
+    .icoMenu {
         ion-icon {
             color: white !important;
-        transition: all .4s;
+            transition: all .4s;
 
         }
     }
+
     #miLogo {
         span {
             color: white;
             transition: all .4s;
         }
     }
-    .camb-color{
+
+    .camb-color {
         background-color: white;
         transition: all .8s;
+
         ion-icon {
             color: $color-secundary;
         }
     }
-    .tarjeB{
-        background-color: $color-secundary !important; 
+
+    .tarjeB {
+        background-color: $color-secundary !important;
     }
 }
 
-.div-color-pagina{
+.div-color-pagina {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -130,6 +149,7 @@ body{
     align-items: center;
     background-color: transparent;
     z-index: 100000;
+
     div {
         margin-top: auto;
         cursor: pointer;
@@ -140,8 +160,9 @@ body{
         flex-direction: column;
         justify-self: center;
         align-items: center;
+
         ion-icon {
-            font-size:30px;
+            font-size: 30px;
             color: white;
             margin: 0px;
             padding: 0px;
@@ -152,12 +173,13 @@ body{
 $break-700px: 700px;
 $break-iphone7plus: 414px;
 
-header{
+header {
     width: 100%;
     height: auto;
     z-index: 10;
+
     //  introduccion
-    .div-header{
+    .div-header {
         width: 100%;
         height: auto;
         display: flex;
@@ -166,103 +188,127 @@ header{
         align-items: center;
         flex-wrap: wrap;
         margin: 20px 0px;
+
         @media screen and (max-width:950px) {
             justify-content: center;
             align-items: center;
             padding: 10px 0px !important;
         }
-        .divText{
+
+        .divText {
             width: 45%;
             height: auto;
             display: flex;
             flex-direction: column;
-            justify-content:center;
-            align-items:flex-start;
+            justify-content: center;
+            align-items: flex-start;
+
             @media screen and (max-width:950px) {
                 padding: 10px 0px !important;
                 margin: 10px 0px !important;
                 align-items: center !important;
                 text-align: center !important;
+
                 h3 {
                     margin: 0;
                 }
+
                 hr {
                     display: none;
                 }
             }
-            #div-redes{
+
+            #div-redes {
                 padding: 20px 0px;
+
                 a {
                     padding: 20px 10px;
                     font-size: 30px;
                     text-decoration: none;
                 }
             }
+
             div {
                 padding: 5px 0px;
             }
+
             @media screen and (max-width:950px) {
                 width: 100%;
                 align-items: center;
                 text-align: left;
             }
+
             @media screen and (max-width:712px) {
                 padding: 10px 0px;
+
                 h1 {
                     font-size: 200% !important;
                 }
             }
-            @media screen and (max-width:550px){
-                padding:10px 0px;
+
+            @media screen and (max-width:550px) {
+                padding: 10px 0px;
                 margin: 10px 0px;
             }
-            hr{
+
+            hr {
                 width: 40px;
-                border:1px solid black;
+                border: 1px solid black;
                 margin: 10px 0px;
             }
+
             h3 {
                 font-size: 150%; // 25px
                 font-weight: normal;
+
                 span {
                     color: $color-primary;
                     font-weight: bold;
                 }
             }
-            h1{ 
+
+            h1 {
                 font-size: 280%; //60px
                 margin: 0;
                 font-weight: bold !important;
-                @media screen and (max-width:550px){
+
+                @media screen and (max-width:550px) {
                     padding: 10px 0px;
                 }
+
                 span {
                     color: $color-primary;
                 }
             }
+
             p {
                 font-size: 120%; // 20px
                 font-weight: normal;
-                a{
+
+                a {
                     text-decoration: none;
                     color: $color-primary;
-                    &::after{
+
+                    &::after {
                         content: '📲';
                     }
                 }
             }
-            #div-botones{
+
+            #div-botones {
                 width: 100%;
                 height: auto;
                 display: flex;
                 flex-direction: row;
+
                 @media screen and (max-width:950px) {
                     justify-content: center;
                     align-items: center;
                 }
             }
         }
-        .divImg{
+
+        .divImg {
             width: 45%;
             height: auto;
             display: flex;
@@ -272,14 +318,17 @@ header{
             flex-wrap: wrap;
             padding: 0px 0px;
             margin: 0px 0px;
+
             @media screen and (max-width:950px) {
                 width: 100%;
                 padding: 0;
                 margin: 0;
-                img{
+
+                img {
                     width: 70% !important;
                 }
             }
+
             img {
                 width: 100%;
             }
@@ -288,7 +337,7 @@ header{
 }
 
 // Modal de Bienvenida
-.mensajeBienvenida{
+.mensajeBienvenida {
     position: fixed;
     top: -1000px;
     width: 100%;
@@ -299,7 +348,8 @@ header{
     align-items: center;
     backdrop-filter: blur(2px);
     z-index: 100000000;
-    .tarjeB{
+
+    .tarjeB {
         position: relative;
         width: 40%;
         display: flex;
@@ -309,14 +359,16 @@ header{
         align-items: center;
         background-color: white;
         border-radius: 10px;
-        .quit{
+
+        .quit {
             position: absolute;
             width: auto;
             top: -50px;
             right: 0px;
             text-align: right;
             padding: 20px;
-            p{
+
+            p {
                 font-size: 22px;
                 font-weight: bold;
                 color: white;
@@ -326,20 +378,25 @@ header{
                 border-radius: 50%;
             }
         }
+
         div {
             text-align: center;
             padding: 5px;
             text-decoration: none;
+
             p {
                 font-size: 20px;
             }
+
             h2 {
                 font-size: 30px;
                 color: $color-primary;
             }
+
             a {
                 text-decoration: none;
             }
+
             ion-icon {
                 background-color: $color-primary;
                 font-size: 40px;
@@ -349,19 +406,22 @@ header{
             }
         }
     }
-    @media screen and (max-width:950px){
-        .tarjeB{
+
+    @media screen and (max-width:950px) {
+        .tarjeB {
             width: 80%;
         }
     }
 }
+
 // fin de modal de bienvenida
 
 // Seccion de mi resumen
-.seccionMi{
+.seccionMi {
     width: 100%;
     position: relative;
-    .divSecMi{
+
+    .divSecMi {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -369,10 +429,12 @@ header{
         align-items: center;
         flex-wrap: wrap;
         padding: 50px 0px;
+
         .text {
             width: 700px;
             margin: 0px auto;
-            h3{
+
+            h3 {
                 position: relative;
                 font-size: 150%; //25px
                 font-weight: normal;
@@ -380,25 +442,31 @@ header{
                 margin: 0;
                 font-weight: bold;
             }
+
             h1 {
                 font-size: 200%; //40px
                 margin: 0;
                 font-weight: bold;
             }
-            p{
+
+            p {
                 font-size: 130%; // 18px
                 line-height: 30px;
             }
+
             .habi {
                 width: 100%;
                 flex-wrap: wrap;
+
                 p {
                     padding: 10px;
                     margin: 0px;
                     font-size: 16px;
                     font-weight: bold;
-                    &::before{
-                        content: '⇉';
+
+                    &::before {
+                        content: '⇨';
+                        font-size: 25px;
                         padding: 0px 10px;
                         color: $color-primary;
                         font-weight: bold;
@@ -406,48 +474,58 @@ header{
                 }
             }
         }
-        .desc{
+
+        .desc {
             position: relative;
             width: 300px;
             text-align: center;
         }
+
         @media screen and (max-width:712px) {
             padding: 50px 0px;
+
             div {
-                width: 100% ;
+                width: 100%;
                 text-align: center;
-                margin:20px 0px;
-                h1{
+                margin: 20px 0px;
+
+                h1 {
                     font-size: 40px;
                 }
-                p{
+
+                p {
                     font-size: 18px;
                 }
             }
         }
     }
 }
+
 // fin de la seccion de mi resumen
 
 // seccion portafolio
-.seccion-portafolio{
+.seccion-portafolio {
     width: 100%;
     padding-bottom: 80px;
+
     // .tit - div para agregar titulo 
-    .tit{
+    .tit {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: left;
+
         div {
             width: 100%;
-            h1{
+
+            h1 {
                 font-size: 280%; //40px
                 margin: 0;
                 font-weight: bold;
                 padding: 10px 0px;
             }
+
             p {
                 margin: 0;
                 padding: 0;
@@ -455,8 +533,9 @@ header{
             }
         }
     }
+
     // cajon donde estan los proyectos
-    .div-portafolio{
+    .div-portafolio {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -465,7 +544,7 @@ header{
         flex-wrap: wrap;
 
         // tarjeta de los proyectos
-        .tarjt-portafolio{
+        .tarjt-portafolio {
             width: 450px;
             height: 30vh;
             margin: 20px auto;
@@ -475,13 +554,16 @@ header{
             background-color: $color-primary;
             border-radius: 8px;
             object-fit: cover;
-            @media screen and (max-width:455px){
+
+            @media screen and (max-width:455px) {
                 height: 25vh;
             }
-            @media screen and (max-width:374px){
+
+            @media screen and (max-width:374px) {
                 height: 20vh;
             }
-            .text{
+
+            .text {
                 width: 100%;
                 height: 100vh;
                 position: absolute;
@@ -493,15 +575,18 @@ header{
                     font-size: 20px;
                     color: white;
                 }
+
                 p {
                     color: white;
                     font-size: 16px !important;
+
                     span {
                         font-weight: bold;
                         text-transform: uppercase;
                     }
                 }
             }
+
             &:hover {
                 .text {
                     width: 100%;
@@ -511,6 +596,7 @@ header{
                     background-color: rgba(131, 0, 218, 0.692);
                 }
             }
+
             &:focus {
                 .text {
                     width: 100%;
@@ -520,6 +606,7 @@ header{
                     background-color: rgba(131, 0, 218, 0.692);
                 }
             }
+
             div {
                 width: 100%;
                 text-align: center;
@@ -529,29 +616,37 @@ header{
                 align-items: center;
                 overflow: hidden !important;
                 object-fit: cover;
+
                 img {
                     width: 100% !important;
                     object-fit: cover;
                 }
 
             }
-            .d-vermas{
+
+            .d-vermas {
                 width: 100%;
             }
-        } // fin de tarjeta de los proyectos
-    }// fin cajon portafolio
+        }
+
+        // fin de tarjeta de los proyectos
+    }
+
+    // fin cajon portafolio
 }
 
 // Seccion de formulario
 .seccion-form {
     width: 100%;
     overflow: hidden;
+
     .div-form {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         form {
             width: 100%;
             display: flex;
@@ -559,6 +654,7 @@ header{
             justify-content: center;
             align-items: center;
             flex-wrap: wrap !important;
+
             div {
                 width: 50%;
                 display: flex;
@@ -566,18 +662,21 @@ header{
                 justify-content: center;
                 align-items: center;
                 padding: 12px 0px;
+
                 @media screen and (max-width:955px) {
                     width: 100%;
                     padding: 5px 0px;
                     margin: 0px;
                 }
             }
+
             label {
                 width: 100%;
                 font-size: 16px;
                 color: white;
                 font-weight: bold;
             }
+
             input {
                 width: 100%;
                 padding: 12px;
@@ -585,19 +684,21 @@ header{
                 border: 2px solid $color-primary;
                 border-radius: 8px;
             }
-            textarea{
+
+            textarea {
                 width: 100%;
                 padding: 10px;
                 font-size: 16px;
                 border: 2px solid $color-primary;
                 border-radius: 5px;
             }
-            #btnValidar{
-                width:auto;
+
+            #btnValidar {
+                width: auto;
                 padding: 10px 30px;
                 background: $color-secundary;
                 margin: 10px 0px;
-                border-radius:5px;
+                border-radius: 5px;
                 text-decoration: none;
                 color: white !important;
                 font-weight: 400;
@@ -605,7 +706,8 @@ header{
                 border: 2px solid $color-secundary;
                 font-weight: bold;
                 box-shadow: 0px 2px 2px $color-secundary;
-                &:hover{
+
+                &:hover {
                     transition: all .3s;
                     border: 2px solid $color-primary;
                     background-color: transparent;
@@ -615,7 +717,8 @@ header{
 
         }
     }
-} 
+}
+
 //fin de seccion formulario
 
 .otra {
@@ -625,41 +728,50 @@ header{
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
-    h1{
+
+    h1 {
         color: white;
         text-align: center;
     }
 }
-.seccion-trab{
+
+.seccion-trab {
     width: 100%;
     background-color: $color-primary;
-    .div-trab{
+
+    .div-trab {
         padding: 50px 0px;
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         div {
             text-align: center;
             width: 80%;
             margin: 0;
             padding: 10px 0px;
+
             h3 {
                 color: rgba(255, 255, 255, 0.829);
                 font-size: 20px;
             }
+
             h1 {
                 font-size: 35px;
                 color: white;
             }
         }
-        @media screen and (max-width:712px){
-            div{
+
+        @media screen and (max-width:712px) {
+            div {
                 width: 100%;
+
                 h3 {
                     font-size: 18px;
                 }
+
                 h1 {
                     font-size: 25px;
                 }
@@ -669,30 +781,35 @@ header{
 }
 
 // final
-footer{
+footer {
     width: 100%;
     background-color: $color-primary;
+
     hr {
         width: 50%;
         color: rgba(255, 255, 255, 0.164);
     }
-    .divFooter{
+
+    .divFooter {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        
+
         div {
             padding: 10px 0px;
             width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            p{
+
+            p {
                 color: white;
             }
-            a{
+
+            a {
                 text-decoration: none;
-                ion-icon{
+
+                ion-icon {
                     color: white;
                     font-size: 30px;
                     padding: 0px 10px;
@@ -702,23 +819,36 @@ footer{
     }
 }
 
+.arrayBottom{
+    width: 100%;
+    text-align: left;
+    ion-icon {
+        color: $color-primary;
+        font-size: 40px;
+
+    }
+
+}
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
     src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
 
-  .material-icons {
+.material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -726,40 +856,82 @@ footer{
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
+
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
+
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 
-  /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
 
 /* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
 
 /* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
 
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-18 {
+    font-size: 18px;
+}
 
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}

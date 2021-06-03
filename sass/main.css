@@ -1101,6 +1101,7 @@ header .div-header .divImg img {
 
 .seccion-portafolio .div-portafolio .tarjt-portafolio div img {
   width: 100% !important;
+  height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
